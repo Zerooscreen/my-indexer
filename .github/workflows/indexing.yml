@@ -1,0 +1,26 @@
+name: Blogger Auto Indexer
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Jalan otomatis setiap 6 jam
+  workflow_dispatch:       # Munculkan tombol manual
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Menarik kode
+        uses: actions/checkout@v3
+
+      - name: Menyiapkan Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Menginstal Library
+        run: pip install -r requirements.txt
+
+      - name: Menjalankan Script Indexing
+        env:
+          INDEXER_CONFIG: ${{ secrets.INDEXER_CONFIG }}
+        run: python main.py
