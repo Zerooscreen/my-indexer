@@ -4,55 +4,70 @@ from google.oauth2 import service_account
 from google.auth.transport.requests import Request
 import json
 import os
+import logging
+import sys
+from tqdm import tqdm  # Import tqdm untuk progress bar
+
+# --- 1. KONFIGURASI LOGGING ---
+# Setup logging di awal script
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[logging.StreamHandler(sys.stdout)]
+)
+logger = logging.getLogger(__name__)
 
 # --- PENGATURAN URL ---
 
-# 1. Daftar RSS Feed Blog (Untuk otomatisasi artikel baru)
 RSS_FEEDS = [
     "https://zero-1pmovie-world.blogspot.com/feeds/posts/default?alt=rss",
-    # "https://blog-lain.blogspot.com/feeds/posts/default?alt=rss", # Tambah di sini jika ada blog lain
 ]
 
-# 2. Daftar URL Manual (Untuk link spesifik seperti readme.io Anda)
 MANUAL_URLS = [
-    "https://supparer-2-2569.readme.io/reference/สัปเหร่อ2-เต็มเรื่อง",
-    "https://supparer-2-2569.readme.io/reference/สัปเหร่อ-2-fhd",
-    "https://undertaker-2-2026.readme.io/reference/the-undertaker-2026-สัปเหร่อ-2",
-    "https://undertaker-2-2026.readme.io/reference/the-undertaker-2-เต็มเรื่อง-พากย์ไทย",
-    "https://sup-pa-rer-2-hd.readme.io/reference/สัปเหร่อ-2-full-hd",
-    "https://sup-pa-rer-2-hd.readme.io/reference/สัปเหร่อ-2-fhd",
-    "https://sup-pa-rer-2-hd-2569.readme.io/reference/สัปเหร่อ-2-uhd-พากย์ไทย",
-    "https://sup-pa-rer-2-hd-2569.readme.io/reference/sup-pa-rer-2-ซับไทย-ดูฟรี"
-	"https://cat-for-cash-the-series-hd.readme.io/reference/ปย์รักด้วยแมวเลี้ยง-ep-4-ย้อนหลัง",
-    "https://cat-for-cash-the-series-hd.readme.io/reference/cat-for-cash-ep-4",
-    "https://cat-for-cash-the-series-hd.readme.io/reference/เปย์รักด้วยแมวเลี้ยง-cat-for-cash-ep-4-uncut",
-    "https://peach-lover-the-series-hd.readme.io/reference/ลูกพีชทานสด-ep-4-uncut",
-    "https://peach-lover-the-series-hd.readme.io/reference/ลูกพีชทานสด-ep-4-ย้อนหลัง",
-    "https://peach-lover-the-series-hd.readme.io/reference/peach-lover-ep-4",
-    "https://yesterday-the-series-hd.readme.io/reference/รอยรักวันวาน-ep-1-ย้อนหลัง",
-    "https://yesterday-the-series-hd.readme.io/reference/yesterday-ep-1",
-    "https://yesterday-the-series-hd.readme.io/reference/รอยรักวันวาน-ep-1-uncut",
-    "https://dare-you-death-the-series-hd.readme.io/reference/ไขคดีเป็น-เห็นคดีตาย-ep-8-ย้อนหลัง",
-    "https://dare-you-death-the-series-hd.readme.io/reference/dare-you-to-death-ep-8-bl-uncut-full",
-    "https://dare-you-death-the-series-hd.readme.io/reference/ไขคดีเป็น-เห็นคดีตาย-ep-8-uncut",
-
+    "https://my-romance-scammer-the-series.readme.io/reference/my-romance-scammer-ep-3-uncut-hd",
+    "https://my-romance-scammer-the-series.readme.io/reference/watch-my-romance-scammer-ep-3-free",
+    "https://my-romance-scammer-the-series.readme.io/reference/my-romance-scammer-ep-3-rewatch-thai",
+    "https://my-romance-scammer-the-series.readme.io/update/reference/รักจริง-หลังแต่ง-my-romance-scammer-ep-3-uncut",
+    "https://melody-of-secrets-uncut.readme.io/reference/ความลับในบทเพลงที่บรรเลงไม่รู้จบ-ep-10-uncut",
+    "https://melody-of-secrets-uncut.readme.io/reference/ความลับในบทเพลง-melody-of-secrets-ep-10-uncut",
+    "https://melody-of-secrets-uncut.readme.io/reference/melody-of-secrets-ep-10-uncut-full",
+    "https://melody-of-secrets-uncut.readme.io/reference/watch-melody-of-secrets-ep-10-free",
+    "https://melody-of-secrets-uncut.readme.io/reference/melody-of-secrets-ep-10-rewatch-hd",
+    "https://love-alert-the-series.readme.io/reference/watch-love-alert-ep-8-online-free",
+    "https://love-alert-the-series.readme.io/reference/มีคําเตือน-โปรดระมัดระวัง-ep-8-uncut-hd",
+    "https://duang-with-you-the-series.readme.io/reference/duang-with-you-ep-3",
+    "https://muteluv-love-me-if-you-swear.readme.io/reference/muteluv-ตอน-9-วัด-ปะล่ะ-ep-2-uncut",
+    "https://muteluv-love-me-if-you-swear.readme.io/reference/watch-muteluv-love-me-if-you-swear-ep-2-uncut",
+    "https://muteluv-love-me-if-you-swear.readme.io/reference/muteluv-ตอน-9-วัด-ปะล่ะ-muteluv-love-me-if-you-swear-ep-2",
+    "https://yesterday-the-series.readme.io/reference/รอยรักวันวาน-yesterday-ep-2-uncut",
+    "https://yesterday-the-series.readme.io/reference/รอยรัก-วันวาน-yesterday-ep-2",
+    "https://yesterday-the-series.readme.io/reference/yesterday-ep-2",
 ]
 
 # --- PROSES INDEXING ---
 
 def send_to_google(urls):
     if not urls:
+        logger.warning("Tidak ada URL untuk dikirim.")
         return
 
     # Ambil kunci dari brankas GitHub Secrets
-    info = json.loads(os.environ['INDEXER_CONFIG'])
-    credentials = service_account.Credentials.from_service_account_info(
-        info, scopes=["https://www.googleapis.com/auth/indexing"]
-    )
+    try:
+        info = json.loads(os.environ['INDEXER_CONFIG'])
+        credentials = service_account.Credentials.from_service_account_info(
+            info, scopes=["https://www.googleapis.com/auth/indexing"]
+        )
+        logger.info("Kredensial Google Cloud berhasil dimuat.")
+    except KeyError:
+        logger.error("Secret 'INDEXER_CONFIG' tidak ditemukan di environment.")
+        return
 
     endpoint = "https://indexing.googleapis.com/v3/urlNotifications:publish"
     
-    for url in urls:
+    # --- TAMBAHKAN TQDM DI SINI ---
+    logger.info(f"Memulai pengiriman {len(urls)} URL ke Google Indexing API...")
+    
+    for url in tqdm(urls, desc="Progress Indexing", unit="url"):
         try:
             credentials.refresh(Request())
             headers = {
@@ -61,30 +76,35 @@ def send_to_google(urls):
             }
             data = {"url": url, "type": "URL_UPDATED"}
             res = requests.post(endpoint, headers=headers, json=data)
-            print(f"Status {res.status_code} untuk: {url}")
+            
+            # Jika ingin tetap melihat log per url tanpa merusak bar, gunakan tqdm.write
+            if res.status_code != 200:
+                tqdm.write(f"Gagal [{res.status_code}] : {url}")
+                
         except Exception as e:
-            print(f"Gagal mengirim {url}: {e}")
+            tqdm.write(f"Error pada {url}: {e}")
 
 def run_indexer():
     all_urls = []
 
-    # Ambil link dari semua RSS yang didaftarkan
+    # Ambil link dari semua RSS
     for rss in RSS_FEEDS:
-        print(f"Mengecek RSS: {rss}")
+        logger.info(f"Mengecek RSS: {rss}")
         feed = feedparser.parse(rss)
-        for entry in feed.entries[:10]: # Ambil 10 terbaru dari tiap blog
+        for entry in feed.entries[:10]:
             all_urls.append(entry.link)
 
     # Tambahkan link manual
-    print(f"Menambahkan {len(MANUAL_URLS)} link manual.")
+    logger.info(f"Menambahkan {len(MANUAL_URLS)} link manual.")
     all_urls.extend(MANUAL_URLS)
 
-    # Hapus duplikat link jika ada
+    # Hapus duplikat
     final_urls = list(set(all_urls))
-    print(f"Total ada {len(final_urls)} link unik yang akan dikirim ke Google.")
+    logger.info(f"Total: {len(final_urls)} link unik siap dikirim.")
 
-    # Kirim ke Google
+    # Jalankan pengiriman
     send_to_google(final_urls)
+    logger.info("Proses selesai seluruhnya.")
 
 if __name__ == "__main__":
     run_indexer()
