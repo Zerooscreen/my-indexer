@@ -6,10 +6,9 @@ import json
 import os
 import logging
 import sys
-from tqdm import tqdm  # Import tqdm untuk progress bar
+from tqdm import tqdm
 
 # --- 1. KONFIGURASI LOGGING ---
-# Setup logging di awal script
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -17,19 +16,21 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# --- PENGATURAN URL ---
+# --- 2. PENGATURAN URL (SUDAH DIPERBAIKI) ---
 
 RSS_FEEDS = [
-    "https://zero-1pmovie-world.blogspot.com/feeds/posts/default?alt=rss",
+    # Alamat Blogspot Anda (Sudah diperbaiki dari '1' menjadi 'l')
+    "https://zero-lpmovie-world.blogspot.com/feeds/posts/default?alt=rss",
 ]
 
 MANUAL_URLS = [
+    # Daftar link readme.io Anda
     "https://my-romance-scammer-the-series.readme.io/reference/my-romance-scammer-ep-3-uncut-hd",
     "https://my-romance-scammer-the-series.readme.io/reference/watch-my-romance-scammer-ep-3-free",
     "https://my-romance-scammer-the-series.readme.io/reference/my-romance-scammer-ep-3-rewatch-thai",
     "https://my-romance-scammer-the-series.readme.io/update/reference/รักจริง-หลังแต่ง-my-romance-scammer-ep-3-uncut",
-    "https://melody-of-secrets-uncut.readme.io/reference/ความลับในบทเพลงที่บรรเลงไม่รู้จบ-ep-10-uncut",
-    "https://melody-of-secrets-uncut.readme.io/reference/ความลับในบทเพลง-melody-of-secrets-ep-10-uncut",
+    "https://melody-of-secrets-uncut.readme.io/reference/ความลับ dalam-บทเพลง-yang-bermain-tidak-tahu-akhir-ep-10-uncut",
+    "https://melody-of-secrets-uncut.readme.io/reference/ความลับ dalam-บทเพลง-melody-of-secrets-ep-10-uncut",
     "https://melody-of-secrets-uncut.readme.io/reference/melody-of-secrets-ep-10-uncut-full",
     "https://melody-of-secrets-uncut.readme.io/reference/watch-melody-of-secrets-ep-10-free",
     "https://melody-of-secrets-uncut.readme.io/reference/melody-of-secrets-ep-10-rewatch-hd",
@@ -44,29 +45,28 @@ MANUAL_URLS = [
     "https://yesterday-the-series.readme.io/reference/yesterday-ep-2",
 ]
 
-# --- PROSES INDEXING ---
+# --- 3. PROSES INDEXING ---
 
 def send_to_google(urls):
     if not urls:
         logger.warning("Tidak ada URL untuk dikirim.")
         return
 
-    # Ambil kunci dari brankas GitHub Secrets
+    # Ambil kunci dari GitHub Secrets (INDEXER_CONFIG)
     try:
         info = json.loads(os.environ['INDEXER_CONFIG'])
         credentials = service_account.Credentials.from_service_account_info(
             info, scopes=["https://www.googleapis.com/auth/indexing"]
         )
         logger.info("Kredensial Google Cloud berhasil dimuat.")
-    except KeyError:
-        logger.error("Secret 'INDEXER_CONFIG' tidak ditemukan di environment.")
+    except Exception as e:
+        logger.error(f"Gagal memuat kredensial: {e}")
         return
 
     endpoint = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-    
-    # --- TAMBAHKAN TQDM DI SINI ---
     logger.info(f"Memulai pengiriman {len(urls)} URL ke Google Indexing API...")
     
+    # Progress Bar di Logs GitHub
     for url in tqdm(urls, desc="Progress Indexing", unit="url"):
         try:
             credentials.refresh(Request())
@@ -77,9 +77,8 @@ def send_to_google(urls):
             data = {"url": url, "type": "URL_UPDATED"}
             res = requests.post(endpoint, headers=headers, json=data)
             
-            # Jika ingin tetap melihat log per url tanpa merusak bar, gunakan tqdm.write
             if res.status_code != 200:
-                tqdm.write(f"Gagal [{res.status_code}] : {url}")
+                tqdm.write(f"Gagal [{res.status_code}] : {url} | Pesan: {res.text}")
                 
         except Exception as e:
             tqdm.write(f"Error pada {url}: {e}")
@@ -87,22 +86,30 @@ def send_to_google(urls):
 def run_indexer():
     all_urls = []
 
-    # Ambil link dari semua RSS
+    # 1. Ambil link otomatis dari RSS Blogspot
     for rss in RSS_FEEDS:
-        logger.info(f"Mengecek RSS: {rss}")
-        feed = feedparser.parse(rss)
-        for entry in feed.entries[:10]:
-            all_urls.append(entry.link)
+        logger.info(f"Mengecek RSS Blog: {rss}")
+        try:
+            feed = feedparser.parse(rss)
+            if feed.entries:
+                # Ambil 20 postingan terbaru
+                for entry in feed.entries[:20]:
+                    all_urls.append(entry.link)
+                logger.info(f"Berhasil mengambil {len(feed.entries[:20])} link dari RSS.")
+            else:
+                logger.warning(f"RSS Kosong atau salah URL: {rss}")
+        except Exception as e:
+            logger.error(f"Gagal membaca RSS {rss}: {e}")
 
-    # Tambahkan link manual
-    logger.info(f"Menambahkan {len(MANUAL_URLS)} link manual.")
+    # 2. Tambahkan link manual dari daftar MANUAL_URLS
+    logger.info(f"Menambahkan {len(MANUAL_URLS)} link manual (readme.io).")
     all_urls.extend(MANUAL_URLS)
 
-    # Hapus duplikat
+    # 3. Hapus duplikat link
     final_urls = list(set(all_urls))
-    logger.info(f"Total: {len(final_urls)} link unik siap dikirim.")
+    logger.info(f"Total: {len(final_urls)} link unik siap dikirim ke Google.")
 
-    # Jalankan pengiriman
+    # 4. Jalankan pengiriman ke Google
     send_to_google(final_urls)
     logger.info("Proses selesai seluruhnya.")
 
