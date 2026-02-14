@@ -1,4 +1,3 @@
-import feedparser
 import requests
 from google.oauth2 import service_account
 from google.auth.transport.requests import Request
@@ -16,21 +15,17 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# --- 2. PENGATURAN URL (SUDAH DIPERBAIKI) ---
+# File database untuk menyimpan URL yang sudah sukses (Penting untuk GitHub Actions)
+DB_FILE = "indexed_urls.txt"
 
-RSS_FEEDS = [
-    # Alamat Blogspot Anda (Sudah diperbaiki dari '1' menjadi 'l')
-    "https://zero-lpmovie-world.blogspot.com/feeds/posts/default?alt=rss",
-]
-
+# --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    # Daftar link readme.io Anda
     "https://my-romance-scammer-the-series.readme.io/reference/my-romance-scammer-ep-3-uncut-hd",
     "https://my-romance-scammer-the-series.readme.io/reference/watch-my-romance-scammer-ep-3-free",
     "https://my-romance-scammer-the-series.readme.io/reference/my-romance-scammer-ep-3-rewatch-thai",
     "https://my-romance-scammer-the-series.readme.io/update/reference/รักจริง-หลังแต่ง-my-romance-scammer-ep-3-uncut",
-    "https://melody-of-secrets-uncut.readme.io/reference/ความลับ dalam-บทเพลง-yang-bermain-tidak-tahu-akhir-ep-10-uncut",
-    "https://melody-of-secrets-uncut.readme.io/reference/ความลับ dalam-บทเพลง-melody-of-secrets-ep-10-uncut",
+    "https://melody-of-secrets-uncut.readme.io/reference/ความลับ-dalam-บทเพลง-yang-bermain-tidak-tahu-akhir-ep-10-uncut",
+    "https://melody-of-secrets-uncut.readme.io/reference/ความลับ-dalam-บทเพลง-melody-of-secrets-ep-10-uncut",
     "https://melody-of-secrets-uncut.readme.io/reference/melody-of-secrets-ep-10-uncut-full",
     "https://melody-of-secrets-uncut.readme.io/reference/watch-melody-of-secrets-ep-10-free",
     "https://melody-of-secrets-uncut.readme.io/reference/melody-of-secrets-ep-10-rewatch-hd",
@@ -45,15 +40,28 @@ MANUAL_URLS = [
     "https://yesterday-the-series.readme.io/reference/yesterday-ep-2",
 ]
 
-# --- 3. PROSES INDEXING ---
+# --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
+
+def get_already_indexed():
+    """Membaca list URL yang sudah pernah sukses di-index sebelumnya"""
+    if not os.path.exists(DB_FILE):
+        return set()
+    with open(DB_FILE, "r") as f:
+        return set(line.strip() for line in f if line.strip())
+
+def save_indexed_url(url):
+    """Menambah URL ke database setelah berhasil dikirim ke Google"""
+    with open(DB_FILE, "a") as f:
+        f.write(url + "\n")
+
+# --- 4. FUNGSI PENGIRIMAN KE GOOGLE INDEXING API ---
 
 def send_to_google(urls):
     if not urls:
-        logger.warning("Tidak ada URL untuk dikirim.")
         return
 
-    # Ambil kunci dari GitHub Secrets (INDEXER_CONFIG)
     try:
+        # Mengambil file JSON Kredensial dari GitHub Secrets
         info = json.loads(os.environ['INDEXER_CONFIG'])
         credentials = service_account.Credentials.from_service_account_info(
             info, scopes=["https://www.googleapis.com/auth/indexing"]
@@ -64,10 +72,8 @@ def send_to_google(urls):
         return
 
     endpoint = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-    logger.info(f"Memulai pengiriman {len(urls)} URL ke Google Indexing API...")
     
-    # Progress Bar di Logs GitHub
-    for url in tqdm(urls, desc="Progress Indexing", unit="url"):
+    for url in tqdm(urls, desc="Proses Indexing", unit="url"):
         try:
             credentials.refresh(Request())
             headers = {
@@ -77,41 +83,36 @@ def send_to_google(urls):
             data = {"url": url, "type": "URL_UPDATED"}
             res = requests.post(endpoint, headers=headers, json=data)
             
-            if res.status_code != 200:
+            if res.status_code == 200:
+                # Berhasil! Simpan link ke file database
+                save_indexed_url(url)
+            else:
                 tqdm.write(f"Gagal [{res.status_code}] : {url} | Pesan: {res.text}")
                 
         except Exception as e:
             tqdm.write(f"Error pada {url}: {e}")
 
+# --- 5. EKSEKUSI UTAMA ---
+
 def run_indexer():
-    all_urls = []
+    # 1. Ambil semua link dari daftar manual di atas
+    all_urls = list(set(MANUAL_URLS))
 
-    # 1. Ambil link otomatis dari RSS Blogspot
-    for rss in RSS_FEEDS:
-        logger.info(f"Mengecek RSS Blog: {rss}")
-        try:
-            feed = feedparser.parse(rss)
-            if feed.entries:
-                # Ambil 20 postingan terbaru
-                for entry in feed.entries[:20]:
-                    all_urls.append(entry.link)
-                logger.info(f"Berhasil mengambil {len(feed.entries[:20])} link dari RSS.")
-            else:
-                logger.warning(f"RSS Kosong atau salah URL: {rss}")
-        except Exception as e:
-            logger.error(f"Gagal membaca RSS {rss}: {e}")
+    # 2. Ambil data link yang sudah pernah di-index
+    already_indexed = get_already_indexed()
 
-    # 2. Tambahkan link manual dari daftar MANUAL_URLS
-    logger.info(f"Menambahkan {len(MANUAL_URLS)} link manual (readme.io).")
-    all_urls.extend(MANUAL_URLS)
+    # 3. Filter: Hanya ambil link yang belum ada di database
+    final_urls = [url for url in all_urls if url not in already_indexed]
 
-    # 3. Hapus duplikat link
-    final_urls = list(set(all_urls))
-    logger.info(f"Total: {len(final_urls)} link unik siap dikirim ke Google.")
+    if not final_urls:
+        logger.info("HASIL: Tidak ada URL baru. Semua URL sudah pernah di-index sebelumnya.")
+        return
 
-    # 4. Jalankan pengiriman ke Google
+    logger.info(f"HASIL: Menemukan {len(final_urls)} URL baru untuk dikirim ke Google.")
+
+    # 4. Kirim ke Google
     send_to_google(final_urls)
-    logger.info("Proses selesai seluruhnya.")
+    logger.info("Selesai.")
 
 if __name__ == "__main__":
     run_indexer()
