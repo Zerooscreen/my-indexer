@@ -1,26 +1,41 @@
-name: Blogger Auto Indexer
+name: Google Indexing Bot
 
 on:
+  push:
+    branches: [ main ]
   schedule:
-    - cron: '0 */6 * * *'  # Jalan otomatis setiap 6 jam
-  workflow_dispatch:       # Munculkan tombol manual
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - name: Menarik kode
-        uses: actions/checkout@v3
+    permissions:
+      contents: write # PENTING agar bot bisa menyimpan file
 
-      - name: Menyiapkan Python
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Menginstal Library
-        run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: |
+          pip install requests google-auth tqdm
 
-      - name: Menjalankan Script Indexing
+      - name: Run Script
         env:
           INDEXER_CONFIG: ${{ secrets.INDEXER_CONFIG }}
         run: python main.py
+
+      - name: Save Indexed URLs List
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -f indexed_urls.txt ]; then
+            git add indexed_urls.txt
+            git diff --quiet && git diff --staged --quiet || (git commit -m "Update indexed list" && git push)
+          fi
