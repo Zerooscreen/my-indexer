@@ -20,25 +20,18 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://supparer-2-full-hd.readme.io/reference/watch-online-supparer-2-full-hd",
-    "https://supparer-2-update.readme.io/reference/supparer-2-release-date",
-    "https://panor-2-hd-full-movie.readme.io/reference/watch-panor-2-hd-full-movie",
-    "https://panor-2-hd-full-movie.readme.io/reference/panor-2-online-thai-sub",
-    "https://sap-pa-lee-huan-fullmovie-2026.readme.io/reference/sap-pa-lee-huan-full-movie-2026",
-    "https://sap-pa-lee-huan-fullmovie-2026.readme.io/reference/watch-sap-pa-lee-huan-online-hd",
-    "https://rakee-the-stain-movie-full-hd.readme.io/reference/rakee-the-stain-movie-full-hd-online",
-    "https://rakee-the-stain-movie-full-hd.readme.io/reference/rakee-the-stain-full-story-online-free",
-    "https://king-kaew-full-movie-thai-hd.readme.io/reference/watch-king-kaew-zoom-hd-online",
-    "https://king-kaew-full-movie-thai-hd.readme.io/reference/king-kaew-full-movie-thai-hd",
-    "https://scream-7-thaisub.readme.io/reference/watch-scream-7-thai-dubbed-full-movie",
-    "https://scream-7-thaisub.readme.io/reference/scream-7-release-date-thai-update",
-    "https://hor-taew-tak-latest-part-thai.readme.io/reference/watch-hor-taew-tak-latest-part-thai",
-    "https://hor-taew-tak-latest-part-thai.readme.io/reference/hor-taew-tak-hak-lee-hoo-full-hd",
-    "https://the-strangers-chapter3-thaisub.readme.io/reference/watch-the-strangers-chapter-3-thai",
-    "https://the-strangers-chapter3-thaisub.readme.io/reference/the-strangers-chapter-3-update-thai",
-    "https://pob-dib-dib-full-movie-thai.readme.io/reference/watch-pob-dib-dib-full-movie-thai",
-    "https://pob-dib-dib-full-movie-thai.readme.io/reference/pob-dib-dib-movie-update-review",
-    "https://crime-101-thaisub.readme.io/reference/crime-101-movie-release-date-thai",
+    "https://love-me-if-you-swear-ep2.readme.io/reference/muteluv-ep2-9วัดปะล่ะ-ดูฟรี",
+    "https://love-me-if-you-swear-ep2.readme.io/reference/love-me-if-you-swear-ep2-thai",
+    "https://love-me-if-you-swear-ep2.readme.io/reference/muteluv-ep3-9วัดปะล่ะ-ดูฟรี",
+    "https://love-me-if-you-swear-ep2.readme.io/reference/love-me-if-you-swear-ep3-thai",
+    "https://yesterday-bl-series.readme.io/reference/รอยรักวันวาน-ep2-พากย์ไทย-2026",
+    "https://yesterday-bl-series.readme.io/reference/yesterday-series-ep2-thai-dub",
+    "https://yesterday-bl-series.readme.io/reference/รอยรักวันวาน-ep3-พากย์ไทย-2026",
+    "https://yesterday-bl-series.readme.io/reference/yesterday-series-ep3-thai-dub",
+    "https://peach-lover-ep5-uncut-thai.readme.io/reference/ลูกพีชทานสด-ep5-พากย์ไทย-full-hd",
+    "https://peach-lover-ep5-uncut-thai.readme.io/reference/peach-lover-ep5-uncut-thai",
+    "https://cat-for-cash-ep5-thai-dub.readme.io/reference/เปย์รักด้วยแมวเลี้ยง-ep5-ดูฟรี-uncut",
+    "https://cat-for-cash-ep5-thai-dub.readme.io/reference/cat-for-cash-ep5-thai-dub",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
