@@ -20,18 +20,20 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://love-me-if-you-swear-ep2.readme.io/reference/muteluv-ep2-9วัดปะล่ะ-ดูฟรี",
-    "https://love-me-if-you-swear-ep2.readme.io/reference/love-me-if-you-swear-ep2-thai",
-    "https://love-me-if-you-swear-ep2.readme.io/reference/muteluv-ep3-9วัดปะล่ะ-ดูฟรี",
-    "https://love-me-if-you-swear-ep2.readme.io/reference/love-me-if-you-swear-ep3-thai",
-    "https://yesterday-bl-series.readme.io/reference/รอยรักวันวาน-ep2-พากย์ไทย-2026",
-    "https://yesterday-bl-series.readme.io/reference/yesterday-series-ep2-thai-dub",
-    "https://yesterday-bl-series.readme.io/reference/รอยรักวันวาน-ep3-พากย์ไทย-2026",
-    "https://yesterday-bl-series.readme.io/reference/yesterday-series-ep3-thai-dub",
-    "https://peach-lover-ep5-uncut-thai.readme.io/reference/ลูกพีชทานสด-ep5-พากย์ไทย-full-hd",
-    "https://peach-lover-ep5-uncut-thai.readme.io/reference/peach-lover-ep5-uncut-thai",
-    "https://cat-for-cash-ep5-thai-dub.readme.io/reference/เปย์รักด้วยแมวเลี้ยง-ep5-ดูฟรี-uncut",
-    "https://cat-for-cash-ep5-thai-dub.readme.io/reference/cat-for-cash-ep5-thai-dub",
+    "https://dare-you-to-death-ep9.readme.io/reference/ไขคดีเป็นเห็นคดีตาย-ep9-ดูฟรี",
+    "https://dare-you-to-death-ep9.readme.io/reference/dare-you-to-death-ep9-thai-sub",
+    "https://duang-with-you-ep4.readme.io/reference/ด้วงกับเธอ-ep4-ดูฟรี-uncut-hd",
+    "https://duang-with-you-ep4.readme.io/reference/duang-with-you-ep4-thai-sub",
+    "https://love-alert-ep9-thai-sub.readme.io/reference/มีคําเตือนโปรดระมัดระวัง-ep9-uncut",
+    "https://love-alert-ep9-thai-sub.readme.io/reference/love-alert-ep9-thai-sub-2026",
+    "https://my-romance-scammer-ep4.readme.io/reference/ดู-รักจริงหลังแต่ง-ep4-พากย์ไทย-uncut",
+    "https://my-romance-scammer-ep4.readme.io/reference/my-romance-scammer-ep4-thai-sub",
+    "https://my-romance-scammer-ep3-thaisub.readme.io/reference/ดู-รักจริงหลังแต่ง-ep3-พากย์ไทย-uncut",
+    "https://my-romance-scammer-ep3-thaisub.readme.io/reference/my-romance-scammer-ep3-thai-sub",
+    "https://love-alert-ep8-thai-sub.readme.io/reference/มีคําเตือนโปรดระมัดระวัง-ep8-uncut",
+    "https://love-alert-ep8-thai-sub.readme.io/reference/love-alert-ep8-thai-sub-2026",
+    "https://duang-with-you-ep3-thai.readme.io/reference/ด้วงกับเธอ-ep3-ดูฟรี-uncut-hd",
+    "https://duang-with-you-ep3-thai.readme.io/reference/duang-with-you-ep3-thai-sub",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
