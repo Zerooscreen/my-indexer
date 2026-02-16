@@ -20,17 +20,24 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://ver-panico-7-online-gratis.readme.io/reference/ver-panico-7-online-portugal-gratis",
-    "https://ver-panico-7-online-gratis.readme.io/reference/ver-panico-7-online-filme-completo-portugal",
-    "https://ver-panico-7-online-gratis.readme.io/reference/onde-ver-panico-7-streaming-portugal-estreia",
-    "https://os-estranhos-capitulo-3-online.readme.io/reference/ver-os-estranhos-capitulo-3-online-portugal",
-    "https://os-estranhos-capitulo-3-online.readme.io/reference/filme-os-estranhos-3-completo-onde-ver",
-    "https://destruicao-final-2-filme.readme.io/reference/ver-destruicao-final-2-migration-online-hd",
-    "https://destruicao-final-2-filme.readme.io/reference/descarregar-destruicao-final-2-filme-completo-torrent",
-    "https://exterminio-o-templo-dos-ossos.readme.io/reference/ver-exterminio-o-templo-dos-ossos-online-legendado",
-    "https://exterminio-o-templo-dos-ossos.readme.io/reference/exterminio-3-2025-onde-ver-online-portugal",
-    "https://ver-caminhos-do-crime-online.readme.io/reference/ver-caminhos-do-crime-online-legendado-hd",
-    "https://ver-caminhos-do-crime-online.readme.io/reference/caminhos-do-crime-onde-ver-online-streaming",
+    "https://justica-artificial-mercy.readme.io/reference/ver-justica-artificial-mercy-online-filme-completo",
+    "https://justica-artificial-mercy.readme.io/reference/justica-artificial-streaming-portugal-onde-ver",
+    "https://avatar-fogo-e-cinzas-online.readme.io/reference/ver-avatar-fogo-e-cinzas-online-legendado-4k",
+    "https://avatar-fogo-e-cinzas-online.readme.io/reference/avatar-3-filme-completo-estreia-portugal-online",
+    "https://ver-regresso-a-silent-hill.readme.io/reference/ver-regresso-a-silent-hill-online-legendado-pt",
+    "https://ver-regresso-a-silent-hill.readme.io/reference/regresso-a-silent-hill-onde-ver-online-estreia",
+    "https://goat-o-maior-de-todos-online.readme.io/reference/ver-goat-maior-de-todos-filme-completo-online-portugal",
+    "https://goat-o-maior-de-todos-online.readme.io/reference/goat-maior-de-todos-filme-completo-online",
+    "https://filme-socorro.readme.io/reference/ver-socorro-send-help-online-filme-hd",
+    "https://filme-socorro.readme.io/reference/filme-socorro-onde-ver-streaming-portugal",
+    "https://zootopia-2-onde-ver-online.readme.io/reference/ver-zootopia-2-filme-completo-dobrado-gratis",
+    "https://zootopia-2-onde-ver-online.readme.io/reference/zootopia-2-onde-ver-online-disney-plus-portugal",
+    "https://goat-2026-thai.readme.io/reference/watch-goat-2026-thai-full-hd",
+    "https://goat-2026-thai.readme.io/reference/goat-movie-2026-release-date-thai",
+    "https://mudborn-full-movie-thai-hd.readme.io/reference/watch-mudborn-full-movie-thai-hd",
+    "https://mudborn-full-movie-thai-hd.readme.io/reference/mudborn-thai-movie-release-date-update",
+    "https://survive-or-die.readme.io/reference/watch-survive-or-die-full-movie-thai",
+    "https://survive-or-die.readme.io/reference/survive-or-die-movie-review-thai",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
