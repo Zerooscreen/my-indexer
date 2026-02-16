@@ -20,20 +20,17 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://dare-you-to-death-ep9.readme.io/reference/ไขคดีเป็นเห็นคดีตาย-ep9-ดูฟรี",
-    "https://dare-you-to-death-ep9.readme.io/reference/dare-you-to-death-ep9-thai-sub",
-    "https://duang-with-you-ep4.readme.io/reference/ด้วงกับเธอ-ep4-ดูฟรี-uncut-hd",
-    "https://duang-with-you-ep4.readme.io/reference/duang-with-you-ep4-thai-sub",
-    "https://love-alert-ep9-thai-sub.readme.io/reference/มีคําเตือนโปรดระมัดระวัง-ep9-uncut",
-    "https://love-alert-ep9-thai-sub.readme.io/reference/love-alert-ep9-thai-sub-2026",
-    "https://my-romance-scammer-ep4.readme.io/reference/ดู-รักจริงหลังแต่ง-ep4-พากย์ไทย-uncut",
-    "https://my-romance-scammer-ep4.readme.io/reference/my-romance-scammer-ep4-thai-sub",
-    "https://my-romance-scammer-ep3-thaisub.readme.io/reference/ดู-รักจริงหลังแต่ง-ep3-พากย์ไทย-uncut",
-    "https://my-romance-scammer-ep3-thaisub.readme.io/reference/my-romance-scammer-ep3-thai-sub",
-    "https://love-alert-ep8-thai-sub.readme.io/reference/มีคําเตือนโปรดระมัดระวัง-ep8-uncut",
-    "https://love-alert-ep8-thai-sub.readme.io/reference/love-alert-ep8-thai-sub-2026",
-    "https://duang-with-you-ep3-thai.readme.io/reference/ด้วงกับเธอ-ep3-ดูฟรี-uncut-hd",
-    "https://duang-with-you-ep3-thai.readme.io/reference/duang-with-you-ep3-thai-sub",
+    "https://ver-panico-7-online-gratis.readme.io/reference/ver-panico-7-online-portugal-gratis",
+    "https://ver-panico-7-online-gratis.readme.io/reference/ver-panico-7-online-filme-completo-portugal",
+    "https://ver-panico-7-online-gratis.readme.io/reference/onde-ver-panico-7-streaming-portugal-estreia",
+    "https://os-estranhos-capitulo-3-online.readme.io/reference/ver-os-estranhos-capitulo-3-online-portugal",
+    "https://os-estranhos-capitulo-3-online.readme.io/reference/filme-os-estranhos-3-completo-onde-ver",
+    "https://destruicao-final-2-filme.readme.io/reference/ver-destruicao-final-2-migration-online-hd",
+    "https://destruicao-final-2-filme.readme.io/reference/descarregar-destruicao-final-2-filme-completo-torrent",
+    "https://exterminio-o-templo-dos-ossos.readme.io/reference/ver-exterminio-o-templo-dos-ossos-online-legendado",
+    "https://exterminio-o-templo-dos-ossos.readme.io/reference/exterminio-3-2025-onde-ver-online-portugal",
+    "https://ver-caminhos-do-crime-online.readme.io/reference/ver-caminhos-do-crime-online-legendado-hd",
+    "https://ver-caminhos-do-crime-online.readme.io/reference/caminhos-do-crime-onde-ver-online-streaming",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
