@@ -20,18 +20,16 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://avatar-3-koreansub.readme.io/reference/avatar-3-fire-and-ash-full-movie",
-    "https://avatar-3-koreansub.readme.io/reference/avatar-fire-and-ash-full-4k",
-    "https://28-years-later-full-movie-kor.readme.io/reference/28-years-later-full-movie-kor",
-    "https://28-years-later-full-movie-kor.readme.io/reference/28-years-later-korean-4k",
-    "https://scream-7-full-movie-korean-sub.readme.io/reference/scream-7-full-movie-korean-sub",
-    "https://scream-7-full-movie-korean-sub.readme.io/reference/watch-scream-7-korean-4k",
-    "https://goat-2026-korean-version-4k.readme.io/reference/goat-movie-2026-full-movie-korean",
-    "https://goat-2026-korean-version-4k.readme.io/reference/goat-2026-korean-version-4k",
-    "https://strangers-3-full-movie-korean.readme.io/reference/strangers-chapter-3-full-movie-korean",
-    "https://strangers-3-full-movie-korean.readme.io/reference/strangers-3-kor-fullversion",
-    "https://mercy-full-movie-koreansub.readme.io/reference/mercy-2026-full-movie-korean",
-    "https://mercy-full-movie-koreansub.readme.io/reference/mercy-movie-kor-fullversion",
+    "https://assistir-panico-7-online.readme.io/reference/assistir-panico-7-online-dublado-gratis",
+    "https://assistir-panico-7-online.readme.io/reference/baixar-panico-7-torrent-4k-dual-audio",
+    "https://os-estranhos-capitulo-3-hd.readme.io/reference/os-estranhos-capitulo-3-online-dublado",
+    "https://os-estranhos-capitulo-3-hd.readme.io/reference/filme-os-estranhos-3-completo-dublado",
+    "https://assistir-destruicao-final-2.readme.io/reference/assistir-destruicao-final-2-migration-online",
+    "https://assistir-destruicao-final-2.readme.io/reference/destruicao-final-2-torrent-download-gratis",
+    "https://assistir-um-cabra-bom-de-bola.readme.io/reference/assistir-um-cabra-bom-de-bola-online-gratis",
+    "https://assistir-um-cabra-bom-de-bola.readme.io/reference/baixar-um-cabra-bom-de-bola-torrent",
+    "https://assistir-caminhos-do-crime.readme.io/reference/assistir-caminhos-do-crime-online-legendado",
+    "https://assistir-caminhos-do-crime.readme.io/reference/baixar-caminhos-do-crime-torrent-4k",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
