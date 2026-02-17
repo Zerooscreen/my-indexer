@@ -20,16 +20,18 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://whistle-movie-thai-hd.readme.io/reference/watch-whistle-movie-thai-hd",
-    "https://whistle-movie-thai-hd.readme.io/reference/whistle-movie-release-date-thai",
-    "https://peenak5.readme.io/reference/peenak-5-full-movie-release-date-thai",
-    "https://peenak5.readme.io/reference/peenak-5-uhd-thai-dubbed-sub",
-    "https://peenak-5.readme.io/reference/watch-peenak-5-based-on-true-story-uhd",
-    "https://peenak-5.readme.io/reference/watch-peenak-5-2026-thai-fhd-full",
-    "https://peenak-5-thaimovie.readme.io/reference/peenak-5-full-movie-uhd-sub-thai",
-    "https://peenak-5-full-movie.readme.io/reference/watch-peenak-5-full-movie-thai-hd",
-    "https://return-silent-hill-2026-thai.readme.io/reference/watch-silent-hill-return-full-hd",
-    "https://return-silent-hill-2026-thai.readme.io/reference/return-to-silent-hill-2026-thai-update",
+    "https://avatar-3-koreansub.readme.io/reference/avatar-3-fire-and-ash-full-movie",
+    "https://avatar-3-koreansub.readme.io/reference/avatar-fire-and-ash-full-4k",
+    "https://28-years-later-full-movie-kor.readme.io/reference/28-years-later-full-movie-kor",
+    "https://28-years-later-full-movie-kor.readme.io/reference/28-years-later-korean-4k",
+    "https://scream-7-full-movie-korean-sub.readme.io/reference/scream-7-full-movie-korean-sub",
+    "https://scream-7-full-movie-korean-sub.readme.io/reference/watch-scream-7-korean-4k",
+    "https://goat-2026-korean-version-4k.readme.io/reference/goat-movie-2026-full-movie-korean",
+    "https://goat-2026-korean-version-4k.readme.io/reference/goat-2026-korean-version-4k",
+    "https://strangers-3-full-movie-korean.readme.io/reference/strangers-chapter-3-full-movie-korean",
+    "https://strangers-3-full-movie-korean.readme.io/reference/strangers-3-kor-fullversion",
+    "https://mercy-full-movie-koreansub.readme.io/reference/mercy-2026-full-movie-korean",
+    "https://mercy-full-movie-koreansub.readme.io/reference/mercy-movie-kor-fullversion",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
