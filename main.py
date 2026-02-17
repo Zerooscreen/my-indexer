@@ -20,24 +20,16 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://justica-artificial-mercy.readme.io/reference/ver-justica-artificial-mercy-online-filme-completo",
-    "https://justica-artificial-mercy.readme.io/reference/justica-artificial-streaming-portugal-onde-ver",
-    "https://avatar-fogo-e-cinzas-online.readme.io/reference/ver-avatar-fogo-e-cinzas-online-legendado-4k",
-    "https://avatar-fogo-e-cinzas-online.readme.io/reference/avatar-3-filme-completo-estreia-portugal-online",
-    "https://ver-regresso-a-silent-hill.readme.io/reference/ver-regresso-a-silent-hill-online-legendado-pt",
-    "https://ver-regresso-a-silent-hill.readme.io/reference/regresso-a-silent-hill-onde-ver-online-estreia",
-    "https://goat-o-maior-de-todos-online.readme.io/reference/ver-goat-maior-de-todos-filme-completo-online-portugal",
-    "https://goat-o-maior-de-todos-online.readme.io/reference/goat-maior-de-todos-filme-completo-online",
-    "https://filme-socorro.readme.io/reference/ver-socorro-send-help-online-filme-hd",
-    "https://filme-socorro.readme.io/reference/filme-socorro-onde-ver-streaming-portugal",
-    "https://zootopia-2-onde-ver-online.readme.io/reference/ver-zootopia-2-filme-completo-dobrado-gratis",
-    "https://zootopia-2-onde-ver-online.readme.io/reference/zootopia-2-onde-ver-online-disney-plus-portugal",
-    "https://goat-2026-thai.readme.io/reference/watch-goat-2026-thai-full-hd",
-    "https://goat-2026-thai.readme.io/reference/goat-movie-2026-release-date-thai",
-    "https://mudborn-full-movie-thai-hd.readme.io/reference/watch-mudborn-full-movie-thai-hd",
-    "https://mudborn-full-movie-thai-hd.readme.io/reference/mudborn-thai-movie-release-date-update",
-    "https://survive-or-die.readme.io/reference/watch-survive-or-die-full-movie-thai",
-    "https://survive-or-die.readme.io/reference/survive-or-die-movie-review-thai",
+    "https://whistle-movie-thai-hd.readme.io/reference/watch-whistle-movie-thai-hd",
+    "https://whistle-movie-thai-hd.readme.io/reference/whistle-movie-release-date-thai",
+    "https://peenak5.readme.io/reference/peenak-5-full-movie-release-date-thai",
+    "https://peenak5.readme.io/reference/peenak-5-uhd-thai-dubbed-sub",
+    "https://peenak-5.readme.io/reference/watch-peenak-5-based-on-true-story-uhd",
+    "https://peenak-5.readme.io/reference/watch-peenak-5-2026-thai-fhd-full",
+    "https://peenak-5-thaimovie.readme.io/reference/peenak-5-full-movie-uhd-sub-thai",
+    "https://peenak-5-full-movie.readme.io/reference/watch-peenak-5-full-movie-thai-hd",
+    "https://return-silent-hill-2026-thai.readme.io/reference/watch-silent-hill-return-full-hd",
+    "https://return-silent-hill-2026-thai.readme.io/reference/return-to-silent-hill-2026-thai-update",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
