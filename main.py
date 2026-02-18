@@ -20,16 +20,24 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://assistir-panico-7-online.readme.io/reference/assistir-panico-7-online-dublado-gratis",
-    "https://assistir-panico-7-online.readme.io/reference/baixar-panico-7-torrent-4k-dual-audio",
-    "https://os-estranhos-capitulo-3-hd.readme.io/reference/os-estranhos-capitulo-3-online-dublado",
-    "https://os-estranhos-capitulo-3-hd.readme.io/reference/filme-os-estranhos-3-completo-dublado",
-    "https://assistir-destruicao-final-2.readme.io/reference/assistir-destruicao-final-2-migration-online",
-    "https://assistir-destruicao-final-2.readme.io/reference/destruicao-final-2-torrent-download-gratis",
-    "https://assistir-um-cabra-bom-de-bola.readme.io/reference/assistir-um-cabra-bom-de-bola-online-gratis",
-    "https://assistir-um-cabra-bom-de-bola.readme.io/reference/baixar-um-cabra-bom-de-bola-torrent",
-    "https://assistir-caminhos-do-crime.readme.io/reference/assistir-caminhos-do-crime-online-legendado",
-    "https://assistir-caminhos-do-crime.readme.io/reference/baixar-caminhos-do-crime-torrent-4k",
+    "https://scream-7-bgsub.readme.io/reference/gledai-pisyak-7-2026-tseliyat-film-online-bg-audio",
+	"https://scream-7-bgsub.readme.io/reference/pisyak-7-2026-online-bg-sub-audio",
+	"https://goat-bg-sub.readme.io/reference/gledai-shampion-po-priroda-goat-online-bg-audio",
+	"https://goat-bg-sub.readme.io/reference/goat-film-2026-online-bg-sub-audio",
+	"https://crime-101-bgsub.readme.io/reference/gledai-prestaplenie-101-crime-101-online-bg-audio",
+	"https://crime-101-bgsub.readme.io/reference/crime-101-online-bg-sub-audio",
+	"https://the-strangers-chapter-3-bg-sub.readme.io/reference/gledai-bezlikite-glava-3-the-strangers-chapter-3-online-bg-audio",
+	"https://the-strangers-chapter-3-bg-sub.readme.io/reference/bezlikite-3-2026-online-bg-sub-audio",
+	"https://wuthering-heights-bg-sub.readme.io/reference/gledai-bruleni-halmove-wuthering-heights-online-bg-audio",
+	"https://wuthering-heights-bg-sub.readme.io/reference/bruleni-halmove-2026-online-bg-sub-audio",
+	"https://return-to-silent-hill-bg-sub.readme.io/reference/gledai-zavrashtane-v-saylant-hil-return-to-silent-hill-online-bg-audio",
+	"https://return-to-silent-hill-bg-sub.readme.io/reference/return-to-silent-hill-2026-online-bg-sub-audio",
+	"https://greenland-migration-bg-sub.readme.io/reference/gledai-grenlandiya-2-migratsiya-2026-online-bg-audio",
+	"https://greenland-migration-bg-sub.readme.io/reference/greenland-2-migration-2026-online-bg-sub-audio",
+	"https://28-years-later-bg-sub.readme.io/reference/gledai-28-godini-po-kasno-2-hram-ot-kosti-online-bg-audio",
+	"https://28-years-later-bg-sub.readme.io/reference/28-years-later-2-2026-online-bg-sub-audio",
+	"https://mercy-full-movie-bg-sub.readme.io/reference/gledai-90-minuti-do-prisada-mercy-online-bg-audio",
+	"https://mercy-full-movie-bg-sub.readme.io/reference/mercy-2026-online-bg-sub-audio",
 ]
 
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
