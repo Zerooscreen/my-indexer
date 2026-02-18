@@ -20,26 +20,17 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://scream-7-bgsub.readme.io/reference/gledai-pisyak-7-2026-tseliyat-film-online-bg-audio",
-	"https://scream-7-bgsub.readme.io/reference/pisyak-7-2026-online-bg-sub-audio",
-	"https://goat-bg-sub.readme.io/reference/gledai-shampion-po-priroda-goat-online-bg-audio",
-	"https://goat-bg-sub.readme.io/reference/goat-film-2026-online-bg-sub-audio",
-	"https://crime-101-bgsub.readme.io/reference/gledai-prestaplenie-101-crime-101-online-bg-audio",
-	"https://crime-101-bgsub.readme.io/reference/crime-101-online-bg-sub-audio",
-	"https://the-strangers-chapter-3-bg-sub.readme.io/reference/gledai-bezlikite-glava-3-the-strangers-chapter-3-online-bg-audio",
-	"https://the-strangers-chapter-3-bg-sub.readme.io/reference/bezlikite-3-2026-online-bg-sub-audio",
-	"https://wuthering-heights-bg-sub.readme.io/reference/gledai-bruleni-halmove-wuthering-heights-online-bg-audio",
-	"https://wuthering-heights-bg-sub.readme.io/reference/bruleni-halmove-2026-online-bg-sub-audio",
-	"https://return-to-silent-hill-bg-sub.readme.io/reference/gledai-zavrashtane-v-saylant-hil-return-to-silent-hill-online-bg-audio",
-	"https://return-to-silent-hill-bg-sub.readme.io/reference/return-to-silent-hill-2026-online-bg-sub-audio",
-	"https://greenland-migration-bg-sub.readme.io/reference/gledai-grenlandiya-2-migratsiya-2026-online-bg-audio",
-	"https://greenland-migration-bg-sub.readme.io/reference/greenland-2-migration-2026-online-bg-sub-audio",
-	"https://28-years-later-bg-sub.readme.io/reference/gledai-28-godini-po-kasno-2-hram-ot-kosti-online-bg-audio",
-	"https://28-years-later-bg-sub.readme.io/reference/28-years-later-2-2026-online-bg-sub-audio",
-	"https://mercy-full-movie-bg-sub.readme.io/reference/gledai-90-minuti-do-prisada-mercy-online-bg-audio",
-	"https://mercy-full-movie-bg-sub.readme.io/reference/mercy-2026-online-bg-sub-audio",
+    "https://the-undertaker-2-full-4k.readme.io/reference/watch-the-undertaker-2-full-4k-2026",
+    "https://the-undertaker-2-full-4k.readme.io/reference/the-undertaker-2-2026-thai-uhd-full",
+    "https://wuthering-heights-thaisub.readme.io/reference/watch-wuthering-heights-2026-full-4k",
+    "https://wuthering-heights-thaisub.readme.io/reference/wuthering-heights-2026-sub-thai-uhd-full",
+    "https://khing-keaw-2026-full-uhd.readme.io/reference/watch-khing-keaw-2026-full-uhd-4k",
+    "https://khing-keaw-2026-full-uhd.readme.io/reference/khing-keaw-2026-thai-full-uhd-free",
+    "https://panor-2-full-movie.readme.io/reference/watch-panor-2-full-movie-2026-4k",
+    "https://panor-2-full-movie.readme.io/reference/panor-2-2026-thai-full-master-uhd",
+    "https://whistle-2026-full-uhd.readme.io/reference/watch-whistle-2026-full-uhd-4k",
+    "https://whistle-2026-full-uhd.readme.io/reference/whistle-2026-thai-dubbed-uncut-uhd",
 ]
-
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
 
 def get_already_indexed():
