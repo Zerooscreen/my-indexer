@@ -20,18 +20,20 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://assistir-panico-7.readme.io/reference/assistir-panico-7-2026-filme-completo-dublado",
-    "https://assistir-panico-7.readme.io/reference/ver-panico-7-2026-online-gratis-portugues",
-    "https://wuthering-heights-legendado.readme.io/reference/assistir-o-morro-dos-ventos-uivantes-2026-online-dublado",
-    "https://wuthering-heights-legendado.readme.io/reference/o-morro-dos-ventos-uivantes-2026-online-gratis-hd",
-    "https://um-cabra-bom-de-bola2026.readme.io/reference/um-cabra-bom-de-bola-2026-completo-online",
-    "https://um-cabra-bom-de-bola2026.readme.io/reference/ver-um-cabra-bom-de-bola-2026-online-gratis-hd",
-    "https://caminhos-do-crime-completo.readme.io/reference/caminhos-do-crime-2026-completo-online-dublado",
-    "https://caminhos-do-crime-completo.readme.io/reference/ver-caminhos-do-crime-2026-online-gratis-4k",
-    "https://destruicao-final-2-2026.readme.io/reference/destruicao-final-2-2026-completo-online-dublado",
-    "https://destruicao-final-2-2026.readme.io/reference/ver-destruicao-final-2-2026-online-gratis-4k",
-    "https://justica-artificial-2026.readme.io/reference/justica-artificial-2026-completo-online-hd",
-    "https://justica-artificial-2026.readme.io/reference/ver-justica-artificial-2026-online-gratis-4k",
+    "https://scream-7-taiwansub.readme.io/reference/scream-7-watch-online-full-hd",
+    "https://scream-7-taiwansub.readme.io/reference/scream-7-2026-download-zh",
+    "https://avatar-3-tw-hk.readme.io/reference/avatar-3-fire-and-ash-online-2025",
+    "https://avatar-3-tw-hk.readme.io/reference/avatar-3-full-version-xiaoya-2025",
+    "https://mickey-17-zhsub.readme.io/reference/mickey-17-2026-online-full-hd",
+    "https://mickey-17-zhsub.readme.io/reference/watch-mickey-17-full-movie-xiaoya",
+    "https://goat-2026-zhsub.readme.io/reference/goat-2026-online-full-movie-zh",
+    "https://goat-2026-zhsub.readme.io/reference/goat-2026-full-version-online",
+    "https://wuthering-heights-zhsub.readme.io/reference/wuthering-heights-2026-online-tw",
+    "https://wuthering-heights-zhsub.readme.io/reference/wuthering-heights-full-version-xiaoya",
+    "https://crime-101-zhsub.readme.io/reference/crime-101-2026-online-streaming",
+    "https://crime-101-zhsub.readme.io/reference/crime-101-2026-full-movie-xiaoya",
+    "https://kung-fu-hustle-2.readme.io/reference/kung-fu-hustle-2-full-online-zh",
+    "https://kung-fu-hustle-2.readme.io/reference/watch-kung-fu-hustle-2-online-free",
 ]
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
 
