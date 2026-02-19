@@ -20,16 +20,18 @@ DB_FILE = "indexed_urls.txt"
 
 # --- 2. DAFTAR URL MANUAL (Hanya masukkan link di sini) ---
 MANUAL_URLS = [
-    "https://the-undertaker-2-full-4k.readme.io/reference/watch-the-undertaker-2-full-4k-2026",
-    "https://the-undertaker-2-full-4k.readme.io/reference/the-undertaker-2-2026-thai-uhd-full",
-    "https://wuthering-heights-thaisub.readme.io/reference/watch-wuthering-heights-2026-full-4k",
-    "https://wuthering-heights-thaisub.readme.io/reference/wuthering-heights-2026-sub-thai-uhd-full",
-    "https://khing-keaw-2026-full-uhd.readme.io/reference/watch-khing-keaw-2026-full-uhd-4k",
-    "https://khing-keaw-2026-full-uhd.readme.io/reference/khing-keaw-2026-thai-full-uhd-free",
-    "https://panor-2-full-movie.readme.io/reference/watch-panor-2-full-movie-2026-4k",
-    "https://panor-2-full-movie.readme.io/reference/panor-2-2026-thai-full-master-uhd",
-    "https://whistle-2026-full-uhd.readme.io/reference/watch-whistle-2026-full-uhd-4k",
-    "https://whistle-2026-full-uhd.readme.io/reference/whistle-2026-thai-dubbed-uncut-uhd",
+    "https://assistir-panico-7.readme.io/reference/assistir-panico-7-2026-filme-completo-dublado",
+    "https://assistir-panico-7.readme.io/reference/ver-panico-7-2026-online-gratis-portugues",
+    "https://wuthering-heights-legendado.readme.io/reference/assistir-o-morro-dos-ventos-uivantes-2026-online-dublado",
+    "https://wuthering-heights-legendado.readme.io/reference/o-morro-dos-ventos-uivantes-2026-online-gratis-hd",
+    "https://um-cabra-bom-de-bola2026.readme.io/reference/um-cabra-bom-de-bola-2026-completo-online",
+    "https://um-cabra-bom-de-bola2026.readme.io/reference/ver-um-cabra-bom-de-bola-2026-online-gratis-hd",
+    "https://caminhos-do-crime-completo.readme.io/reference/caminhos-do-crime-2026-completo-online-dublado",
+    "https://caminhos-do-crime-completo.readme.io/reference/ver-caminhos-do-crime-2026-online-gratis-4k",
+    "https://destruicao-final-2-2026.readme.io/reference/destruicao-final-2-2026-completo-online-dublado",
+    "https://destruicao-final-2-2026.readme.io/reference/ver-destruicao-final-2-2026-online-gratis-4k",
+    "https://justica-artificial-2026.readme.io/reference/justica-artificial-2026-completo-online-hd",
+    "https://justica-artificial-2026.readme.io/reference/ver-justica-artificial-2026-online-gratis-4k",
 ]
 # --- 3. FUNGSI CEK DATABASE (Agar tidak double index) ---
 
