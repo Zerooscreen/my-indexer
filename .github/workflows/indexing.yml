@@ -35,6 +35,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add indexed_urls.txt backlinks.html
-          git commit -m "Update database and backlink sitemap" || exit 0
+          # Tambahkan index.html ke dalam git agar disimpan
+          git add indexed_urls.txt index.html
+          git commit -m "Update database and index sitemap" || exit 0
           git push
