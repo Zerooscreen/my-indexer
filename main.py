@@ -12,9 +12,9 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
 DB_FILE = "indexed_urls.txt"
-HTML_SITEMAP = "backlinks.html" 
+HTML_SITEMAP = "index.html" 
 
-# --- DAFTAR URL MANUAL ---
+# --- DAFTAR URL FILM ---
 MANUAL_URLS = [
     "https://the-earth-ep6.readme.io/reference/วิวาห์ปฐพี-the-earth-ep6-พากย์ไทย-uncut",
     "https://the-earth-ep6.readme.io/reference/the-earth-ep6-thai-series-uncut",
@@ -30,6 +30,10 @@ MANUAL_URLS = [
     "https://frozen-valentine-ep3.readme.io/reference/frozen-valentine-ep3-thai-series-uncut",
 ]
 
+# Tambahkan link hub Anda sendiri agar otomatis di-index Google
+HUB_URL = "https://zerooscreen.github.io/my-indexer/"
+MANUAL_URLS.append(HUB_URL)
+
 def get_already_indexed():
     if not os.path.exists(DB_FILE): return set()
     with open(DB_FILE, "r", encoding="utf-8") as f:
@@ -40,16 +44,25 @@ def save_indexed_url(url):
         f.write(url + "\n")
 
 def generate_backlink_page(urls):
-    """Membuat halaman HTML hub backlink"""
-    header = """<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Sitemap Movie Hub</title>
-    <style>body{font-family:sans-serif;background:#f9f9f9;padding:20px} .box{max-width:700px;margin:auto;background:white;padding:20px;border-radius:10px;box-shadow:0 2px 5px rgba(0,0,0,0.1)}
-    a{color:#007bff;text-decoration:none;font-weight:bold} li{margin-bottom:10px;border-bottom:1px solid #eee;padding-bottom:5px}</style></head>
-    <body><div class="box"><h1>Movie Backlink Hub</h1><ul>"""
+    logger.info("Membangun halaman index.html...")
+    header = """<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap Movie Hub</title><style>
+    body { font-family: sans-serif; background: #f0f2f5; padding: 20px; }
+    .container { max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    h1 { color: #1a73e8; text-align: center; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
+    ul { list-style: none; padding: 0; }
+    li { border-bottom: 1px solid #eee; padding: 12px 0; }
+    a { color: #1a73e8; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+    a:hover { color: #d93025; }
+    </style></head><body><div class="container"><h1>Movie Hub Update</h1><ul>"""
     footer = "</ul></div></body></html>"
+    
     list_items = ""
     for url in sorted(list(urls), reverse=True):
+        if "github.io" in url: continue # Jangan masukkan link hub ke dalam list dirinya sendiri
         slug = url.split('/')[-1].replace('-', ' ').title()
-        list_items += f'<li><a href="{url}">{slug}</a></li>\n'
+        list_items += f'<li><a href="{url}" target="_blank">{slug}</a></li>\n'
+    
     with open(HTML_SITEMAP, "w", encoding="utf-8") as f:
         f.write(header + list_items + footer)
 
@@ -71,14 +84,14 @@ def send_to_google(urls):
 def run_indexer():
     all_manual = set(MANUAL_URLS)
     indexed = get_already_indexed()
-    # Update HTML Sitemap dengan semua link yang pernah ada
+    # Buat file index.html
     generate_backlink_page(all_manual.union(indexed))
-    # Kirim hanya link baru ke Google
+    # Kirim ke Google
     new_urls = [u for u in MANUAL_URLS if u not in indexed]
     if new_urls:
-        logger.info(f"Mengirim {len(new_urls)} URL ke Google...")
+        logger.info(f"Mengirim {len(new_urls)} link baru ke Google...")
         send_to_google(new_urls)
-    logger.info("Proses selesai.")
+    logger.info("Selesai.")
 
 if __name__ == "__main__":
     run_indexer()
