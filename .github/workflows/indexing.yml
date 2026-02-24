@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # PENTING agar bot bisa menyimpan file
+      contents: write
 
     steps:
       - name: Checkout code
@@ -24,18 +24,17 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests google-auth tqdm
+          pip install requests google-auth tqdm google-api-python-client
 
       - name: Run Script
         env:
           INDEXER_CONFIG: ${{ secrets.INDEXER_CONFIG }}
         run: python main.py
 
-      - name: Save Indexed URLs List
+      - name: Save Changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -f indexed_urls.txt ]; then
-            git add indexed_urls.txt
-            git diff --quiet && git diff --staged --quiet || (git commit -m "Update indexed list" && git push)
-          fi
+          git add indexed_urls.txt backlinks.html
+          git commit -m "Update database and backlink sitemap" || exit 0
+          git push
