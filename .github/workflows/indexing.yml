@@ -4,14 +4,14 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+    - cron: '0 0 * * *' # Berjalan otomatis setiap jam 12 malam
+  workflow_dispatch: # Tombol "Run workflow" manual
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: write # PENTING: Memberikan izin agar bot bisa menyimpan file ke repo
 
     steps:
       - name: Checkout code
@@ -35,7 +35,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          # Tambahkan index.html ke dalam git agar disimpan
-          git add indexed_urls.txt index.html
-          git commit -m "Update database and index sitemap" || exit 0
+          
+          # Menambahkan semua file yang dihasilkan oleh script
+          git add indexed_urls.txt index.html sitemap.xml
+          
+          # Melakukan commit hanya jika ada perubahan
+          git commit -m "Update database, index, and sitemap [skip ci]" || exit 0
+          
+          # Mengirim perubahan kembali ke repository
           git push
