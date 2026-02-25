@@ -17,20 +17,19 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://the-earth-ep6.readme.io/reference/วิวาห์ปฐพี-the-earth-ep6-พากย์ไทย-uncut",
-    "https://the-earth-ep6.readme.io/reference/the-earth-ep6-thai-series-uncut",
-    "https://be-my-angel-ep5.readme.io/reference/ฉันหลงรักเทวดาของฉัน-ep5-ดูฟรี-uncut",
-    "https://be-my-angel-ep5.readme.io/reference/be-my-angel-ep5-thai-dub-hd",
-    "https://heart-code-ep5.readme.io/reference/heart-code-สืบลับจับใจ-ep5-uncut",
-    "https://heart-code-ep5.readme.io/reference/สืบลับจับใจ-ep5-thai-sub-2026",
-    "https://i-wanna-be-suptar-ep4.readme.io/reference/วันหนึ่งจะเป็นซุปตาร์-ep4-ดูฟรี-hd",
-    "https://i-wanna-be-suptar-ep4.readme.io/reference/i-wanna-be-suptar-ep4-thai-series",
-    "https://play-park-the-series-ep2.readme.io/reference/รักไม่คาดฝัน-play-park-ep2-uncut",
-    "https://play-park-the-series-ep2.readme.io/reference/play-park-the-series-ep2-thai-uncut",
-    "https://frozen-valentine-ep3.readme.io/reference/ปิ๊งรักคุณพี่เย็นชา-ep3-ดูฟรี-uncut",
-    "https://frozen-valentine-ep3.readme.io/reference/frozen-valentine-ep3-thai-series-uncut",
+    "https://peenak5-full-hd.readme.io/reference/peenak5",
+	"https://peenak5-full-hd.readme.io/reference/peenak5-full",
+	"https://suppparer2-thai.readme.io/reference/suppparer2",
+	"https://suppparer2-thai.readme.io/reference/suppparer2-thai",
+	"https://mudborn-thaisub.readme.io/reference/mudborn-thai",
+	"https://mudborn-thaisub.readme.io/reference/mudbornsubthai",
+	"https://wutheringheights-thai.readme.io/reference/wutheringheights",
+	"https://wutheringheights-thai.readme.io/reference/wutheringheights-thai",
+	"https://crime101-thai.readme.io/reference/crime101",
+	"https://crime101-thai.readme.io/reference/crime101-thai",
+	"https://whistle-thaisub.readme.io/reference/whistle-thai",
+	"https://whistle-thaisub.readme.io/reference/whistle2026",
 ]
-
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
 
