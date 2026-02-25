@@ -17,18 +17,10 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://peenak5-full-hd.readme.io/reference/peenak5",
-	"https://peenak5-full-hd.readme.io/reference/peenak5-full",
-	"https://suppparer2-thai.readme.io/reference/suppparer2",
-	"https://suppparer2-thai.readme.io/reference/suppparer2-thai",
-	"https://mudborn-thaisub.readme.io/reference/mudborn-thai",
-	"https://mudborn-thaisub.readme.io/reference/mudbornsubthai",
-	"https://wutheringheights-thai.readme.io/reference/wutheringheights",
-	"https://wutheringheights-thai.readme.io/reference/wutheringheights-thai",
-	"https://crime101-thai.readme.io/reference/crime101",
-	"https://crime101-thai.readme.io/reference/crime101-thai",
-	"https://whistle-thaisub.readme.io/reference/whistle-thai",
-	"https://whistle-thaisub.readme.io/reference/whistle2026",
+    "https://goat-2026-kor-full-4k.readme.io/reference/watch-goat-2026-kor-full-4k",
+	"https://goat-2026-kor-full-4k.readme.io/reference/goat-2026-full-movie-free-hd",
+	"https://mickey-17-kor-full-4k.readme.io/reference/watch-mickey-17-kor-full-4k-uhd",
+	"https://mickey-17-kor-full-4k.readme.io/reference/mickey-17-2025-full-movie-free",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
