@@ -17,15 +17,14 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://goat-full-hd-zh.readme.io/reference/goat-watch-online-full-version-guide-2026",
-	"https://goat-full-hd-free-tw-sub.readme.io/reference/watch-goat-full-hd-free-2026",
-	"https://goat-full-hd-free-tw-sub.readme.io/reference/watch-goat-full-version-1080p-free",
-	"https://crime-101-zh.readme.io/reference/crime-101-watch-online-full-version-guide-2026",
-	"https://crime-101-full-hd-tw.readme.io/reference/watch-crime-101-full-hd-free-2026",
-	"https://crime-101-full-hd-tw.readme.io/reference/watch-crime-101-full-version-1080p-free",
-	"https://avatar-fire-and-ash-zhsub.readme.io/reference/avatar-fire-and-ash-watch-online-full-version-guide-2026",
-	"https://avatar-fire-and-ash-tw-sub.readme.io/reference/watch-avatar-fire-and-ash-full-hd-free-2026",
-	"https://avatar-fire-and-ash-tw-sub.readme.io/reference/watch-avatar-fire-and-ash-full-version-1080p-free",
+    "https://zootopia-2-full-hd-zhsub.readme.io/reference/zootopia-2-watch-online-full-version-guide-2025/",
+	"https://zootopia-2-twsub.readme.io/reference/watch-zootopia-2-full-hd-free-2025",
+	"https://zootopia-2-twsub.readme.io/reference/watch-zootopia-2-full-version-1080p-free",
+	"https://onepiece2.readme.io/reference/onepiece2",
+	"https://op2-subthai.readme.io/reference/op2-subthai",
+	"https://onepiece2-4k.readme.io/reference/onepiece2-4k",
+	"https://onepiece2-thai.readme.io/reference/onepiece2-thai",
+	"https://op2-full-uhd.readme.io/reference/op2-full-uhd",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
