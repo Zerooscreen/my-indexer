@@ -17,20 +17,15 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://theearthep-7.readme.io/reference/theearthep7",
-	"https://theearthep-7.readme.io/reference/ep7",
-	"https://the-earth-ep7.readme.io/reference/วิวาห์ปฐพี-the-earth-ep7-พากย์ไทย-uncut",
-	"https://the-earth-ep7.readme.io/reference/the-earth-ep7-thai-series-uncut",
-	"https://be-my-angel-ep6.readme.io/reference/ฉันหลงรักเทวดาของฉัน-ep6-ดูฟรี-uncut",
-	"https://be-my-angel-ep6.readme.io/reference/be-my-angel-ep6-thai-dub-hd",
-	"https://heart-code-ep6.readme.io/reference/heart-code-สืบลับจับใจ-ep6-uncut",
-	"https://heart-code-ep6.readme.io/reference/สืบลับจับใจ-ep6-thai-sub-2026",
-	"https://i-wanna-be-suptar-ep5.readme.io/reference/วันหนึ่งจะเป็นซุปตาร์-ep5-ดูฟรี-hd",
-	"https://i-wanna-be-suptar-ep5.readme.io/reference/i-wanna-be-suptar-ep5-thai-series",
-	"https://play-park-the-series-ep3.readme.io/reference/รักไม่คาดฝัน-play-park-ep3-uncut",
-	"https://play-park-the-series-ep3.readme.io/reference/play-park-the-series-ep3-thai-uncut",
-	"https://frozen-valentine-ep4.readme.io/reference/ปิ๊งรักคุณพี่เย็นชา-ep4-ดูฟรี-uncut",
-	"https://frozen-valentine-ep4.readme.io/reference/frozen-valentine-ep4-thai-series-uncut",
+    "https://goat-full-hd-zh.readme.io/reference/goat-watch-online-full-version-guide-2026",
+	"https://goat-full-hd-free-tw-sub.readme.io/reference/watch-goat-full-hd-free-2026",
+	"https://goat-full-hd-free-tw-sub.readme.io/reference/watch-goat-full-version-1080p-free",
+	"https://crime-101-zh.readme.io/reference/crime-101-watch-online-full-version-guide-2026",
+	"https://crime-101-full-hd-tw.readme.io/reference/watch-crime-101-full-hd-free-2026",
+	"https://crime-101-full-hd-tw.readme.io/reference/watch-crime-101-full-version-1080p-free",
+	"https://avatar-fire-and-ash-zhsub.readme.io/reference/avatar-fire-and-ash-watch-online-full-version-guide-2026",
+	"https://avatar-fire-and-ash-tw-sub.readme.io/reference/watch-avatar-fire-and-ash-full-hd-free-2026",
+	"https://avatar-fire-and-ash-tw-sub.readme.io/reference/watch-avatar-fire-and-ash-full-version-1080p-free",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
