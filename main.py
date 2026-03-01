@@ -17,25 +17,18 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://watch-peenak5-2026.readme.io/reference/watch-peenak5-2026",
-	"https://watch-peenak5-mobile.readme.io/reference/watch-peenak5-mobile",
-	"https://onepiece-s2.readme.io/reference/onepiece-s2",
-	"https://op2-thai-2026.readme.io/reference/op2-thai-2026",
-	"https://watch-onepiece2.readme.io/reference/watch-onepiece2",
-	"https://yesterday-series-ep5.readme.io/reference/ep5-uncut-ver",
-	"https://yesterday-ep5.readme.io/reference/yesterday-series-ep5-thai-sub",
-	"https://love-me-if-you-swear-ep-4.readme.io/reference/ep4",
-	"https://loveme-if-you-swear-ep4-series.readme.io/reference/love-me-if-you-swear-ep4-thai-series",
-	"https://cat-for-cash-ep-7.readme.io/reference/ep7",
-	"https://cat-for-cash-ep7-thai-series.readme.io/reference/cat-for-cash-ep7-thai-series-uncut",
-	"https://peach-lover-ep-7-thai-series.readme.io/reference/ep7",
-	"https://peach-lover-ep7-uncut.readme.io/reference/peach-lover-ep7-thai-sub-uncut",
-	"https://duang-with-you-ep6.readme.io/reference/ep6",
-	"https://duang-with-you-ep6-uncut.readme.io/reference/duang-with-you-ep6-uncut",
-	"https://my-romance-scammer-ep6.readme.io/reference/ep6",
-	"https://my-romance-scammer-ep6-uncut.readme.io/reference/my-romance-scammer-ep6-uncut-ver",
-	"https://heart-code-ep-5-6.readme.io/reference/ep5-6",
-	"https://heart-code-ep6-thai-gl.readme.io/reference/heart-code-ep6-thai-gl-series",
+    "https://pochivkata2bgaudio.readme.io/reference/pochivkata2bgaudio",
+	"https://pochivkata-2-online.readme.io/reference/pochivkata-2-online-bg-audio",
+	"https://hamnetbgaudio.readme.io/reference/hamnetbgaudio",
+	"https://hamnet-online-bg-audio.readme.io/reference/hamnet-online-bg-audio",
+	"https://martysupremebgaudio.readme.io/reference/martysupremebgaudio",
+	"https://marty-supreme-online-bg-audio.readme.io/reference/marty-supreme-online-bg-audio",
+	"https://grenlandiya-2-migraciya.readme.io/reference/grenlandiya-2-migraciya",
+	"https://grenlandiya2.readme.io/reference/grenlandiya2",
+	"https://whistlebgaudio.readme.io/reference/whistlebgaudio",
+	"https://whistle-online-bg-audio.readme.io/reference/whistle-online-bg-audio",
+	"https://wutheringbgaudio.readme.io/reference/wutheringbgaudio",
+	"https://wuthering-heights-bg-audio.readme.io/reference/wuthering-heights-online-bg-audio",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
