@@ -17,18 +17,16 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://pochivkata2bgaudio.readme.io/reference/pochivkata2bgaudio",
-	"https://pochivkata-2-online.readme.io/reference/pochivkata-2-online-bg-audio",
-	"https://hamnetbgaudio.readme.io/reference/hamnetbgaudio",
-	"https://hamnet-online-bg-audio.readme.io/reference/hamnet-online-bg-audio",
-	"https://martysupremebgaudio.readme.io/reference/martysupremebgaudio",
-	"https://marty-supreme-online-bg-audio.readme.io/reference/marty-supreme-online-bg-audio",
-	"https://grenlandiya-2-migraciya.readme.io/reference/grenlandiya-2-migraciya",
-	"https://grenlandiya2.readme.io/reference/grenlandiya2",
-	"https://whistlebgaudio.readme.io/reference/whistlebgaudio",
-	"https://whistle-online-bg-audio.readme.io/reference/whistle-online-bg-audio",
-	"https://wutheringbgaudio.readme.io/reference/wutheringbgaudio",
-	"https://wuthering-heights-bg-audio.readme.io/reference/wuthering-heights-online-bg-audio",
+    "https://mercybgaudio.readme.io/reference/mercybgaudio",
+	"https://mercy-online-bg-audio.readme.io/reference/mercy-online-bg-audio",
+	"https://wildstrawberriesbgaudio.readme.io/reference/wildstrawberriesbgaudio",
+	"https://wild-strawberries-bg-audio.readme.io/reference/wild-strawberries-online-bg-audio",
+	"https://dontcloseyoureyesbgaudio.readme.io/reference/dontcloseyoureyesbgaudio",
+	"https://dont-close-your-eyes-bg-audio.readme.io/reference/dont-close-your-eyes-online-bg-audio",
+	"https://zootopia2bgaudio.readme.io/reference/zootopia2bgaudio",
+	"https://zootopia-2-online-bg-audio.readme.io/reference/zootopia-2-online-bg-audio",
+	"https://thestrangerschapter3bgaudio.readme.io/reference/thestrangerschapter3bgaudio",
+	"https://the-strangers-chapter3-bg.readme.io/reference/the-strangers-chapter-3-online-bg-audio",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
