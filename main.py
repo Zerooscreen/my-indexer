@@ -17,22 +17,14 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://thebridebgaudio.readme.io/reference/thebridebgaudio",
-	"https://the-bride-online-bg-audio.readme.io/reference/the-bride-online-bg-audio",
-	"https://hoppersbgaudio.readme.io/reference/hoppersbgaudio",
-	"https://hoppers-online-bg-audio.readme.io/reference/hoppers-online-bg-audio",
-	"https://one-piece-s2-ep1-8.readme.io/reference/one-piece-s2-ep1-8",
-	"https://onepiece2-netflix-thai.readme.io/reference/onepiece2-netflix-thai",
-	"https://op2-sub-thai-uhd.readme.io/reference/op2-sub-thai-full",
-	"https://onepiece-s2-ep-all.readme.io/reference/onepiece-s2-ep-all",
-	"https://onepiece-season2-full-ep.readme.io/reference/onepiece-season2-full-ep",
-	"https://op2-4k-master.readme.io/reference/op2-4k-master",
-	"https://op2-ghost-uhd.readme.io/reference/op2-ghost-uhd",
-	"https://onepiece-s2-full-uhd.readme.io/reference/onepiece-s2-full-uhd",
-	"https://peenak5-tonight.readme.io/reference/peenak5-tonight",
-	"https://peenak5-master.readme.io/reference/peenak5-master",
-	"https://peenak5-thai-movie.readme.io/reference/peenak5-thai",
-	"https://peenak5-ghost.readme.io/reference/peenak5-ghost",
+    "https://peenak5-full-movie-master.readme.io/reference/peenak5-full-movie-master",
+	"https://watch-peenak5-thai-uhd.readme.io/reference/watch-peenak5-thai-uhd",
+	"https://peenak5-uncut-uhd-thai.readme.io/reference/peenak5-uncut-uhd-thai",
+	"https://peenak5-online-tonight.readme.io/reference/peenak5-online-tonight",
+	"https://watch-bride-2026-full.readme.io/reference/watch-bride-2026-full",
+	"https://bride-thai-full-hd.readme.io/reference/bride-thai-full-hd",
+	"https://watch-hoppers-thai-uhd.readme.io/reference/watch-hoppers-thai-uhd",
+	"https://hoppers-2026-full-movie.readme.io/reference/hoppers-2026-full-movie",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
