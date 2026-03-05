@@ -17,14 +17,22 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://peenak5-full-movie-master.readme.io/reference/peenak5-full-movie-master",
-	"https://watch-peenak5-thai-uhd.readme.io/reference/watch-peenak5-thai-uhd",
-	"https://peenak5-uncut-uhd-thai.readme.io/reference/peenak5-uncut-uhd-thai",
-	"https://peenak5-online-tonight.readme.io/reference/peenak5-online-tonight",
-	"https://watch-bride-2026-full.readme.io/reference/watch-bride-2026-full",
-	"https://bride-thai-full-hd.readme.io/reference/bride-thai-full-hd",
-	"https://watch-hoppers-thai-uhd.readme.io/reference/watch-hoppers-thai-uhd",
-	"https://hoppers-2026-full-movie.readme.io/reference/hoppers-2026-full-movie",
+    "https://ghost-board-full-hd.readme.io/reference/ghost-board-full-hd",
+	"https://watch-ghostboard-2026.readme.io/reference/watch-ghostboard-2026",
+	"https://iron-lung-2026-thai.readme.io/reference/iron-lung-2026-thai",
+	"https://watch-ironlung-uhd.readme.io/reference/watch-ironlung-uhd",
+	"https://thai-fighters-2026-full.readme.io/reference/thai-fighters-2026-full",
+	"https://watch-thaifighters-uhd.readme.io/reference/watch-thaifighters-uhd",
+	"https://mortuary-assistant-thai-uhd.readme.io/reference/mortuary-assistant-thai-uhd",
+	"https://watch-mortuary-full.readme.io/reference/watch-mortuary-full",
+	"https://scream-7-full-hd-thai.readme.io/reference/scream-7-full-hd-thai",
+	"https://watch-scream7-uhd.readme.io/reference/watch-scream7-uhd",
+	"https://ai-tao-waew-wan-2026.readme.io/reference/ai-tao-waew-wan-2026",
+	"https://watch-aitao-waew-wan.readme.io/reference/watch-aitao-waew-wan",
+	"https://wooden-buddha-full-hd.readme.io/reference/wooden-buddha-full",
+	"https://watch-woodenbuddha-uncut.readme.io/reference/watch-woodenbuddha-uncut",
+	"https://marty-supreme-thai-sub.readme.io/reference/marty-supreme-thai-sub",
+	"https://watch-martysupreme-full.readme.io/reference/watch-martysupreme-full",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
