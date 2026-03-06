@@ -50,7 +50,7 @@ MANUAL_URLS = [
 	"https://i-wanna-be-suptar-ep5.readme.io/reference/วันหนึ่งจะเป็นซุปตาร์-ep5-ดูฟรี-hd",
 	"https://i-wanna-be-suptar-ep5.readme.io/reference/i-wanna-be-suptar-ep5-thai-series",
 	"https://play-park-the-series-ep3.readme.io/reference/รักไม่คาดฝัน-play-park-ep3-uncut",
-	"https://play-park-the-series-ep3.readme.io/reference/play-park-the-series-ep3-thai-uncut",'
+	"https://play-park-the-series-ep3.readme.io/reference/play-park-the-series-ep3-thai-uncut",
 	"https://frozen-valentine-ep4.readme.io/reference/ปิ๊งรักคุณพี่เย็นชา-ep4-ดูฟรี-uncut",
 	"https://frozen-valentine-ep4.readme.io/reference/frozen-valentine-ep4-thai-series-uncut",
 ]
