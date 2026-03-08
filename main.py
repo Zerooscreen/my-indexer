@@ -17,30 +17,14 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://assistir-one-piece-temporada-2.readme.io/reference/assistir-one-piece-temporada-2-saga-de-alabasta-dublado-hd",
-	"https://one-piece-temporada-2.readme.io/reference/assistir-hd-one-piece-temporada-2-live-action-dublado-4k",
-	"https://one-piece-temporada-2-dublado.readme.io/reference/one-piece-temporada-2",
-	"https://one-piece-temporada-2-online.readme.io/reference/assistir-one-piece-temporada-2",
-	"https://dao-hai-tac-live-action-phan-2.readme.io/reference/xem-phim-dao-hai-tac-live-action-phan-2-motchill",
-	"https://one-piece-live-action-phan-2.readme.io/reference/one-piece-live-action-phan-2-full-hd-vietsub-thuyet-minh",
-	"https://dao-hai-tac-live-action.readme.io/reference/dao-hai-tac-live-action-phan-2-tron-bo-8-tap-vietsub",
-	"https://onepieceliveactionphan2vietsub.readme.io/reference/xem-phim-one-piece-live-action-phan-2-full-vietsub-mien-phi",
-	"https://one-piece-s2-ep1-8.readme.io/reference/one-piece-s2-ep1-8",
-	"https://onepiece2-netflix-thai.readme.io/reference/onepiece2-netflix-thai",
-	"https://op2-sub-thai-uhd.readme.io/reference/op2-sub-thai-full",
-	"https://onepiece-s2-ep-all.readme.io/reference/onepiece-s2-ep-all",
-	"https://onepiece-season2-full-ep.readme.io/reference/onepiece-season2-full-ep",
-	"https://op2-4k-master.readme.io/reference/op2-4k-master",
-	"https://op2-ghost-uhd.readme.io/reference/op2-ghost-uhd",
-	"https://onepiece-s2-full-uhd.readme.io/reference/onepiece-s2-full-uhd",
-	"https://onepiece-s2.readme.io/reference/onepiece-s2",
-	"https://op2-thai-2026.readme.io/reference/op2-thai-2026",
-	"https://watch-onepiece2.readme.io/reference/watch-onepiece2",
-	"https://onepiece2.readme.io/reference/onepiece2",
-	"https://op2-subthai.readme.io/reference/op2-subthai",
-	"https://onepiece2-4k.readme.io/reference/onepiece2-4k",
-	"https://onepiece2-thai.readme.io/reference/onepiece2-thai",
-	"https://op2-full-uhd.readme.io/reference/op2-full-uhd",
+    "https://onepiece-s2-live-action-fullep.readme.io/reference/onepiece-s2-live-action-full-ep",
+	"https://onepiece-2-netflix-thai-dub.readme.io/reference/onepiece-2-netflix-thai-dub",
+	"https://onepiece-2-liveaction-uhd.readme.io/reference/watch-onepiece-2-liveaction-uhd",
+	"https://op2-thai-live-action-uncut.readme.io/reference/op2-thai-live-action-uncut",
+	"https://peenak5-full-movie-tonight.readme.io/reference/peenak5-full-movie-tonight",
+	"https://peenak5-master-4k-thai.readme.io/reference/peenak5-master-4k-thai",
+	"https://peenak5-uncut-full-movie.readme.io/reference/peenak5-uncut-full-movie",
+	"https://peenak5-ghost-uhd-free.readme.io/reference/peenak5-ghost-uhd-free",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
