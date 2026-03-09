@@ -17,14 +17,17 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://onepiece-s2-skull-full.readme.io/reference/onepiece-s2-skull-full",
-	"https://op2-straw-hat-thai.readme.io/reference/op2-straw-hat-thai",
-	"https://onepiece2-pirate-flag.readme.io/reference/onepiece2-pirate-flag",
-	"https://watch-op2-skull-uhd.readme.io/reference/watch-op2-skull-uhd",
-	"https://op2-ghost-pirate-full.readme.io/reference/op2-ghost-pirate-full",
-	"https://onepiece2-netflix-full.readme.io/reference/onepiece2-netflix-full",
-	"https://watch-onepiece2-skull.readme.io/reference/watch-onepiece2-skull",
-	"https://op2-ep1-8-complete.readme.io/reference/op2-ep1-8-complete",
+    "https://peach-lover-series-ep7.readme.io/reference/peach-lover-ep7",
+	"https://peach-loverep8.readme.io/reference/peachloverep8",
+	"https://peach-lover-ep8.readme.io/reference/peach-lover-ep8",
+	"https://peach-lover-ep-8.readme.io/reference/ep8",
+	"https://cat-for-cash-ep-8.readme.io/reference/catforcashep8",
+	"https://catforcash-ep8.readme.io/reference/ep8",
+	"https://cat-for-cash-series-ep-8.readme.io/reference/cat-for-cash-ep8",
+	"https://catforcash-ep-7.readme.io/reference/ep7",
+	"https://yesterday-series-ep-6.readme.io/reference/yesterday-series-ep6-thai-sub",
+	"https://yesterday-the-series-ep6.readme.io/reference/ep6",
+	"https://yesterday-ep6-uncut.readme.io/reference/yesterday-ep6",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
