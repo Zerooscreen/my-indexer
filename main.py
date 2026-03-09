@@ -17,14 +17,14 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://onepiece-s2-live-action-fullep.readme.io/reference/onepiece-s2-live-action-full-ep",
-	"https://onepiece-2-netflix-thai-dub.readme.io/reference/onepiece-2-netflix-thai-dub",
-	"https://onepiece-2-liveaction-uhd.readme.io/reference/watch-onepiece-2-liveaction-uhd",
-	"https://op2-thai-live-action-uncut.readme.io/reference/op2-thai-live-action-uncut",
-	"https://peenak5-full-movie-tonight.readme.io/reference/peenak5-full-movie-tonight",
-	"https://peenak5-master-4k-thai.readme.io/reference/peenak5-master-4k-thai",
-	"https://peenak5-uncut-full-movie.readme.io/reference/peenak5-uncut-full-movie",
-	"https://peenak5-ghost-uhd-free.readme.io/reference/peenak5-ghost-uhd-free",
+    "https://onepiece-s2-skull-full.readme.io/reference/onepiece-s2-skull-full",
+	"https://op2-straw-hat-thai.readme.io/reference/op2-straw-hat-thai",
+	"https://onepiece2-pirate-flag.readme.io/reference/onepiece2-pirate-flag",
+	"https://watch-op2-skull-uhd.readme.io/reference/watch-op2-skull-uhd",
+	"https://op2-ghost-pirate-full.readme.io/reference/op2-ghost-pirate-full",
+	"https://onepiece2-netflix-full.readme.io/reference/onepiece2-netflix-full",
+	"https://watch-onepiece2-skull.readme.io/reference/watch-onepiece2-skull",
+	"https://op2-ep1-8-complete.readme.io/reference/op2-ep1-8-complete",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
