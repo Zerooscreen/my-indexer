@@ -17,17 +17,17 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://wiwa-pathaphi-ep7.readme.io/reference/wiwa-pathaphi-ep7",
-	"https://wiwapathaphiep8.readme.io/reference/ep8",
-	"https://wiwa-pathaphi-ep8.readme.io/reference/wiwa-pathaphi-ep8",
-	"https://the-earth-ep-8.readme.io/reference/ep8",
-	"https://be-my-angelep6.readme.io/reference/ep6",
-	"https://bemyangelep7.readme.io/reference/ep7",
-	"https://be-my-angel-ep7.readme.io/reference/ep7",
-	"https://be-my-angel-ep-7.readme.io/reference/be-my-angel-ep7",
-	"https://heart-code-ep7-thai-gl.readme.io/reference/heart-code-ep7-thai-gl-series",
-	"https://heart-code-ep-7.readme.io/reference/heart-code-ep7",
-	"https://heartcode-ep7.readme.io/reference/ep7",
+    "https://i-wanna-be-suptar-ep-5.readme.io/reference/ep5",
+	"https://i-wanna-be-suptar-ep-6.readme.io/reference/ep6",
+	"https://i-wanna-be-suptar-ep6.readme.io/reference/i-wanna-be-suptar-ep6",
+	"https://play-park-ep-3.readme.io/reference/ep3",
+	"https://play-park-ep4.readme.io/reference/รักไม่คาดฝัน-ep4",
+	"https://play-park-ep-4.readme.io/reference/ep4",
+	"https://playpark-ep4.readme.io/reference/play-park-ep4",
+	"https://frozenvalentine-ep4-uncut.readme.io/reference/ep4",
+	"https://frozen-valentineep5.readme.io/reference/frozenvalentineep5",
+	"https://frozen-valentine-ep-5.readme.io/reference/ep5",
+	"https://frozenvalentine-ep5.readme.io/reference/frozen-valentine-ep5",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
