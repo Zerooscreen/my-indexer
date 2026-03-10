@@ -17,17 +17,17 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://duang-with-you-ep7.readme.io/reference/duang-with-you-ep7",
-	"https://duangwithyou-ep7.readme.io/reference/ep7",
-	"https://duangwithyouep7.readme.io/reference/ep7",
-	"https://duangwith-you-ep6.readme.io/reference/ep6",
-	"https://my-romance-scammer-series-ep-6.readme.io/reference/ep6",
-	"https://myromancescammer-ep7.readme.io/reference/ep7",
-	"https://my-romance-scammer-ep7.readme.io/reference/my-romance-scammer-ep7",
-	"https://my-romance-scammer-ep-7.readme.io/reference/ep7",
-	"https://the-sun-from-another-star-ep1.readme.io/reference/the-sun-from-another-star-ep1",
-	"https://thesunfromanotherstar-ep2.readme.io/reference/ep2",
-	"https://sun-another-star-ep2-uncut.readme.io/reference/ep2",
+    "https://wiwa-pathaphi-ep7.readme.io/reference/wiwa-pathaphi-ep7",
+	"https://wiwapathaphiep8.readme.io/reference/ep8",
+	"https://wiwa-pathaphi-ep8.readme.io/reference/wiwa-pathaphi-ep8",
+	"https://the-earth-ep-8.readme.io/reference/ep8",
+	"https://be-my-angelep6.readme.io/reference/ep6",
+	"https://bemyangelep7.readme.io/reference/ep7",
+	"https://be-my-angel-ep7.readme.io/reference/ep7",
+	"https://be-my-angel-ep-7.readme.io/reference/be-my-angel-ep7",
+	"https://heart-code-ep7-thai-gl.readme.io/reference/heart-code-ep7-thai-gl-series",
+	"https://heart-code-ep-7.readme.io/reference/heart-code-ep7",
+	"https://heartcode-ep7.readme.io/reference/ep7",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
