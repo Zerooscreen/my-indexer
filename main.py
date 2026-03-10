@@ -17,17 +17,17 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://peach-lover-series-ep7.readme.io/reference/peach-lover-ep7",
-	"https://peach-loverep8.readme.io/reference/peachloverep8",
-	"https://peach-lover-ep8.readme.io/reference/peach-lover-ep8",
-	"https://peach-lover-ep-8.readme.io/reference/ep8",
-	"https://cat-for-cash-ep-8.readme.io/reference/catforcashep8",
-	"https://catforcash-ep8.readme.io/reference/ep8",
-	"https://cat-for-cash-series-ep-8.readme.io/reference/cat-for-cash-ep8",
-	"https://catforcash-ep-7.readme.io/reference/ep7",
-	"https://yesterday-series-ep-6.readme.io/reference/yesterday-series-ep6-thai-sub",
-	"https://yesterday-the-series-ep6.readme.io/reference/ep6",
-	"https://yesterday-ep6-uncut.readme.io/reference/yesterday-ep6",
+    "https://duang-with-you-ep7.readme.io/reference/duang-with-you-ep7",
+	"https://duangwithyou-ep7.readme.io/reference/ep7",
+	"https://duangwithyouep7.readme.io/reference/ep7",
+	"https://duangwith-you-ep6.readme.io/reference/ep6",
+	"https://my-romance-scammer-series-ep-6.readme.io/reference/ep6",
+	"https://myromancescammer-ep7.readme.io/reference/ep7",
+	"https://my-romance-scammer-ep7.readme.io/reference/my-romance-scammer-ep7",
+	"https://my-romance-scammer-ep-7.readme.io/reference/ep7",
+	"https://the-sun-from-another-star-ep1.readme.io/reference/the-sun-from-another-star-ep1",
+	"https://thesunfromanotherstar-ep2.readme.io/reference/ep2",
+	"https://sun-another-star-ep2-uncut.readme.io/reference/ep2",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
