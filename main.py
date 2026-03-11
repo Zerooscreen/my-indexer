@@ -17,17 +17,18 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://i-wanna-be-suptar-ep-5.readme.io/reference/ep5",
-	"https://i-wanna-be-suptar-ep-6.readme.io/reference/ep6",
-	"https://i-wanna-be-suptar-ep6.readme.io/reference/i-wanna-be-suptar-ep6",
-	"https://play-park-ep-3.readme.io/reference/ep3",
-	"https://play-park-ep4.readme.io/reference/รักไม่คาดฝัน-ep4",
-	"https://play-park-ep-4.readme.io/reference/ep4",
-	"https://playpark-ep4.readme.io/reference/play-park-ep4",
-	"https://frozenvalentine-ep4-uncut.readme.io/reference/ep4",
-	"https://frozen-valentineep5.readme.io/reference/frozenvalentineep5",
-	"https://frozen-valentine-ep-5.readme.io/reference/ep5",
-	"https://frozenvalentine-ep5.readme.io/reference/frozen-valentine-ep5",
+    "https://thaifighters-fhd.readme.io/reference/thaifighters-fhd",
+	"https://watch-thaifighters.readme.io/reference/watch-thaifighters",
+	"https://thaifighters-thai.readme.io/reference/thaifighters-thai",
+	"https://thai-fighters-fhd.readme.io/reference/thai-fighters-fhd",
+	"https://ironlung-fhd.readme.io/reference/ironlung-fhd",
+	"https://watch-ironlung.readme.io/reference/watch-ironlung",
+	"https://ironlung-subthai.readme.io/reference/ironlung-subthai",
+	"https://iron-lung-2026.readme.io/reference/iron-lung-2026",
+	"https://ghostboard-fhd.readme.io/reference/ghostboard-fhd",
+	"https://watch-ghostboard.readme.io/reference/watch-ghostboard",
+	"https://ghostboard-thai.readme.io/reference/ghostboard-thai",
+	"https://ghostboard-chonrong.readme.io/reference/ghostboard-chonrong",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
