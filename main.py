@@ -17,18 +17,13 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://thaifighters-fhd.readme.io/reference/thaifighters-fhd",
-	"https://watch-thaifighters.readme.io/reference/watch-thaifighters",
-	"https://thaifighters-thai.readme.io/reference/thaifighters-thai",
-	"https://thai-fighters-fhd.readme.io/reference/thai-fighters-fhd",
-	"https://ironlung-fhd.readme.io/reference/ironlung-fhd",
-	"https://watch-ironlung.readme.io/reference/watch-ironlung",
-	"https://ironlung-subthai.readme.io/reference/ironlung-subthai",
-	"https://iron-lung-2026.readme.io/reference/iron-lung-2026",
-	"https://ghostboard-fhd.readme.io/reference/ghostboard-fhd",
-	"https://watch-ghostboard.readme.io/reference/watch-ghostboard",
-	"https://ghostboard-thai.readme.io/reference/ghostboard-thai",
-	"https://ghostboard-chonrong.readme.io/reference/ghostboard-chonrong",
+    "https://onepiece-s2-full.readme.io/reference/onepiece-s2-full",
+	"https://op2-ep1-8-fhd.readme.io/reference/op2-ep1-8-fhd",
+	"https://watch-onepiece2-thaihd.readme.io/reference/onepiece2",
+	"https://op2-thai-full.readme.io/reference/op2-thai-full",
+	"https://peenak5-fhd-thai.readme.io/reference/peenak5-fhd-thai",
+	"https://peenak5-uncut.readme.io/reference/peenak5-uncut",
+	"https://peenak5-thai-online-hq.readme.io/reference/peenak5-thai-online",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
