@@ -17,13 +17,13 @@ XML_SITEMAP = "sitemap.xml"
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://onepiece-s2-full.readme.io/reference/onepiece-s2-full",
-	"https://op2-ep1-8-fhd.readme.io/reference/op2-ep1-8-fhd",
-	"https://watch-onepiece2-thaihd.readme.io/reference/onepiece2",
-	"https://op2-thai-full.readme.io/reference/op2-thai-full",
-	"https://peenak5-fhd-thai.readme.io/reference/peenak5-fhd-thai",
-	"https://peenak5-uncut.readme.io/reference/peenak5-uncut",
-	"https://peenak5-thai-online-hq.readme.io/reference/peenak5-thai-online",
+    "https://onepiece-season2-korean.readme.io/reference/onepiece-season2-korean",
+	"https://watch-onepiece2-fhd.readme.io/reference/watch-onepiece2-fhd",
+	"https://onepiece2-full-sub.readme.io/reference/onepiece2-full-sub",
+	"https://onepiece-season2-koreansub.readme.io/reference/onepiece-season2",
+	"https://onepieceseason2bgsub.readme.io/reference/onepieceseason2bgsub",
+	"https://onepieceseason2bgaudio.readme.io/reference/onepieceseason2bgaudio",
+	"https://onepieceseason2online-bg-audio.readme.io/reference/one-piece-season-2-online-bg-audio",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 MANUAL_URLS.append(HUB_URL)
