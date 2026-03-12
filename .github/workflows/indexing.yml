@@ -2,45 +2,43 @@ name: Google Indexing Bot
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # Berjalan otomatis setiap jam 12 malam
-  workflow_dispatch: # Tombol "Run workflow" manual
+    # JADWAL OTOMATIS (Waktu dalam UTC)
+    # Jam 10:00 UTC = 19:00 Korea/Vietnam/Thailand (Puncak Asia)
+    # Jam 15:00 UTC = 18:00 Bulgaria/Prancis (Awal Puncak Eropa)
+    # Jam 18:00 UTC = 21:00 Prancis/Bulgaria (Puncak Eropa)
+    # Jam 22:00 UTC = 19:00 Brazil (Puncak Amerika Latin)
+    - cron: '0 10,15,18,22 * * *'
 
 jobs:
-  build:
+  indexing:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # PENTING: Memberikan izin agar bot bisa menyimpan file ke repo
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
-          pip install requests google-auth tqdm google-api-python-client
+          python -m pip install --upgrade pip
+          pip install requests google-auth tqdm
 
-      - name: Run Script
+      - name: Run Indexing Script
         env:
           INDEXER_CONFIG: ${{ secrets.INDEXER_CONFIG }}
         run: python main.py
 
-      - name: Save Changes
+      - name: Commit and Push Changes
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Menambahkan semua file yang dihasilkan oleh script
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add indexed_urls.txt index.html sitemap.xml
-          
-          # Melakukan commit hanya jika ada perubahan
-          git commit -m "Update database, index, and sitemap [skip ci]" || exit 0
-          
-          # Mengirim perubahan kembali ke repository
+          git commit -m "Update database, index, and sitemap [skip ci]" || echo "No changes to commit"
           git push
