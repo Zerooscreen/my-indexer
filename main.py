@@ -19,24 +19,21 @@ XML_SITEMAP = "sitemap.xml"
 # Tambahkan link baru Anda di bawah kategori negara masing-masing agar rapi.
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://rakee-the-stain.readme.io/reference/rakee-the-stain-online-th",
-	"https://rakee-the-stain.readme.io/reference/rakee-the-stain-uncut",
-	"https://rakee-the-stain.readme.io/reference/rakee-the-stain-hd",
-	"https://rakee-the-stain.readme.io/reference/watch-rakee-online-free",
-	"https://rakee-the-stain.readme.io/reference/rakee-the-stain-full-movie",
+    #
 
     # === FRANCE / BULGARIA ===
-    "https://onepiece-saison-2-streaming-vf.readme.io/reference/one-piece-saison-2-episodes-1-a-8-streaming-vf",
-	"https://voir-one-piece-2-2026-integral.readme.io/reference/voir-one-piece-live-action-2026-integral",
-	"https://one-piece-s2-vf-gratuit.readme.io/reference/one-piece-s2-vf-gratuit",
-	"https://scream-7-streaming-vf-complet.readme.io/reference/scream-7",
-	"https://voir-film-scream-7-gratuit.readme.io/reference/voir-film-scream-7",
-	"https://scream-vii-vostfr-hd-1080p.readme.io/reference/scream-vii-vostfr-hd-1080p",
-	"https://voir-hoppers-streaming-vf.readme.io/reference/voir-hoppers",
-	"https://regarder-hoppers-2026.readme.io/reference/hoppers-2026-streaming-vf",
-	"https://hoppers-2026-streaming-vf.readme.io/reference/hoppers-vf",
-	"https://voir-goat-streaming-vf.readme.io/reference/voir-goat-streaming-vf-gratuit",
-	"https://goat-film-complet-vf.readme.io/reference/goat-film-complet-vf-hd-sans-compte",
+    "https://voir-one-piece-saison-2.readme.io/reference/voir-one-piece-saison-2-episodes-1-a-8-vf-gratuit",
+	"https://one-piece-s2-live-action.readme.io/reference/one-piece-s2-live-action-tous-episodes-vostfr",
+	"https://onepiecesaison-2-streaming-vf.readme.io/reference/one-piece-saison-2-streaming-vf-france-2026",
+	"https://scream-7-streaming-vf-t-vostfr.readme.io/reference/voir-scream-7-streaming-vf-gratuit-vostfr",
+	"https://scream-7-film-horreur-vf.readme.io/reference/scream-7-film-horreur-vf-hd-france",
+	"https://scream-7-ghostface-vf-fr.readme.io/reference/scream-7-ghostface-streaming-vf-fr",
+	"https://voir-hoppers-streamingvf.readme.io/reference/voir-hoppers-streaming-vf-gratuit-fr",
+	"https://hoppers-vf-hd-vostfr.readme.io/reference/hoppers-vf-hd-vostfr",
+	"https://hoppers-film-complet-2026.readme.io/reference/hoppers-film-complet-streaming-2026",
+	"https://voir-goat-streaming-vf-gratuit.readme.io/reference/voir-goat-streaming-vf-gratuit",
+	"https://goat-thriller-vf-fr.readme.io/reference/goat-thriller-vf-fr",
+	"https://goat-film-vostfr-hd-complet.readme.io/reference/goat-film-vostfr-hd-complet",
 
     # === BRAZIL ===
     # 
