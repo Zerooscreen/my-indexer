@@ -22,18 +22,10 @@ MANUAL_URLS = [
     #
 
     # === FRANCE / BULGARIA ===
-    "https://voir-one-piece-saison-2.readme.io/reference/voir-one-piece-saison-2-episodes-1-a-8-vf-gratuit",
-	"https://one-piece-s2-live-action.readme.io/reference/one-piece-s2-live-action-tous-episodes-vostfr",
-	"https://onepiecesaison-2-streaming-vf.readme.io/reference/one-piece-saison-2-streaming-vf-france-2026",
-	"https://scream-7-streaming-vf-t-vostfr.readme.io/reference/voir-scream-7-streaming-vf-gratuit-vostfr",
-	"https://scream-7-film-horreur-vf.readme.io/reference/scream-7-film-horreur-vf-hd-france",
-	"https://scream-7-ghostface-vf-fr.readme.io/reference/scream-7-ghostface-streaming-vf-fr",
-	"https://voir-hoppers-streamingvf.readme.io/reference/voir-hoppers-streaming-vf-gratuit-fr",
-	"https://hoppers-vf-hd-vostfr.readme.io/reference/hoppers-vf-hd-vostfr",
-	"https://hoppers-film-complet-2026.readme.io/reference/hoppers-film-complet-streaming-2026",
-	"https://voir-goat-streaming-vf-gratuit.readme.io/reference/voir-goat-streaming-vf-gratuit",
-	"https://goat-thriller-vf-fr.readme.io/reference/goat-thriller-vf-fr",
-	"https://goat-film-vostfr-hd-complet.readme.io/reference/goat-film-vostfr-hd-complet",
+    "https://projecthailmary-bg-audio.readme.io/reference/projecthailmarybgaudio",
+	"https://projecthailmary-online-bgaudio.readme.io/reference/project-hail-mary-online-bg-audio",
+	"https://coldstoragebgaudio.readme.io/reference/coldstoragebgaudio",
+	"https://cold-storage-online-bg-audio.readme.io/reference/cold-storage-online-bg-audio",
 
     # === BRAZIL ===
     # 
