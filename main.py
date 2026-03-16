@@ -19,18 +19,18 @@ XML_SITEMAP = "sitemap.xml"
 # Tambahkan link baru Anda di bawah kategori negara masing-masing agar rapi.
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://yesterday-ep-7-uncut.readme.io/reference/ep7",
-	"https://yesterdayseriesep7.readme.io/reference/yesterday-ep7",
-	"https://yesterday-series-ep7.readme.io/reference/ep-7",
-	"https://yesterday-the-series-ep7.readme.io/reference/yesterday-series-ep7",
-	"https://roryak-ep7.readme.io/reference/roryak-ep7",
-	"https://ep7-yesterday-series-uncut.readme.io/reference/ep7-uncut",
-	"https://peachlover-ep9.readme.io/reference/ep9",
-	"https://peachloverep9uncut.readme.io/reference/peach-lover-ep9",
-	"https://peach-lover-ep9-series.readme.io/reference/ep-9",
-	"https://peach-lover-series-ep9.readme.io/reference/peach-lover-series-ep9",
-	"https://lookpeach-ep9.readme.io/reference/lookpeach-ep9",
-	"https://plover-ep9-uncut.readme.io/reference/ep9-uncut",
+    "https://cat-for-cash-ep-9.readme.io/reference/ep9",
+	"https://cat-for-cash-series-ep9.readme.io/reference/cat-for-cash-ep9",
+	"https://catforcashep9.readme.io/reference/ep-9",
+	"https://catforcashep9uncut.readme.io/reference/cat-forcash-ep9",
+	"https://payrak-ep9.readme.io/reference/payrak-ep9",
+	"https://ep9-uncut.readme.io/reference/ep9-uncut",
+	"https://the-sun-ep-3.readme.io/reference/ep3",
+	"https://the-sun-from-star-ep3.readme.io/reference/the-sun-ep3",
+	"https://the-sun-ep3.readme.io/reference/ep-3",
+	"https://the-sun-from-another-star-ep3.readme.io/reference/the-sun-from-another-star-ep3",
+	"https://arthit-ep3.readme.io/reference/arthit-ep3",
+	"https://thesunfromstarep3-uncut.readme.io/reference/ep3-uncut",
 
     # === FRANCE / BULGARIA ===
     #
