@@ -5,9 +5,11 @@ import json
 import os
 import logging
 import sys
+import time # PENTING: Untuk jeda waktu
 from tqdm import tqdm
 from datetime import datetime
 
+# --- 1. KONFIGURASI LOGGING ---
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
@@ -15,52 +17,48 @@ DB_FILE = "indexed_urls.txt"
 HTML_SITEMAP = "index.html" 
 XML_SITEMAP = "sitemap.xml" 
 
-# --- DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
-# Tambahkan link baru Anda di bawah kategori negara masing-masing agar rapi.
+# --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
     "https://peenak5-fhd.readme.io/reference/peenak5-fhd",
-	"https://watch-peenak5.readme.io/reference/watch-peenak5",
-	"https://peenak5-2026-hd.readme.io/reference/peenak5-2026",
-	"https://peenak5-thaidub.readme.io/reference/peenak5-thai",
-	"https://peenak5-master-fhd.readme.io/reference/peenak5-master",
-	"https://peenak5-uncut-fhd.readme.io/reference/peenak5-uncut",
-	"https://thaifighters-fhd-2026.readme.io/reference/thaifighters-fhd",
-	"https://watch-thaifighters-fhd.readme.io/reference/watch-thaifighters",
-	"https://thaifighters-online.readme.io/reference/thaifighters-online",
-	"https://thaifighters-master.readme.io/reference/thaifighters-master",
-	"https://thaifighters-2026.readme.io/reference/thaifighters-2026",
-	"https://thaifighters-thai-dub.readme.io/reference/thaifighters-thai",
+    "https://watch-peenak5.readme.io/reference/watch-peenak5",
+    "https://peenak5-2026-hd.readme.io/reference/peenak5-2026",
+    "https://peenak5-thaidub.readme.io/reference/peenak5-thai",
+    "https://peenak5-master-fhd.readme.io/reference/peenak5-master",
+    "https://peenak5-uncut-fhd.readme.io/reference/peenak5-uncut",
+    "https://thaifighters-fhd-2026.readme.io/reference/thaifighters-fhd",
+    "https://watch-thaifighters-fhd.readme.io/reference/watch-thaifighters",
+    "https://thaifighters-online.readme.io/reference/thaifighters-online",
+    "https://thaifighters-master.readme.io/reference/thaifighters-master",
+    "https://thaifighters-2026.readme.io/reference/thaifighters-2026",
+    "https://thaifighters-thai-dub.readme.io/reference/thaifighters-thai",
 
     # === FRANCE / BULGARIA ===
-    #
+    # 
+    
 
     # === BRAZIL ===
     # 
+    
 ]
 
-# URL Hub Indexer Anda (GitHub Pages)
+# URL Hub Indexer Anda (Harus konsisten dengan GSC)
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
-MANUAL_URLS.append(HUB_URL)
+
+# --- 3. FUNGSI DATABASE & SITEMAP GENERATOR ---
 
 def get_already_indexed():
-    """Mengambil daftar URL yang sudah sukses ter-index dari database lokal"""
     if not os.path.exists(DB_FILE): return set()
     with open(DB_FILE, "r", encoding="utf-8") as f:
         return set(line.strip() for line in f if line.strip())
 
 def save_indexed_url(url):
-    """Menyimpan URL yang sukses ke database agar tidak dikirim ulang"""
     with open(DB_FILE, "a", encoding="utf-8") as f:
         f.write(url + "\n")
 
 def generate_html_sitemap(urls):
-    """Membuat tampilan website Hub (index.html) yang profesional dan SEO Friendly"""
-    # MASUKKAN KODE VERIFIKASI GOOGLE SEARCH CONSOLE BARU DI SINI (Jika ada)
-    meta_verifikasi = """
-    <meta name="google-site-verification" content="jkO82p0n2lmtm7R_TubD9cyAVSxfwpILpgn6zjD-Pvk" />
-    """
-    
+    """Membuat website Hub index.html (Backlink Power)"""
+    meta_verifikasi = '<meta name="google-site-verification" content="jkO82p0n2lmtm7R_TubD9cyAVSxfwpILpgn6zjD-Pvk" />'
     header = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
     {meta_verifikasi}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,40 +78,37 @@ def generate_html_sitemap(urls):
     
     footer = f"</ul><div class='footer'>Last Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')} UTC</div></div></body></html>"
     list_items = ""
-    
-    # Sortir URL agar yang terbaru berada di atas
     for url in sorted(list(urls), reverse=True):
         if "github.io" in url: continue
-        # Mengubah slug URL menjadi judul yang rapi
         slug = url.split('/')[-1].replace('-', ' ').replace('_', ' ').title()
         list_items += f'<li><a href="{url}" target="_blank">{slug}</a></li>\n'
     
     with open(HTML_SITEMAP, "w", encoding="utf-8") as f:
         f.write(header + list_items + footer)
 
-def generate_xml_sitemap(urls):
-    """Membuat sitemap.xml otomatis untuk robot Google"""
+def generate_xml_sitemap():
+    """Hanya isi Link Hub agar GSC berstatus HIJAU (Validasi Domain)"""
     now = datetime.now().strftime('%Y-%m-%dT%H:%M:%S+00:00')
-    header = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    footer = '</urlset>'
-    items = ""
-    # Link utama Hub
-    items += f'  <url>\n    <loc>{HUB_URL}</loc>\n    <lastmod>{now}</lastmod>\n    <priority>1.0</priority>\n  </url>\n'
-    for url in urls:
-        if "github.io" in url: continue
-        items += f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{now}</lastmod>\n    <priority>0.8</priority>\n  </url>\n'
+    xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{HUB_URL}</loc>
+    <lastmod>{now}</lastmod>
+    <priority>1.0</priority>
+  </url>
+</urlset>"""
     with open(XML_SITEMAP, "w", encoding="utf-8") as f:
-        f.write(header + items + footer)
+        f.write(xml_content)
+    logger.info("Sitemap XML diperbarui (GSC Validation Mode).")
+
+# --- 4. FUNGSI PENGIRIMAN KE GOOGLE ---
 
 def send_to_google(urls):
-    """Mengirim URL baru ke Google Indexing API"""
     if not urls: return
     try:
         info = json.loads(os.environ['INDEXER_CONFIG'])
         credentials = service_account.Credentials.from_service_account_info(info, scopes=["https://www.googleapis.com/auth/indexing"])
-    except Exception as e:
-        logger.error(f"Error Konfigurasi: {e}")
-        return
+    except: return
 
     endpoint = "https://indexing.googleapis.com/v3/urlNotifications:publish"
     for url in tqdm(urls, desc="Indexing"):
@@ -123,27 +118,38 @@ def send_to_google(urls):
             res = requests.post(endpoint, headers=headers, json={"url": url, "type": "URL_UPDATED"})
             if res.status_code == 200:
                 save_indexed_url(url)
+            
+            # --- PENGATURAN WAKTU (DELAY) ---
+            # Jeda 1 detik antar URL agar stabil dan tidak menggantung
+            time.sleep(1) 
+            
         except Exception as e:
             logger.error(f"Gagal mengirim {url}: {e}")
 
 def run_indexer():
-    """Fungsi utama menjalankan seluruh proses"""
-    all_manual = set(MANUAL_URLS)
+    # Salin list manual dan tambahkan Hub
+    temp_manual = MANUAL_URLS.copy()
+    if HUB_URL not in temp_manual:
+        temp_manual.append(HUB_URL)
+        
+    all_manual = set(temp_manual)
     indexed = get_already_indexed()
-    total_urls_for_sitemap = all_manual.union(indexed)
+    total_urls_for_html = all_manual.union(indexed)
     
-    # Update Website Hub & Sitemap
-    generate_html_sitemap(total_urls_for_sitemap)
-    generate_xml_sitemap(total_urls_for_sitemap)
+    # 1. Update Website Hub (Lengkap untuk SEO)
+    generate_html_sitemap(total_urls_for_html)
     
-    # Filter hanya link yang benar-benar baru (belum ada di indexed_urls.txt)
-    new_urls = [u for u in MANUAL_URLS if u not in indexed]
+    # 2. Update XML (Link Hub saja agar GSC Hijau)
+    generate_xml_sitemap()
+    
+    # 3. Filter Link Baru
+    new_urls = [u for u in temp_manual if u not in indexed]
     
     if new_urls:
         logger.info(f"Ditemukan {len(new_urls)} link baru. Mengirim ke Google...")
         send_to_google(new_urls)
     else:
-        logger.info("Semua URL sudah ter-index sebelumnya. Melewati pengiriman.")
+        logger.info("Semua URL sudah ter-index. Melewati pengiriman API.")
     
     logger.info("--- PROSES SELESAI ---")
 
