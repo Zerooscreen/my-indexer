@@ -19,18 +19,18 @@ XML_SITEMAP = "sitemap.xml"
 # Tambahkan link baru Anda di bawah kategori negara masing-masing agar rapi.
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://cat-for-cash-ep-9.readme.io/reference/ep9",
-	"https://cat-for-cash-series-ep9.readme.io/reference/cat-for-cash-ep9",
-	"https://catforcashep9.readme.io/reference/ep-9",
-	"https://catforcashep9uncut.readme.io/reference/cat-forcash-ep9",
-	"https://payrak-ep9.readme.io/reference/payrak-ep9",
-	"https://ep9-uncut.readme.io/reference/ep9-uncut",
-	"https://the-sun-ep-3.readme.io/reference/ep3",
-	"https://the-sun-from-star-ep3.readme.io/reference/the-sun-ep3",
-	"https://the-sun-ep3.readme.io/reference/ep-3",
-	"https://the-sun-from-another-star-ep3.readme.io/reference/the-sun-from-another-star-ep3",
-	"https://arthit-ep3.readme.io/reference/arthit-ep3",
-	"https://thesunfromstarep3-uncut.readme.io/reference/ep3-uncut",
+    "https://peenak5-fhd.readme.io/reference/peenak5-fhd",
+	"https://watch-peenak5.readme.io/reference/watch-peenak5",
+	"https://peenak5-2026-hd.readme.io/reference/peenak5-2026",
+	"https://peenak5-thaidub.readme.io/reference/peenak5-thai",
+	"https://peenak5-master-fhd.readme.io/reference/peenak5-master",
+	"https://peenak5-uncut-fhd.readme.io/reference/peenak5-uncut",
+	"https://thaifighters-fhd-2026.readme.io/reference/thaifighters-fhd",
+	"https://watch-thaifighters-fhd.readme.io/reference/watch-thaifighters",
+	"https://thaifighters-online.readme.io/reference/thaifighters-online",
+	"https://thaifighters-master.readme.io/reference/thaifighters-master",
+	"https://thaifighters-2026.readme.io/reference/thaifighters-2026",
+	"https://thaifighters-thai-dub.readme.io/reference/thaifighters-thai",
 
     # === FRANCE / BULGARIA ===
     #
