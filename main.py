@@ -20,23 +20,12 @@ XML_SITEMAP = "sitemap.xml"
 # --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://onepiece2-ep1-8-fhd.readme.io/reference/onepiece2-ep1-8",
-	"https://op2-live-action.readme.io/reference/op2-live-action",
-	"https://op2-netflix.readme.io/reference/op2-netflix",
-	"https://op2-fhd-full.readme.io/reference/op2-fhd-full",
-	"https://op2-thai-fullhd.readme.io/reference/watch-onepiece2",
-	"https://op2-thai-full-hd.readme.io/reference/op2-thai-full",
-	"https://ghostboard-fhd-2026.readme.io/reference/ghostboard-fhd",
-	"https://ghostboard-2026.readme.io/reference/watch-ghostboard",
-	"https://ghostboard-master.readme.io/reference/ghostboard-master",
-	"https://ghostboard-sub-thai.readme.io/reference/ghostboard-thai",
-	"https://ghostboard-uhd-2026.readme.io/reference/ghostboard-2026",
-	"https://ghostboard-online.readme.io/reference/ghostboard-onlin",
+    "https://zoraflix.webflow.io/the-de4d-echoes/",
+	"https://movie-korean-sub.webflow.io/one-piece-season-2/",
 	
     # === FRANCE / BULGARIA ===
-    # 
+    "https://zeroomovie4k.webflow.io/one-piece-season-2/",
     
-
     # === BRAZIL ===
     # 
     
