@@ -20,19 +20,19 @@ XML_SITEMAP = "sitemap.xml"
 # --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://peenak5-fhd.readme.io/reference/peenak5-fhd",
-    "https://watch-peenak5.readme.io/reference/watch-peenak5",
-    "https://peenak5-2026-hd.readme.io/reference/peenak5-2026",
-    "https://peenak5-thaidub.readme.io/reference/peenak5-thai",
-    "https://peenak5-master-fhd.readme.io/reference/peenak5-master",
-    "https://peenak5-uncut-fhd.readme.io/reference/peenak5-uncut",
-    "https://thaifighters-fhd-2026.readme.io/reference/thaifighters-fhd",
-    "https://watch-thaifighters-fhd.readme.io/reference/watch-thaifighters",
-    "https://thaifighters-online.readme.io/reference/thaifighters-online",
-    "https://thaifighters-master.readme.io/reference/thaifighters-master",
-    "https://thaifighters-2026.readme.io/reference/thaifighters-2026",
-    "https://thaifighters-thai-dub.readme.io/reference/thaifighters-thai",
-
+    "https://onepiece2-ep1-8-fhd.readme.io/reference/onepiece2-ep1-8",
+	"https://op2-live-action.readme.io/reference/op2-live-action",
+	"https://op2-netflix.readme.io/reference/op2-netflix",
+	"https://op2-fhd-full.readme.io/reference/op2-fhd-full",
+	"https://op2-thai-fullhd.readme.io/reference/watch-onepiece2",
+	"https://op2-thai-full-hd.readme.io/reference/op2-thai-full",
+	"https://ghostboard-fhd-2026.readme.io/reference/ghostboard-fhd",
+	"https://ghostboard-2026.readme.io/reference/watch-ghostboard",
+	"https://ghostboard-master.readme.io/reference/ghostboard-master",
+	"https://ghostboard-sub-thai.readme.io/reference/ghostboard-thai",
+	"https://ghostboard-uhd-2026.readme.io/reference/ghostboard-2026",
+	"https://ghostboard-online.readme.io/reference/ghostboard-onlin",
+	
     # === FRANCE / BULGARIA ===
     # 
     
