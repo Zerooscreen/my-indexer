@@ -20,11 +20,20 @@ XML_SITEMAP = "sitemap.xml"
 # --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://zoraflix.webflow.io/the-de4d-echoes/",
+    "https://zeroomovie4k.webflow.io/one-piece-season-2/",
+	"https://zoraflix.webflow.io/the-de4d-echoes/",
 	"https://movie-korean-sub.webflow.io/one-piece-season-2/",
+	"https://op-s2-ep1-8.readme.io/reference/op-s2-ep1-8",
+	"https://onepiece2-fhd.readme.io/reference/onepiece2-fhd",
+	"https://watch-op2-4k.readme.io/reference/watch-op2-4k",
+	"https://op2-korean.readme.io/reference/op2-korean",
+	"https://hoppers-2026-koreansub.readme.io/reference/hoppers-2026",
+	"https://pixar-hoppers-korean.readme.io/reference/pixar-hoppers",
+	"https://hoppers-hd-koreansub.readme.io/reference/hoppers-hd",
+	"https://watch-hoppers-koreansub.readme.io/reference/watch-hoppers",
 	
     # === FRANCE / BULGARIA ===
-    "https://zeroomovie4k.webflow.io/one-piece-season-2/",
+    #
     
     # === BRAZIL ===
     # 
