@@ -20,14 +20,8 @@ XML_SITEMAP = "sitemap.xml"
 # --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://king-warden-full.readme.io/reference/king-warden-full",
-	"https://the-kings-warden-korean.readme.io/reference/living-with-king-11k",
-	"https://the-kings-warden-koreandub.readme.io/reference/watch-living-king",
-	"https://warden-king-kor.readme.io/reference/warden-king-kor",
-	"https://scream7-uncut-koreansub.readme.io/reference/scream7-uncut",
-	"https://watch-scream7-korean.readme.io/reference/watch-scream7",
-	"https://scream7-kor.readme.io/reference/scream7-kor",
-	"https://scream7-hd-korea.readme.io/reference/scream7-hd",
+    "https://movie-korean-sub.webflow.io/the-kings-warden/",
+	"https://the-kings-warden-3wi.pages.dev/",
 	
     # === FRANCE / BULGARIA ===
     #
