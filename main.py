@@ -20,18 +20,12 @@ XML_SITEMAP = "sitemap.xml"
 # --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://zootopia2-dub-koreansub.readme.io/reference/zootopia2-dub",
-	"https://zoo2-12k.readme.io/reference/zoo2-12k",
-	"https://marty-supreme-koreansub.readme.io/reference/marty-supreme",
-	"https://watch-marty.readme.io/reference/watch-marty",
-	"https://zootopia2-full.readme.io/reference/zootopia2-full",
-	"https://zoo2-korean.readme.io/reference/zoo2-korean",
-	"https://marty-12k.readme.io/reference/marty-12k",
-	"https://marty-sub-korea.readme.io/reference/marty-sub",
-	"https://the-de4d-echoes.pages.dev/",
+    "https://zoraflix.webflow.io/cinematic-seoul/",
+	"https://cinematic-seoul.pages.dev/",
+
 	
     # === FRANCE / BULGARIA ===
-    "https://one-piece-season-2-stream-vf.pages.dev/",
+    #
     
     # === BRAZIL ===
     # 
