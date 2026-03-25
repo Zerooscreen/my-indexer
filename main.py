@@ -20,7 +20,7 @@ XML_SITEMAP = "sitemap.xml"
 # --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
 MANUAL_URLS = [
     # === KOREA / THAILAND / VIETNAM ===
-    "https://ziamstream-tv.pages.dev/",
+    "https://thai-flix-share.webflow.io/sawadee-series/",
 	
     # === FRANCE / BULGARIA ===
     #
