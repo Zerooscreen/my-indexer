@@ -5,7 +5,7 @@ import json
 import os
 import logging
 import sys
-import time # PENTING: Untuk jeda waktu
+import time
 from tqdm import tqdm
 from datetime import datetime
 
@@ -17,23 +17,48 @@ DB_FILE = "indexed_urls.txt"
 HTML_SITEMAP = "index.html" 
 XML_SITEMAP = "sitemap.xml" 
 
-# --- 2. DAFTAR URL FILM (MAKSIMAL 200 URL BARU PER HARI) ---
-MANUAL_URLS = [
-    # === KOREA / THAILAND / VIETNAM ===
-    "https://thai-flix-share.webflow.io/sawadee-series/",
-	
-    # === FRANCE / BULGARIA ===
-    #
-    
-    # === BRAZIL ===
-    # 
-    
+# --- 2. DAFTAR DOMAIN IZIN GSC (DAFTAR PERMANEN) ---
+# Daftar ini untuk memberi tahu robot domain mana yang boleh dikirim ke API.
+# Domain yang tidak ada di sini HANYA akan dipajang di Web Hub (Backlink).
+VERIFIED_DOMAINS = [
+    "readme.io", 
+    "webflow.io", 
+    "pages.dev", 
+    "github.io", 
+    "blogspot.com"
 ]
 
-# URL Hub Indexer Anda (Harus konsisten dengan GSC)
+# --- 3. DAFTAR URL FILM HARI INI (UPDATE DI SINI) ---
+MANUAL_URLS = [
+    # --- Link GSC (Dikirimin ke API + Web Hub) ---
+    "https://cinematic-seoul.pages.dev/",
+    
+    # --- Link Luar / Non-GSC (Hanya masuk ke Web Hub sebagai Backlink) ---
+    "https://zyo.se/ai-tao-waew-wan",
+    "https://zyo.se/the-de4d-echoes",
+    "https://zyo.se/woodenbuddha",
+    "https://zyo.se/project-hail-mary-2026",
+    "https://zyo.se/themortuaryassistantthaidub",
+    "https://zyo.se/one-piece-season-2-thaisub",
+    "https://zyo.se/peenak-5-fhd",
+    "https://zyo.se/the-undertaker-2-thai-movie",
+    "https://zyo.se/the-kings-warden",
+    "https://zyo.se/the-kings-warden-ko-movie",
+    "https://zyo.se/the-king-warden-2026",
+    "https://zyo.se/op2-korean",
+    "https://zyo.se/op2-hd-4k-koreansub",
+    "https://zyo.se/op-s2-ep-1-8-korean",
+    "https://zyo.se/hoppers-korean-hd",
+    "https://zyo.se/hoppers-2026-korean",
+    "https://zyo.se/pixar-hoppers-koreansub",
+    "https://superprofile.bio/the-king-warden-2026",
+    "https://superprofile.bio/onepiece2-fhd-koreansub",
+]
+
+# URL Hub Indexer Anda
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
-# --- 3. FUNGSI DATABASE & SITEMAP GENERATOR ---
+# --- 4. FUNGSI DATABASE & GENERATOR ---
 
 def get_already_indexed():
     if not os.path.exists(DB_FILE): return set()
@@ -45,7 +70,7 @@ def save_indexed_url(url):
         f.write(url + "\n")
 
 def generate_html_sitemap(urls):
-    """Membuat website Hub index.html (Backlink Power)"""
+    """Membuat website Hub index.html (LENGKAP BERISI SEMUA LINK)"""
     meta_verifikasi = '<meta name="google-site-verification" content="jkO82p0n2lmtm7R_TubD9cyAVSxfwpILpgn6zjD-Pvk" />'
     header = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
     {meta_verifikasi}
@@ -69,27 +94,23 @@ def generate_html_sitemap(urls):
     for url in sorted(list(urls), reverse=True):
         if "github.io" in url: continue
         slug = url.split('/')[-1].replace('-', ' ').replace('_', ' ').title()
+        if not slug or len(slug) < 3: slug = url
         list_items += f'<li><a href="{url}" target="_blank">{slug}</a></li>\n'
     
     with open(HTML_SITEMAP, "w", encoding="utf-8") as f:
         f.write(header + list_items + footer)
 
 def generate_xml_sitemap():
-    """Hanya isi Link Hub agar GSC berstatus HIJAU (Validasi Domain)"""
+    """Hanya berisi Link Hub agar GSC berstatus HIJAU"""
     now = datetime.now().strftime('%Y-%m-%dT%H:%M:%S+00:00')
     xml_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>{HUB_URL}</loc>
-    <lastmod>{now}</lastmod>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>{HUB_URL}</loc><lastmod>{now}</lastmod><priority>1.0</priority></url>
 </urlset>"""
     with open(XML_SITEMAP, "w", encoding="utf-8") as f:
         f.write(xml_content)
-    logger.info("Sitemap XML diperbarui (GSC Validation Mode).")
 
-# --- 4. FUNGSI PENGIRIMAN KE GOOGLE ---
+# --- 5. FUNGSI PENGIRIMAN KE GOOGLE ---
 
 def send_to_google(urls):
     if not urls: return
@@ -99,47 +120,53 @@ def send_to_google(urls):
     except: return
 
     endpoint = "https://indexing.googleapis.com/v3/urlNotifications:publish"
-    for url in tqdm(urls, desc="Indexing"):
+    for url in tqdm(urls, desc="Indexing API"):
         try:
             credentials.refresh(Request())
             headers = {"Content-Type": "application/json", "Authorization": f"Bearer {credentials.token}"}
             res = requests.post(endpoint, headers=headers, json={"url": url, "type": "URL_UPDATED"})
             if res.status_code == 200:
                 save_indexed_url(url)
-            
-            # --- PENGATURAN WAKTU (DELAY) ---
-            # Jeda 1 detik antar URL agar stabil dan tidak menggantung
             time.sleep(1) 
-            
         except Exception as e:
             logger.error(f"Gagal mengirim {url}: {e}")
 
 def run_indexer():
-    # Salin list manual dan tambahkan Hub
     temp_manual = MANUAL_URLS.copy()
-    if HUB_URL not in temp_manual:
-        temp_manual.append(HUB_URL)
+    if HUB_URL not in temp_manual: temp_manual.append(HUB_URL)
         
     all_manual = set(temp_manual)
     indexed = get_already_indexed()
     total_urls_for_html = all_manual.union(indexed)
     
-    # 1. Update Website Hub (Lengkap untuk SEO)
+    # 1. Update Website Hub (SEMUA LINK MASUK KE SINI)
     generate_html_sitemap(total_urls_for_html)
-    
-    # 2. Update XML (Link Hub saja agar GSC Hijau)
     generate_xml_sitemap()
     
-    # 3. Filter Link Baru
+    # 2. Filter Link Baru
     new_urls = [u for u in temp_manual if u not in indexed]
     
     if new_urls:
-        logger.info(f"Ditemukan {len(new_urls)} link baru. Mengirim ke Google...")
-        send_to_google(new_urls)
+        api_queue = []
+        for url in new_urls:
+            # --- CEK APAKAH DOMAIN TERDAFTAR DI VERIFIED_DOMAINS ---
+            is_verified = any(domain in url for domain in VERIFIED_DOMAINS)
+            
+            if is_verified:
+                api_queue.append(url)
+            else:
+                # Link Non-GSC (Zyo/Superprofile), langsung simpan tanpa kirim ke API
+                save_indexed_url(url)
+                logger.info(f"[SKIP API] Link Non-GSC diproses ke Web Hub saja: {url}")
+        
+        # 3. Kirim ke API hanya yang benar-benar punya izin
+        if api_queue:
+            logger.info(f"Mengirim {len(api_queue)} link terverifikasi ke API Google...")
+            send_to_google(api_queue)
     else:
-        logger.info("Semua URL sudah ter-index. Melewati pengiriman API.")
+        logger.info("Tidak ada link baru untuk diproses.")
     
-    logger.info("--- PROSES SELESAI ---")
+    logger.info("--- SEMUA TUGAS SELESAI ---")
 
 if __name__ == "__main__":
     run_indexer()
