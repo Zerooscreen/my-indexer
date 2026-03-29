@@ -35,13 +35,15 @@ MANUAL_URLS = [
 	"https://watch-dead-echoes-thai.readme.io/reference/watch-dead-echoes-thai",
 	"https://project-hail-mary-fhd.readme.io/reference/project-hail-mary-fhd",
 	"https://watch-hail-mary-thai.readme.io/reference/watch-hail-mary-thai",
+	"https://ai-tao-waew-wan-fhd.readme.io/reference/ai-tao-waew-wan-fhd",
+	"https://mor-lam-rhythm-thai-fhd.readme.io/reference/mor-lam-rhythm-thai",
     
     # --- Link Luar / Non-GSC (Hanya masuk ke Web Hub sebagai Backlink) ---
     "https://superprofile.bio/the-dead-echoes-fhd",
 	"https://superprofile.bio/watch-dead-echoes-thai",
 	"https://superprofile.bio/project-hail-mary-fhd",
 	"https://superprofile.bio/watch-hail-mary-thai",
-]
+
 
 # URL Hub Indexer Anda
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
