@@ -31,28 +31,16 @@ VERIFIED_DOMAINS = [
 # --- 3. DAFTAR URL FILM HARI INI (UPDATE DI SINI) ---
 MANUAL_URLS = [
     # --- Link GSC (Dikirimin ke API + Web Hub) ---
-    "https://cinematic-seoul.pages.dev/",
+    "https://dead-echoes-fhd.readme.io/reference/dead-echoes-fhd",
+	"https://watch-dead-echoes-thai.readme.io/reference/watch-dead-echoes-thai",
+	"https://project-hail-mary-fhd.readme.io/reference/project-hail-mary-fhd",
+	"https://watch-hail-mary-thai.readme.io/reference/watch-hail-mary-thai",
     
     # --- Link Luar / Non-GSC (Hanya masuk ke Web Hub sebagai Backlink) ---
-    "https://zyo.se/ai-tao-waew-wan",
-    "https://zyo.se/the-de4d-echoes",
-    "https://zyo.se/woodenbuddha",
-    "https://zyo.se/project-hail-mary-2026",
-    "https://zyo.se/themortuaryassistantthaidub",
-    "https://zyo.se/one-piece-season-2-thaisub",
-    "https://zyo.se/peenak-5-fhd",
-    "https://zyo.se/the-undertaker-2-thai-movie",
-    "https://zyo.se/the-kings-warden",
-    "https://zyo.se/the-kings-warden-ko-movie",
-    "https://zyo.se/the-king-warden-2026",
-    "https://zyo.se/op2-korean",
-    "https://zyo.se/op2-hd-4k-koreansub",
-    "https://zyo.se/op-s2-ep-1-8-korean",
-    "https://zyo.se/hoppers-korean-hd",
-    "https://zyo.se/hoppers-2026-korean",
-    "https://zyo.se/pixar-hoppers-koreansub",
-    "https://superprofile.bio/the-king-warden-2026",
-    "https://superprofile.bio/onepiece2-fhd-koreansub",
+    "https://superprofile.bio/the-dead-echoes-fhd",
+	"https://superprofile.bio/watch-dead-echoes-thai",
+	"https://superprofile.bio/project-hail-mary-fhd",
+	"https://superprofile.bio/watch-hail-mary-thai",
 ]
 
 # URL Hub Indexer Anda
