@@ -43,8 +43,7 @@ MANUAL_URLS = [
 	"https://superprofile.bio/watch-dead-echoes-thai",
 	"https://superprofile.bio/project-hail-mary-fhd",
 	"https://superprofile.bio/watch-hail-mary-thai",
-
-
+]
 # URL Hub Indexer Anda
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
