@@ -21,9 +21,25 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- MASUKKAN LINK BARU DI SINI ---
 MANUAL_URLS = [
-    "https://dead-echoes-fhd.readme.io/reference/dead-echoes-fhd",
+    "https://king-warden-8k-free.readme.io/reference/king-warden-8k-free",
+	"https://kings-warden-4k-video.readme.io/reference/kings-warden-4k-video",
+	"https://op2-ep1-8-hd.readme.io/reference/op2-ep1-8-hd",
+	"https://onepiece2-8k-full.readme.io/reference/onepiece2-8k-full",
+	"https://hoppers-pixar-hd-free.readme.io/reference/hoppers-pixar-hd-free",
+	"https://hoppers-4k-full.readme.io/reference/hoppers-4k-full",
+	"https://superprofile.bio/watch-king-warden-now",
+	"https://superprofile.bio/king-2026-full-version",
+	"https://superprofile.bio/watch-scream7-ok-720p",
+	"https://superprofile.bio/scream7-2026-full-stream",
+	"https://superprofile.bio/goat-2026-4k-korean",
+	"https://superprofile.bio/watch-goat-ok-720p",
+	"https://zyo.se/king-720p-full-video",
+	"https://zyo.se/kings-warden-kkallong",
+	"https://zyo.se/op2-12k-kkodu-stream",
+	"https://zyo.se/op2-dub-free-kkallong",
+	"https://zyo.se/hoppers-free-8k-kkodu",
+	"https://zyo.se/hoppers-hd-kkallong-view",
 ]
-
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
 def generate_robots_txt():
