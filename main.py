@@ -19,7 +19,7 @@ ROBOTS_FILE = "robots.txt"
 
 VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogspot.com"]
 
-# --- DAFTAR URL --- (Silakan ganti dengan link film baru Anda)
+# --- MASUKKAN LINK BARU DI SINI ---
 MANUAL_URLS = [
     "https://dead-echoes-fhd.readme.io/reference/dead-echoes-fhd",
 ]
@@ -27,26 +27,26 @@ MANUAL_URLS = [
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
 def generate_robots_txt():
-    """Membuat robots.txt resmi"""
     content = f"User-agent: *\nAllow: /\n\nSitemap: {HUB_URL}sitemap.xml"
     with open(ROBOTS_FILE, "w", encoding="utf-8") as f:
         f.write(content)
+    logger.info("Robots.txt Berhasil Dibuat.")
 
 def generate_html_sitemap(urls):
     meta_verifikasi = '<meta name="google-site-verification" content="jkO82p0n2lmtm7R_TubD9cyAVSxfwpILpgn6zjD-Pvk" />'
     teks_seo = """
     <div style="margin-bottom:30px; color:#444; text-align:justify; background:#e8f0fe; padding:25px; border-radius:15px; border-left:6px solid #1a73e8;">
-        <h2 style="color:#1a73e8; margin-top:0;">Global Cinema & Series Hub</h2>
-        <p>Welcome to our movie indexing hub. We provide latest updates for Thai Uncut series and international cinema.</p>
+        <h2 style="color:#1a73e8; margin-top:0;">Global Cinema & Series Update Hub</h2>
+        <p>Selamat datang di platform rujukan film internasional. Kami menyediakan daftar pembaruan untuk series Thailand Uncut dan sinema global lainnya.</p>
     </div>
     """
     header = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
     {meta_verifikasi}<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Movie Indexer Hub</title>
-    <style>body{{font-family:sans-serif;background:#f0f2f5;padding:20px}}.container{{max-width:800px;margin:auto;background:white;padding:30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.05)}}
-    h1{{color:#1a73e8;text-align:center}}ul{{list-style:none;padding:0}}li{{border-bottom:1px solid #eee;padding:10px 0}}a{{color:#1a73e8;text-decoration:none;font-weight:600}}</style></head>
+    <style>body{{font-family:sans-serif;background:#f0f2f5;padding:20px}}.container{{max-width:850px;margin:auto;background:white;padding:40px;border-radius:20px;box-shadow:0 15px 35px rgba(0,0,0,0.1)}}
+    h1{{color:#1a73e8;text-align:center;border-bottom:4px solid #1a73e8;padding-bottom:15px}}ul{{list-style:none;padding:0}}li{{border-bottom:1px solid #eee;padding:15px 0}}a{{color:#1a73e8;text-decoration:none;font-weight:600}}</style></head>
     <body><div class="container"><h1>🎬 Movie Update Hub</h1>{teks_seo}<ul>"""
-    footer = f"</ul><div style='text-align:center;margin-top:20px;font-size:0.8em;color:#999'>Last Update: {datetime.now().strftime('%Y-%m-%d')}</div></div></body></html>"
+    footer = f"</ul><div style='text-align:center;margin-top:30px;font-size:0.9em;color:#777'>Update: {datetime.now().strftime('%Y-%m-%d %H:%M')}</div></div></body></html>"
     list_items = ""
     for url in sorted(list(urls), reverse=True):
         if "github.io" in url: continue
@@ -76,11 +76,9 @@ def send_to_google(urls):
 def run_indexer():
     if not os.path.exists(DB_FILE): open(DB_FILE, 'w').close()
     with open(DB_FILE, "r") as f: indexed = set(line.strip() for line in f if line.strip())
-    all_urls = set(MANUAL_URLS)
-    total_urls = all_urls.union(indexed)
+    all_urls = set(MANUAL_URLS).union(indexed)
     
-    # Generate 3 file inti
-    generate_html_sitemap(total_urls)
+    generate_html_sitemap(all_urls)
     generate_xml_sitemap()
     generate_robots_txt()
     
