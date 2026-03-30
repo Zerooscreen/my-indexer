@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zerooscreen.github.io/my-indexer/sitemap.xml
