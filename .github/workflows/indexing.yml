@@ -7,18 +7,21 @@ on:
   workflow_dispatch:
   schedule:
     # JADWAL OTOMATIS (Waktu dalam UTC)
-    # Jam 10:00 UTC = 19:00 Korea/Vietnam/Thailand (Puncak Asia)
-    # Jam 15:00 UTC = 18:00 Bulgaria/Prancis (Awal Puncak Eropa)
-    # Jam 18:00 UTC = 21:00 Prancis/Bulgaria (Puncak Eropa)
-    # Jam 22:00 UTC = 19:00 Brazil (Puncak Amerika Latin)
+    # Jam 10:00 UTC = 17:00 WIB
+    # Jam 15:00 UTC = 22:00 WIB
+    # Jam 18:00 UTC = 01:00 WIB
+    # Jam 22:00 UTC = 05:00 WIB
     - cron: '0 10,15,18,22 * * *'
 
 jobs:
   indexing:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # PENTING: Memberikan izin bot untuk menyimpan file
+
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -28,7 +31,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests google-auth tqdm
+          pip install requests google-auth tqdm google-api-python-client
 
       - name: Run Indexing Script
         env:
@@ -39,6 +42,9 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add indexed_urls.txt index.html sitemap.xml
-          git commit -m "Update database, index, and sitemap [skip ci]" || echo "No changes to commit"
+          
+          # MENAMBAHKAN robots.txt KE DALAM DAFTAR SIMPAN
+          git add indexed_urls.txt index.html sitemap.xml robots.txt
+          
+          git commit -m "Update database, sitemaps, and robots [skip ci]" || echo "No changes to commit"
           git push
