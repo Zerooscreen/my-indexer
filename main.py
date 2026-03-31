@@ -21,18 +21,14 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- MASUKKAN LINK BARU DI SINI ---
 MANUAL_URLS = [
-    "https://shock-me-girls-ep9.readme.io/reference/ep9",
-	"https://shock-me-girls-ep9-uncut.readme.io/reference/shock-me-girls-ep9",
-	"https://shockmegirls-ep9.readme.io/reference/ep-9",
-	"https://shockmegirls-ep-9.readme.io/reference/shock-me-girls-ep9-uncut",
-	"https://shadow-of-love-ep-4.readme.io/reference/ep4",
-	"https://shadow-of-love-ep4-uncut.readme.io/reference/shadow-of-love-ep4",
-	"https://shadowoflove-ep4.readme.io/reference/ep-4",
-	"https://shadow-of-love-ep-4-uncut.readme.io/reference/shadow-of-love-ep4-uncut",
-	"https://girl-from-nowhere-reset-ep5.readme.io/reference/ep5",
-	"https://girl-from-nowhere-reset-ep-5.readme.io/reference/girl-from-nowhere-reset-ep5",
-	"https://girl-from-nowhere-ep5-uncut.readme.io/reference/ep-5",
-	"https://girl-from-nowhere-ep-5-uncut.readme.io/reference/girl-from-nowhere-ep5-uncut",
+    "https://frozen-valentine-ep-9.readme.io/reference/ep9",
+	"https://frozen-valentine-ep9.readme.io/reference/frozen-valentine-ep9",
+	"https://frozenvalentine-ep9.readme.io/reference/ep-9",
+	"https://frozen-valentine-ep9-uncut.readme.io/reference/frozen-valentine-ep9-uncut",
+	"https://broken-of-love-ep-2.readme.io/reference/ep2",
+	"https://broken-of-love-ep2.readme.io/reference/broken-of-love-ep2",
+	"https://brokenofloveep2.readme.io/reference/ep-2",
+	"https://broken-of-love-ep2-uncut.readme.io/reference/broken-of-love-ep2-uncut",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
