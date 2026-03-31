@@ -21,24 +21,18 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- MASUKKAN LINK BARU DI SINI ---
 MANUAL_URLS = [
-    "https://king-warden-8k-free.readme.io/reference/king-warden-8k-free",
-	"https://kings-warden-4k-video.readme.io/reference/kings-warden-4k-video",
-	"https://op2-ep1-8-hd.readme.io/reference/op2-ep1-8-hd",
-	"https://onepiece2-8k-full.readme.io/reference/onepiece2-8k-full",
-	"https://hoppers-pixar-hd-free.readme.io/reference/hoppers-pixar-hd-free",
-	"https://hoppers-4k-full.readme.io/reference/hoppers-4k-full",
-	"https://superprofile.bio/watch-king-warden-now",
-	"https://superprofile.bio/king-2026-full-version",
-	"https://superprofile.bio/watch-scream7-ok-720p",
-	"https://superprofile.bio/scream7-2026-full-stream",
-	"https://superprofile.bio/goat-2026-4k-korean",
-	"https://superprofile.bio/watch-goat-ok-720p",
-	"https://zyo.se/king-720p-full-video",
-	"https://zyo.se/kings-warden-kkallong",
-	"https://zyo.se/op2-12k-kkodu-stream",
-	"https://zyo.se/op2-dub-free-kkallong",
-	"https://zyo.se/hoppers-free-8k-kkodu",
-	"https://zyo.se/hoppers-hd-kkallong-view",
+    "https://shock-me-girls-ep9.readme.io/reference/ep9",
+	"https://shock-me-girls-ep9-uncut.readme.io/reference/shock-me-girls-ep9",
+	"https://shockmegirls-ep9.readme.io/reference/ep-9",
+	"https://shockmegirls-ep-9.readme.io/reference/shock-me-girls-ep9-uncut",
+	"https://shadow-of-love-ep-4.readme.io/reference/ep4",
+	"https://shadow-of-love-ep4-uncut.readme.io/reference/shadow-of-love-ep4",
+	"https://shadowoflove-ep4.readme.io/reference/ep-4",
+	"https://shadow-of-love-ep-4-uncut.readme.io/reference/shadow-of-love-ep4-uncut",
+	"https://girl-from-nowhere-reset-ep5.readme.io/reference/ep5",
+	"https://girl-from-nowhere-reset-ep-5.readme.io/reference/girl-from-nowhere-reset-ep5",
+	"https://girl-from-nowhere-ep5-uncut.readme.io/reference/ep-5",
+	"https://girl-from-nowhere-ep-5-uncut.readme.io/reference/girl-from-nowhere-ep5-uncut",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
