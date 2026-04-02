@@ -21,18 +21,26 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- MASUKKAN LINK BARU DI SINI ---
 MANUAL_URLS = [
-    "https://the-water-ep3.readme.io/reference/ep3",
-	"https://the-water-ep-3.readme.io/reference/the-water-ep3",
-	"https://the-water-ep3-uncut.readme.io/reference/ep3",
-	"https://the-water-ep-3-uncut.readme.io/reference/the-water-ep3",
-	"https://girl-rules-ep5.readme.io/reference/ep5",
-	"https://girl-rules-ep-5.readme.io/reference/girl-rules-ep5",
-	"https://girl-rules-ep5-uncut.readme.io/reference/ep5",
-	"https://girl-rules-ep-5-uncut.readme.io/reference/girl-rules-ep5-uncut",
-	"https://love-you-teacher-ep4.readme.io/reference/ep4",
-	"https://love-you-teacher-ep-4.readme.io/reference/love-you-teacher-ep4",
-	"https://love-you-teacher-ep-4-uncut.readme.io/reference/ep4",
-	"https://love-you-teacher-ep4-uncut.readme.io/reference/ep4-uncut",
+    "https://king-warden-8k.readme.io/reference/king-warden-8k",
+	"https://kings-warden-2026-fhd.readme.io/reference/the-kings-warden",
+	"https://watch-hoppers-8k.readme.io/reference/watch-hoppers-8k",
+	"https://hoppers-2026-full-hd.readme.io/reference/hoppers-2026-full-hd",
+	"https://goat-legend-2026-fhd.readme.io/reference/goat-legend-2026-fhd",
+	"https://watch-goat-legend-8k.readme.io/reference/watch-goat-legend-8k",
+	"https://one-piece-season-2-fhd.readme.io/reference/one-piece-season-2-fhd",
+	"https://one-piece-season-2-hd.readme.io/reference/one-piece-s2-8k-dub",
+	"https://project-hail-mary-full-hd.readme.io/reference/project-hail-mary-full-hd",
+	"https://project-hail-mary-8k.readme.io/reference/project-hail-mary-8k",
+	"https://zyo.se/project-hail-mary-kkodu",
+	"https://zyo.se/project-hail-mary-kkallong",
+	"https://zyo.se/hoppers-2026-full-kkodu",
+	"https://zyo.se/hoppers-8k-kkallong",
+	"https://zyo.se/op2-12k-stream",
+	"https://zyo.se/op-s2-hd-kkallong",
+	"https://zyo.se/goat-legend-12k-kkodu",
+	"https://zyo.se/goat-legend-kkallong",
+	"https://zyo.se/kings-warden-12k-kkallong",
+	"https://zyo.se/living-king-hd-kkallong",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
