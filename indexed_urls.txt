@@ -789,3 +789,7 @@ https://hoppers-pixar-8k.readme.io/reference/hoppers-8k-pixar
 https://hoppers-pixar-12k.readme.io/reference/hoppers-pixar
 https://hoppers-pixar-fhd.readme.io/reference/hoppers-fhd-ko
 https://hoppers-pixar-2026-fhd.readme.io/reference/hoppers-pixar-2026
+https://mickey-17.readme.io/reference/mickey-17-8k
+https://mickey-17-ko-12k.readme.io/reference/mickey-17-ko-12k
+https://mickey-17-fhd.readme.io/reference/mickey-17-bong-joon-ho
+https://mickey-17-fhd-ko.readme.io/reference/mickey-17
