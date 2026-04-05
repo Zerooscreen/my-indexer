@@ -21,18 +21,10 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- MASUKKAN LINK BARU DI SINI ---
 MANUAL_URLS = [
-    "https://project-hail-mary-full.readme.io/reference/project-hail-mary-full",
-	"https://project-hail-mary-12k.readme.io/reference/project-hail-mary",
-	"https://project-hail-mary-fhd-2026.readme.io/reference/project-hail-mary-fhd",
-	"https://project-hail-mary-fhd-ko.readme.io/reference/project-hail-mary-ko",
-	"https://one-piece-season-2-ko.readme.io/reference/one-piece-season-2",
-	"https://one-piece-season-2-12k.readme.io/reference/one-piece-season-2-12k",
-	"https://op-s2-fhd.readme.io/reference/one-piece-season-2-netflix",
-	"https://op-s2-netflix.readme.io/reference/one-piece-season-2-netflix-fhd",
-	"https://hoppers-pixar-8k.readme.io/reference/hoppers-8k-pixar",
-	"https://hoppers-pixar-12k.readme.io/reference/hoppers-pixar",
-	"https://hoppers-pixar-fhd.readme.io/reference/hoppers-fhd-ko",
-	"https://hoppers-pixar-2026-fhd.readme.io/reference/hoppers-pixar-2026",
+    "https://mickey-17.readme.io/reference/mickey-17-8k",
+	"https://mickey-17-ko-12k.readme.io/reference/mickey-17-ko-12k",
+	"https://mickey-17-fhd.readme.io/reference/mickey-17-bong-joon-ho",
+	"https://mickey-17-fhd-ko.readme.io/reference/mickey-17",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
