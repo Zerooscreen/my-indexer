@@ -9,7 +9,7 @@ import time
 from tqdm import tqdm
 from datetime import datetime
 
-# --- 1. KONFIGURASI LOGGING ---
+# --- LOGGING ---
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
@@ -18,124 +18,76 @@ HTML_SITEMAP = "index.html"
 XML_SITEMAP = "sitemap.xml" 
 ROBOTS_FILE = "robots.txt"
 
-# --- 2. DAFTAR DOMAIN VERIFIED GSC (BISA KIRIM API) ---
+# --- DOMAIN VERIFIED GSC ---
 VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogspot.com"]
 
-# --- 3. DAFTAR URL FILM HARI INI ---
+# --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    # Tempel Link Baru Anda di Sini:
+    "https://thai-flix-share.webflow.io/sawadee-series/",
+    "https://dead-echoes-fhd.readme.io/reference/dead-echoes-fhd",
+    "https://watch-dead-echoes-thai.readme.io/reference/watch-dead-echoes-thai",
+    "https://project-hail-mary-fhd.readme.io/reference/project-hail-mary-fhd",
+    "https://watch-hail-mary-thai.readme.io/reference/watch-hail-mary-thai",
+    "https://ai-tao-waew-wan-fhd.readme.io/reference/ai-tao-waew-wan-fhd",
+    "https://mor-lam-rhythm-thai-fhd.readme.io/reference/mor-lam-rhythm-thai",
     "https://zyo.se/devoradores-de-estrelas",
 	"https://zyo.se/sevoradores-de-estrelas-2026",
 ]
 
-# URL Hub Indexer Anda
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
-# --- 4. FUNGSI GENERATOR ---
-
 def generate_robots_txt():
-    content = f"User-agent: *\nAllow: /\n\nSitemap: {HUB_URL}sitemap.xml"
+    content = "User-agent: *\nAllow: /\n\nSitemap: " + HUB_URL + "sitemap.xml"
     with open(ROBOTS_FILE, "w", encoding="utf-8") as f:
         f.write(content)
 
 def generate_html_sitemap(urls):
-    """Membuat Website Hub Kelas Profesional dengan Movie Schema untuk Ranking"""
-    meta_verifikasi = '<meta name="google-site-verification" content="jkO82p0n2lmtm7R_TubD9cyAVSxfwpILpgn6zjD-Pvk" />'
+    """Website Hub Pro dengan Schema Markup"""
+    meta_verif = '<meta name="google-site-verification" content="jkO82p0n2lmtm7R_TubD9cyAVSxfwpILpgn6zjD-Pvk" />'
     
-    # Header dengan CSS Modern (Card Layout)
-    header = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
-    {meta_verifikasi}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Cinema Hub - Premium Thai Uncut & World Series</title>
+    # CSS & HTML Template
+    style = """
     <style>
-        :root {{ --primary: #1a73e8; --accent: #d93025; --bg: #f8f9fa; }}
-        body {{ font-family: 'Segoe UI', Tahoma, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #333; }}
-        .container {{ max-width: 900px; margin: auto; }}
-        .hero {{ background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; margin-bottom: 30px; }}
-        h1 {{ color: var(--primary); font-size: 2.5em; margin-bottom: 10px; }}
-        .intro {{ color: #666; font-size: 1.1em; line-height: 1.6; max-width: 700px; margin: auto; text-align: justify; }}
-        .grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }}
-        .card {{ background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.03); transition: 0.3s; border: 1px solid #eee; position: relative; overflow: hidden; }}
-        .card:hover {{ transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-color: var(--primary); }}
-        .badge {{ position: absolute; top: 10px; right: 10px; background: var(--accent); color: white; font-size: 0.7em; padding: 4px 8px; border-radius: 5px; font-weight: bold; }}
-        .card-title {{ font-weight: bold; color: var(--primary); font-size: 1.1em; margin-bottom: 10px; display: block; text-decoration: none; }}
-        .card-meta {{ font-size: 0.85em; color: #888; }}
-        .footer {{ text-align: center; margin-top: 50px; padding: 20px; color: #999; border-top: 1px solid #eee; }}
+        :root { --p: #1a73e8; --a: #d93025; --b: #f8f9fa; }
+        body { font-family: sans-serif; background: var(--b); margin: 0; padding: 20px; color: #333; }
+        .con { max-width: 900px; margin: auto; }
+        .hero { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+        .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: relative; border: 1px solid #eee; }
+        .card:hover { border-color: var(--p); transform: translateY(-3px); transition: 0.2s; }
+        .card-t { font-weight: bold; color: var(--p); text-decoration: none; display: block; margin-bottom: 5px; }
+        .badge { background: var(--a); color: white; font-size: 10px; padding: 2px 6px; border-radius: 4px; float: right; }
     </style>
     """
     
-    # --- MEMBUAT SCHEMA MARKUP ---
     schema_items = []
     list_cards = ""
     
     for url in sorted(list(urls), reverse=True):
         if "github.io" in url: continue
-        
-        # Ekstrak Judul
         slug = url.split('/')[-1].replace('-', ' ').replace('_', ' ').title()
         if not slug or len(slug) < 3: slug = url
         
-        # Buat HTML Card
-        list_cards += f"""
-        <div class="card">
-            <span class="badge">NEW HD</span>
-            <a class="card-title" href="{url}" target="_blank">{slug}</a>
-            <div class="card-meta">Category: International Series<br>Format: Uncut / Full Version</div>
-        </div>
-        """
-        
-        # Tambah ke Schema list
-        schema_items.append({
-            "@type": "ListItem",
-            "position": len(schema_items) + 1,
-            "url": url,
-            "name": slug
-        })
+        list_cards += f'<div class="card"><span class="badge">HD</span><a class="card-t" href="{url}" target="_blank">{slug}</a><small style="color:#999">Global Series Update</small></div>\n'
+        schema_items.append({"@type": "ListItem", "position": len(schema_items)+1, "url": url, "name": slug})
 
-    # Gabungkan Schema JSON-LD
-    schema_json = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": schema_items
-    }
+    schema_json = json.dumps({"@context": "https://schema.org", "@type": "ItemList", "itemListElement": schema_items})
     
-    full_html = f"""
-    {header}
-    <script type="application/ld+json">{json.dumps(schema_json)}</script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="hero">
-                <h1>🎬 Global Movie Update Hub</h1>
-                <div class="intro">
-                    Welcome to the most comprehensive digital library for international cinema enthusiasts. 
-                    We provide curated links for the latest Thai Uncut series, Korean dramas, and exclusive 
-                    releases from Brazil and France. Our automated system ensures that you receive the most 
-                    up-to-date and verified reference links available on the web today.
-                </div>
-            </div>
-            
-            <div class="grid">
-                {list_cards}
-            </div>
-            
-            <div class="footer">
-                &copy; {datetime.now().year} Global Movie Hub Indexer. All links verified. <br>
-                Last Sync: {datetime.now().strftime('%Y-%m-%d %H:%M')} UTC
-            </div>
-        </div>
-    </body>
-    </html>
-    """
+    html_content = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">{meta_verif}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Movie Indexer Hub</title>{style}
+    <script type="application/ld+json">{schema_json}</script></head>
+    <body><div class="con"><div class="hero"><h1>🎬 Movie Update Hub</h1><p>Premium reference for Thai Uncut & International Series.</p></div>
+    <div class="grid">{list_cards}</div>
+    <div style="text-align:center;margin-top:30px;color:#999"><small>Last Sync: {datetime.now().strftime('%Y-%m-%d')}</small></div></div></body></html>"""
     
     with open(HTML_SITEMAP, "w", encoding="utf-8") as f:
-        f.write(full_html)
+        f.write(html_content)
 
 def generate_xml_sitemap():
-    now = datetime.now().strftime('%Y-%m-%dT%H:%M:%S+00:00')
-    xml_content = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>{HUB_URL}</loc><lastmod>{now}</lastmod><priority>1.0</priority></url>\n</urlset>'
+    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>{HUB_URL}</loc><lastmod>{datetime.now().strftime("%Y-%m-%d")}</lastmod><priority>1.0</priority></url>\n</urlset>'
     with open(XML_SITEMAP, "w", encoding="utf-8") as f:
-        f.write(xml_content)
+        f.write(xml)
 
 def send_to_google(urls):
     try:
@@ -144,34 +96,33 @@ def send_to_google(urls):
         from googleapiclient.discovery import build
         service = build('indexing', 'v3', credentials=creds)
         for url in tqdm(urls):
-            service.urlNotifications().publish(body={"url": url, "type": "URL_UPDATED"}).execute()
-            with open(DB_FILE, "a") as f: f.write(url + "\n")
-            time.sleep(1)
+            try:
+                service.urlNotifications().publish(body={"url": url, "type": "URL_UPDATED"}).execute()
+                with open(DB_FILE, "a") as f: f.write(url + "\n")
+                time.sleep(1)
+            except: continue
     except Exception as e: logger.error(f"API Error: {e}")
 
 def run_indexer():
     if not os.path.exists(DB_FILE): open(DB_FILE, 'w').close()
-    with open(DB_FILE, "r", encoding="utf-8") as f: indexed = set(line.strip() for line in f if line.strip())
+    with open(DB_FILE, "r") as f: indexed = set(line.strip() for line in f if line.strip())
+    all_urls = set(MANUAL_URLS).union(indexed)
     
-    all_manual = set(MANUAL_URLS).union(indexed)
-    
-    # 1. Generate All Files (HTML Hub, Sitemap, Robots)
-    generate_html_sitemap(all_manual)
+    generate_html_sitemap(all_urls)
     generate_xml_sitemap()
     generate_robots_txt()
     
-    # 2. API Indexing Logic
     new_urls = [u for u in MANUAL_URLS if u not in indexed]
     api_queue = [u for u in new_urls if any(d in u for d in VERIFIED_DOMAINS)]
     
     if api_queue:
-        logger.info(f"Mengirim {len(api_queue)} link terverifikasi ke API...")
+        logger.info(f"Mengirim {len(api_queue)} link ke API...")
         send_to_google(api_queue)
     
-    # Jika ada link non-verif, simpan ke database agar tidak diulang
+    # Save non-verified to DB so they don't loop
     for u in new_urls:
         if not any(d in u for d in VERIFIED_DOMAINS):
-            save_indexed_url(u)
+            with open(DB_FILE, "a") as f: f.write(u + "\n")
 
 if __name__ == "__main__":
     run_indexer()
