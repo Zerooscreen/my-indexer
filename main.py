@@ -23,15 +23,14 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://thai-flix-share.webflow.io/sawadee-series/",
-    "https://dead-echoes-fhd.readme.io/reference/dead-echoes-fhd",
-    "https://watch-dead-echoes-thai.readme.io/reference/watch-dead-echoes-thai",
-    "https://project-hail-mary-fhd.readme.io/reference/project-hail-mary-fhd",
-    "https://watch-hail-mary-thai.readme.io/reference/watch-hail-mary-thai",
-    "https://ai-tao-waew-wan-fhd.readme.io/reference/ai-tao-waew-wan-fhd",
-    "https://mor-lam-rhythm-thai-fhd.readme.io/reference/mor-lam-rhythm-thai",
-    "https://zyo.se/devoradores-de-estrelas",
-	"https://zyo.se/sevoradores-de-estrelas-2026",
+    "https://girl-rules-ep6.readme.io/reference/ep6",
+	"https://girl-rules-ep-6.readme.io/reference/girl-rules-ep-6",
+	"https://girlrules-ep6.readme.io/reference/girl-rules-ep-6-uncut",
+	"https://girlrulesep6.readme.io/reference/ep-6-uncut",
+	"https://thewater-ep-3.readme.io/reference/ep4",
+	"https://the-water-ep4.readme.io/reference/the-water-ep-4",
+	"https://thewaterep4.readme.io/reference/the-water-ep-4-uncut",
+	"https://thewaterep4uncut.readme.io/reference/ep4",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
