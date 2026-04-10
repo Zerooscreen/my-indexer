@@ -23,14 +23,21 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://girl-rules-ep6.readme.io/reference/ep6",
-	"https://girl-rules-ep-6.readme.io/reference/girl-rules-ep-6",
-	"https://girlrules-ep6.readme.io/reference/girl-rules-ep-6-uncut",
-	"https://girlrulesep6.readme.io/reference/ep-6-uncut",
-	"https://thewater-ep-3.readme.io/reference/ep4",
-	"https://the-water-ep4.readme.io/reference/the-water-ep-4",
-	"https://thewaterep4.readme.io/reference/the-water-ep-4-uncut",
-	"https://thewaterep4uncut.readme.io/reference/ep4",
+    "https://shock-me-girls-ep9.readme.io/reference/ep10",
+	"https://shock-me-girls-ep9-uncut.readme.io/reference/shock-me-girls-ep10-uncut",
+	"https://shockmegirls-ep9.readme.io/reference/ep-10",
+	"https://shockmegirls-ep-9.readme.io/reference/shock-me-girls-ep10",
+	"https://shadow-of-love-ep-4.readme.io/reference/ep10",
+	"https://shadow-of-love-ep4-uncut.readme.io/reference/shadow-of-love-ep10-uncut",
+	"https://shadowoflove-ep4.readme.io/reference/shadow-of-love-ep10",
+	"https://shadow-of-love-ep-4-uncut.readme.io/reference/ep10",
+	"https://frozen-valentine-ep-9.readme.io/reference/ep10",
+	"https://frozen-valentine-ep9.readme.io/reference/frozen-valentine-ep10",
+	"https://frozenvalentine-ep9.readme.io/reference/frozen-valentine-ep10-uncut",
+	"https://broken-of-love-ep-2.readme.io/reference/ep3",
+	"https://broken-of-love-ep2.readme.io/reference/broken-of-love-ep3",
+	"https://brokenofloveep2.readme.io/reference/ep-3",
+	"https://broken-of-love-ep2-uncut.readme.io/reference/ep3",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
