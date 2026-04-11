@@ -23,21 +23,18 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://shock-me-girls-ep9.readme.io/reference/ep10",
-	"https://shock-me-girls-ep9-uncut.readme.io/reference/shock-me-girls-ep10-uncut",
-	"https://shockmegirls-ep9.readme.io/reference/ep-10",
-	"https://shockmegirls-ep-9.readme.io/reference/shock-me-girls-ep10",
-	"https://shadow-of-love-ep-4.readme.io/reference/ep10",
-	"https://shadow-of-love-ep4-uncut.readme.io/reference/shadow-of-love-ep10-uncut",
-	"https://shadowoflove-ep4.readme.io/reference/shadow-of-love-ep10",
-	"https://shadow-of-love-ep-4-uncut.readme.io/reference/ep10",
-	"https://frozen-valentine-ep-9.readme.io/reference/ep10",
-	"https://frozen-valentine-ep9.readme.io/reference/frozen-valentine-ep10",
-	"https://frozenvalentine-ep9.readme.io/reference/frozen-valentine-ep10-uncut",
-	"https://broken-of-love-ep-2.readme.io/reference/ep3",
-	"https://broken-of-love-ep2.readme.io/reference/broken-of-love-ep3",
-	"https://brokenofloveep2.readme.io/reference/ep-3",
-	"https://broken-of-love-ep2-uncut.readme.io/reference/ep3",
+    "https://my-only-sunshine-ep-6.readme.io/reference/ep8",
+	"https://myonlysunshine-ep6.readme.io/reference/my-only-sunshine-ep8",
+	"https://my-only-sunshine-ep6-uncut.readme.io/reference/ep8",
+	"https://my-only-sunshine-ep-6-uncut.readme.io/reference/ep8",
+	"https://play-park-ep7.readme.io/reference/ep9",
+	"https://playpark-ep7.readme.io/reference/play-park-ep9",
+	"https://play-park-ep7-uncut.readme.io/reference/ep-9",
+	"https://play-park-ep-7-uncut.readme.io/reference/play-park-ep9-uncut",
+	"https://girl-from-nowhere-reset-ep5.readme.io/reference/ep6",
+	"https://girl-from-nowhere-reset-ep-5.readme.io/reference/girl-from-nowhere-reset-ep6",
+	"https://girl-from-nowhere-ep5-uncut.readme.io/reference/ep6",
+	"https://girl-from-nowhere-ep-5-uncut.readme.io/reference/girl-from-nowhere-ep6-uncut",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
