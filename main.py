@@ -23,18 +23,14 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://my-only-sunshine-ep-6.readme.io/reference/ep8",
-	"https://myonlysunshine-ep6.readme.io/reference/my-only-sunshine-ep8",
-	"https://my-only-sunshine-ep6-uncut.readme.io/reference/ep8",
-	"https://my-only-sunshine-ep-6-uncut.readme.io/reference/ep8",
-	"https://play-park-ep7.readme.io/reference/ep9",
-	"https://playpark-ep7.readme.io/reference/play-park-ep9",
-	"https://play-park-ep7-uncut.readme.io/reference/ep-9",
-	"https://play-park-ep-7-uncut.readme.io/reference/play-park-ep9-uncut",
-	"https://girl-from-nowhere-reset-ep5.readme.io/reference/ep6",
-	"https://girl-from-nowhere-reset-ep-5.readme.io/reference/girl-from-nowhere-reset-ep6",
-	"https://girl-from-nowhere-ep5-uncut.readme.io/reference/ep6",
-	"https://girl-from-nowhere-ep-5-uncut.readme.io/reference/girl-from-nowhere-ep6-uncut",
+    "https://duang-with-you-ep7.readme.io/reference/ep-11",
+	"https://duangwithyouep7.readme.io/reference/duang-with-you-ep11",
+	"https://duang-with-you-ep4.readme.io/reference/ep11",
+	"https://duang-with-you-ep3-thai.readme.io/reference/duang-with-you-ep11",
+	"https://myromancescammer-ep7.readme.io/reference/ep11",
+	"https://my-romance-scammer-ep7.readme.io/reference/my-romance-scammer-ep11",
+	"https://my-romance-scammer-ep-7.readme.io/reference/ep-11",
+	"https://my-romance-scammer-ep4.readme.io/reference/ep11",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
