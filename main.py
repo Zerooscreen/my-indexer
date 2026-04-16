@@ -23,19 +23,24 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://duang-with-you-ep7.readme.io/reference/ep12",
-	"https://duangwithyouep7.readme.io/reference/duang-with-you-series-ep12",
-	"https://duang-with-you-ep3-thai.readme.io/reference/ep12",
-	"https://duang-with-you-ep4.readme.io/reference/duang-with-you-ep12",
-	"https://myromancescammer-ep7.readme.io/reference/ep12",
-	"https://my-romance-scammer-ep7.readme.io/reference/my-romance-scammer-ep12",
-	"https://my-romance-scammer-ep-7.readme.io/reference/ep12",
-	"https://superprofile.bio/my-romance-scammer-ep12",
-	"https://superprofile.bio/my-romance-scammer-ep-12",
-	"https://superprofile.bio/myromancescammer-ep12",
-	"https://superprofile.bio/the-sun-another-star-ep7",
-	"https://superprofile.bio/farpic1756",
-	"https://superprofile.bio/thesunfromanotherstar-ep7",
+    "https://superprofile.bio/devilblackcat",
+	"https://superprofile.bio/projecthailmaryth",
+	"https://project-hail-mary-full-hd.readme.io/reference/project-hail-mary-ryan-gosling-full",
+	"https://project-hail-mary-full-hd.readme.io/reference/watch-project-hail-mary-8k-free",
+	"https://project-hail-mary-12k.readme.io/reference/project-hail-mary-official-2026",
+	"https://project-hail-mary-12k.readme.io/reference/hail-mary-2026-12k-stream",
+	"https://hoppers-pixar-8k.readme.io/reference/hoppers-pixar-8k-official",
+	"https://hoppers-pixar-12k.readme.io/reference/hoppers-2026-full-kkodu",
+	"https://hoppers-pixar-fhd.readme.io/reference/hoppers-pixar-2026-dubbing",
+	"https://hoppers-pixar-fhd.readme.io/reference/watch-hoppers-2026-ok-720p",
+	"https://one-piece-season-2-ko.readme.io/reference/one-piece-season-2-full-fhd",
+	"https://one-piece-season-2-12k.readme.io/reference/one-piece-s2-ep1-8-4k",
+	"https://op-s2-fhd.readme.io/reference/watch-one-piece-s2-8k-official",
+	"https://op-s2-netflix.readme.io/reference/op-s2-2026-full-ok",
+	"https://marty-supreme-8k.readme.io/reference/marty-supreme-timothee-chalamet-full",
+	"https://marty-supreme-12-k-ko.readme.io/reference/watch-marty-supreme-hd-4k",
+	"https://marty-supreme-fhd.readme.io/reference/marty-supreme-2026-full-stream",
+	"https://marty-supreme-fhd-2026.readme.io/reference/marty-supreme-official-8k",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
