@@ -23,23 +23,13 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://number-one-8k.readme.io/reference/number-one-8k",
-	"https://number-one-uhd.readme.io/reference/number-one-uhd",
-	"https://number-one-full.readme.io/reference/uhm-jung-hwa-number-one-full",
-	"https://number-one-2026-8k-stream.readme.io/reference/number-one-2026-8k-stream",
-	"https://humint-2026-8k.readme.io/reference/humint-2026-8k-official",
-	"https://humint-full-hd.readme.io/reference/jo-in-sung-humint-full-hd",
-	"https://pavane-8.readme.io/reference/pavane-2026-8k",
-	"https://pavane-fhd.readme.io/reference/pavane-byunyohan-full",
-	"https://pavane-uncut-12k.readme.io/reference/pavane-uncut-12k",
-	"https://bloodhounds-2.readme.io/reference/bloodhounds-2-uncut-12k",
-	"https://bloodhounds-s2-fhd.readme.io/reference/bloodhounds-s2-cast-full",
-	"https://bloodhounds-s2.readme.io/reference/bloodhounds-s2-8k",
-	"https://bts-return-fhd.readme.io/reference/watch-bts-return-fhd",
-	"https://bts-return-full-movie.readme.io/reference/bts-return-full-movie",
-	"https://bts-the-return.readme.io/reference/bts-the-return-8k",
-	"https://sugar-2026-8k.readme.io/reference/sugar-2026-8k-official",
-	"https://sugar-movie-full.readme.io/reference/jeon-do-yeon-sugar-movie-full",
+    "https://superprofile.bio/romance-scammer-ep12",
+	"https://superprofile.bio/duang-with-you-ep12",
+	"https://superprofile.bio/duang-with-you-ep-12",
+	"https://superprofile.bio/duangwithyou-ep12",
+	"https://superprofile.bio/love-you-teacher-ep7",
+	"https://superprofile.bio/love-you-teacher-ep-7",
+	"https://zerooscreen.github.io/my-indexer/",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
