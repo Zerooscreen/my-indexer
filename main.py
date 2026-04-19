@@ -23,18 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://superprofile.bio/flavor-of-us-ep4",
-	"https://superprofile.bio/flavor-of-us-ep-4",
-	"https://superprofile.bio/flavorofus-ep4",
-	"https://superprofile.bio/venus-groom-ep9",
-	"https://superprofile.bio/venus-groom-ep-9",
-	"https://superprofile.bio/venusgroom-ep9",
-	"https://superprofile.bio/love-like-a-bike-ep8",
-	"https://superprofile.bio/love-like-a-bike-ep-8",
-	"https://superprofile.bio/lovelikeabike-ep8",
-	"https://superprofile.bio/love-upon-a-time-ep4",
-	"https://superprofile.bio/love-upon-a-time-ep-4",
-	"https://superprofile.bio/loveuponatime-ep4",
+    "https://superprofile.bio/hoppers-zhsub",
+	"https://superprofile.bio/hoppers-2026-full-hd-tw",
+	"https://superprofile.bio/goat-2026-zh-sub",
+	"https://superprofile.bio/goat-2026-full-hd-tw",
+	"https://superprofile.bio/one-piece-season-2-tw",
+	"https://superprofile.bio/one-piece-season-2-zh-sub",
+	"https://superprofile.bio/scream-7-zh-sub",
+	"https://superprofile.bio/scream-7-2026-online-tw",
+	"https://superprofile.bio/zootopia-2-tw-hk",
+	"https://superprofile.bio/zootopia-2-zh",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
