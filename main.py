@@ -23,18 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://superprofile.bio/the-kings-warden-korean",
-	"https://superprofile.bio/kings-warden-8k",
-	"https://superprofile.bio/goat-the-legend-movie",
-	"https://superprofile.bio/goat-legend-fhd",
-	"https://superprofile.bio/one-piece-s2-netflix",
-	"https://superprofile.bio/one-piece-s2-8k",
-	"https://superprofile.bio/hoppers-pixar-korean",
-	"https://superprofile.bio/hoppers-2026-8k",
-	"https://superprofile.bio/projecthailmary-korean",
-	"https://superprofile.bio/hail-mary-8k",
+    "https://superprofile.bio/magic-move-ep1",
+	"https://superprofile.bio/magic-move-ep-1",
+	"https://superprofile.bio/magicmove-ep1",
+	"https://superprofile.bio/the-sun-another-star-ep8",
+	"https://superprofile.bio/the-sun-another-star-ep-8",
+	"https://superprofile.bio/thesunanotherstarep8",
+	"https://superprofile.bio/love-of-silom-ep1-2",
+	"https://superprofile.bio/love-of-silom-ep-1-2",
+	"https://superprofile.bio/loveofsilomep1-2",
 ]
-
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
 def generate_robots_txt():
