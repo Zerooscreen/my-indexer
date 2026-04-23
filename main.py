@@ -23,28 +23,15 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://shadow-of-love-ep14.readme.io/reference/ep14",
-	"https://shadow-of-love-ep-14-uncut.readme.io/reference/shadow-of-love-ep14",
-	"https://shadowoflove-ep14.readme.io/reference/ep-14",
-	"https://broken-of-love-ep5.readme.io/reference/ep5",
-	"https://broken-of-love-ep-5.readme.io/reference/broken-of-love-ep5",
-	"https://brokenoflove-ep5.readme.io/reference/ep-5",
-	"https://my-only-sunshine-ep9.readme.io/reference/ep9",
-	"https://myonlysunshine-ep9.readme.io/reference/my-only-sunshine-ep9",
-	"https://my-only-sunshine-ep-9.readme.io/reference/ep-9",
-	"https://girl-rules-ep7.readme.io/reference/ep7",
-	"https://girl-rules-ep-7.readme.io/reference/girl-rules-ep7",
-	"https://girlrules-ep7.readme.io/reference/ep-7",
-	"https://frozen-valentine-ep-10.readme.io/reference/ep10",
-	"https://frozen-valentine-ep-10-uncut.readme.io/reference/frozen-valentine-ep10",
-	"https://frozenvalentineep10uncut.readme.io/reference/ep-10",
-	"https://shock-me-girls-ep-10-uncut.readme.io/reference/ep10",
-	"https://shockmegirls-ep10.readme.io/reference/shock-me-girls-ep10",
-	"https://shockmegirlsep10.readme.io/reference/ep-10",
-	"https://superprofile.bio/shadow-of-love-ep14",
-	"https://superprofile.bio/shadow-of-love-ep-14",
-	"https://superprofile.bio/shadowoflove-ep14",
-	"https://superprofile.bio/broken-of-love-ep5",
+    "https://magic-move-ep-1.readme.io/reference/ep1",
+	"https://magicmoveep1.readme.io/reference/magic-move-ep1",
+	"https://magic-move-ep1-uncut.readme.io/reference/ep-10",
+	"https://love-of-silom-ep1-2.readme.io/reference/ep2",
+	"https://loveofsilomep1-2.readme.io/reference/love-of-silom-ep1-2",
+	"https://loveofsilomep1-2-uncut.readme.io/reference/ep-1-2",
+	"https://the-sun-another-star-ep8.readme.io/reference/ep8",
+	"https://the-sun-another-star-ep-8.readme.io/reference/the-sun-another-star-ep8",
+	"https://thesunanotherstar-ep8.readme.io/reference/ep-8",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
