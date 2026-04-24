@@ -23,15 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://love-upon-a-time-ep5.readme.io/reference/ep5",
-	"https://love-upon-a-time-ep-5.readme.io/reference/love-upon-a-time-ep5",
-	"https://loveuponatime-ep5.readme.io/reference/ep-5",
-	"https://love-you-teacher-ep7.readme.io/reference/ep7",
-	"https://love-you-teacher-ep-7.readme.io/reference/love-you-teacher-ep7",
-	"https://loveyouteacher-ep7.readme.io/reference/ep-7",
-	"https://only-friends-dream-on-ep9.readme.io/reference/ep9",
-	"https://only-friends-dream-on-ep-9.readme.io/reference/only-friends-dream-on-ep9",
-	"https://onlyfriendsdreamon-ep9.readme.io/reference/ep-9",
+    "https://flower-boy-ep1.readme.io/reference/ep1",
+	"https://flower-boy-ep-1.readme.io/reference/flower-boy-ep1",
+	"https://flowerboy-ep1.readme.io/reference/ep-1",
+	"https://venus-groom-ep10.readme.io/reference/ep10",
+	"https://venus-groom-ep-10.readme.io/reference/venus-groom-ep10",
+	"https://venusgroom-ep10.readme.io/reference/ep-10",
+	"https://one-year-ep1.readme.io/reference/ep1",
+	"https://one-year-ep-1.readme.io/reference/one-year-ep1",
+	"https://oneyear-ep1.readme.io/reference/ep-1",
+	"https://superprofile.bio/fulfill-ep1",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
