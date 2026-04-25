@@ -23,15 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://the-water-ep7.readme.io/reference/ep7",
-	"https://the-water-ep-7.readme.io/reference/the-water-ep7",
-	"https://thewater-ep7.readme.io/reference/ep-7",
-	"https://broken-of-love-ep6.readme.io/reference/ep6",
-	"https://broken-of-love-ep-6.readme.io/reference/broken-of-love-ep6",
-	"https://brokenoflove-ep6.readme.io/reference/ep-6",
-	"https://girl-rules-ep-7-uncut.readme.io/reference/ep7",
-	"https://girlrulesep7.readme.io/reference/girl-rules-ep7",
-	"https://girlrules-ep-7.readme.io/reference/ep-7",
+    "https://salmokji-2026-8k.readme.io/reference/salmokji-2026-8k-official",
+	"https://salmokji-2026-fhd.readme.io/reference/watch-salmokji-2026-fhd",
+	"https://salmokji-uncut-12k.readme.io/reference/salmokji-uncut-12k-stream",
+	"https://salmokji-korean.readme.io/reference/salmokji-kim-yoon-hye-full",
+	"https://audition-109-8k.readme.io/reference/audition-109-8k-free",
+	"https://audition-109-fhd.readme.io/reference/watch-audition-109-fhd",
+	"https://audition-109-12k.readme.io/reference/audition-109-uncut-12k",
+	"https://audition-109-ryeoun.readme.io/reference/audition-109-ryeoun-full",
+	"https://my-name-2026-8k.readme.io/reference/my-name-2026-8k-free",
+	"https://my-name-fhd.readme.io/reference/watch-my-name-fhd-sub",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
