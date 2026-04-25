@@ -23,15 +23,15 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://fulfill-the-series-ep1.readme.io/reference/ep1",
-	"https://fulfill-the-series-ep-1.readme.io/reference/fulfill-the-series-ep1",
-	"https://fulfilltheseries-ep1.readme.io/reference/ep-1",
-	"https://shades-the-series-ep2.readme.io/reference/ep2",
-	"https://shades-the-series-ep-2.readme.io/reference/shades-the-series-ep2",
-	"https://shadestheseries-ep2.readme.io/reference/ep-2",
-	"https://hometown-romance-ep5.readme.io/reference/ep5",
-	"https://hometown-romance-ep-5.readme.io/reference/hometown-romance-ep5",
-	"https://hometownromance-ep5.readme.io/reference/ep-5",
+    "https://the-water-ep7.readme.io/reference/ep7",
+	"https://the-water-ep-7.readme.io/reference/the-water-ep7",
+	"https://thewater-ep7.readme.io/reference/ep-7",
+	"https://broken-of-love-ep6.readme.io/reference/ep6",
+	"https://broken-of-love-ep-6.readme.io/reference/broken-of-love-ep6",
+	"https://brokenoflove-ep6.readme.io/reference/ep-6",
+	"https://girl-rules-ep-7-uncut.readme.io/reference/ep7",
+	"https://girlrulesep7.readme.io/reference/girl-rules-ep7",
+	"https://girlrules-ep-7.readme.io/reference/ep-7",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
