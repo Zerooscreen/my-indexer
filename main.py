@@ -23,16 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://salmokji-2026-8k.readme.io/reference/salmokji-2026-8k-official",
-	"https://salmokji-2026-fhd.readme.io/reference/watch-salmokji-2026-fhd",
-	"https://salmokji-uncut-12k.readme.io/reference/salmokji-uncut-12k-stream",
-	"https://salmokji-korean.readme.io/reference/salmokji-kim-yoon-hye-full",
-	"https://audition-109-8k.readme.io/reference/audition-109-8k-free",
-	"https://audition-109-fhd.readme.io/reference/watch-audition-109-fhd",
-	"https://audition-109-12k.readme.io/reference/audition-109-uncut-12k",
-	"https://audition-109-ryeoun.readme.io/reference/audition-109-ryeoun-full",
-	"https://my-name-2026-8k.readme.io/reference/my-name-2026-8k-free",
-	"https://my-name-fhd.readme.io/reference/watch-my-name-fhd-sub",
+    "https://my-name-12k.readme.io/reference/my-name-12k-stream-ok",
+	"https://my-name-korean.readme.io/reference/my-name-han-so-hee-full",
+	"https://lee-cronin-the-mummy-2026-8k.readme.io/reference/lee-cronin-the-mummy-2026-8k-official",
+	"https://lee-cronins-the-mummy-2026-fhd.readme.io/reference/watch-lee-cronins-the-mummy-2026-fhd",
+	"https://the-mummy-lee-cronin-uncut-12k.readme.io/reference/the-mummy-lee-cronin-uncut-12k-stream",
+	"https://lee-cronin-mummy-korean.readme.io/reference/lee-cronin-mummy-korean-full-movie",
+	"https://ran-12-3-8k.readme.io/reference/ran-12-3-8k-official",
+	"https://ran-12-3-fhd.readme.io/reference/watch-ran-12-3-fhd",
+	"https://ran-12-3-12k.readme.io/reference/ran-12-3-12k-stream",
+	"https://ran-12-3-korean.readme.io/reference/ran-12-3-im-si-wan-full",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
