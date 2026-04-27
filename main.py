@@ -23,16 +23,15 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://my-name-12k.readme.io/reference/my-name-12k-stream-ok",
-	"https://my-name-korean.readme.io/reference/my-name-han-so-hee-full",
-	"https://lee-cronin-the-mummy-2026-8k.readme.io/reference/lee-cronin-the-mummy-2026-8k-official",
-	"https://lee-cronins-the-mummy-2026-fhd.readme.io/reference/watch-lee-cronins-the-mummy-2026-fhd",
-	"https://the-mummy-lee-cronin-uncut-12k.readme.io/reference/the-mummy-lee-cronin-uncut-12k-stream",
-	"https://lee-cronin-mummy-korean.readme.io/reference/lee-cronin-mummy-korean-full-movie",
-	"https://ran-12-3-8k.readme.io/reference/ran-12-3-8k-official",
-	"https://ran-12-3-fhd.readme.io/reference/watch-ran-12-3-fhd",
-	"https://ran-12-3-12k.readme.io/reference/ran-12-3-12k-stream",
-	"https://ran-12-3-korean.readme.io/reference/ran-12-3-im-si-wan-full",
+    "https://perfect-crown-ep7.readme.io/reference/perfect-crown-ep7",
+	"https://perfect-crown-ep7-2026.readme.io/reference/watch-perfect-crown-ep7",
+	"https://perfect-crown-ep-7.readme.io/reference/perfect-crown-ep7-cast",
+	"https://perfect-crown-series-ep7.readme.io/reference/perfect-crown-ep7-review",
+	"https://perfect-crown-ep7-ryeoun.readme.io/reference/perfect-crown-ep7-ryeoun-full",
+	"https://romance-absolute-ep7.readme.io/reference/romance-absolute-ep7",
+	"https://romance-absolute-ep-7.readme.io/reference/watch-romance-absolute-ep7",
+	"https://absolute-value-romance-ep7-8k.readme.io/reference/ep7",
+	"https://absolutevalueromance-ep7.readme.io/reference/ep-7",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
