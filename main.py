@@ -23,15 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://perfect-crown-ep7.readme.io/reference/perfect-crown-ep7",
-	"https://perfect-crown-ep7-2026.readme.io/reference/watch-perfect-crown-ep7",
-	"https://perfect-crown-ep-7.readme.io/reference/perfect-crown-ep7-cast",
-	"https://perfect-crown-series-ep7.readme.io/reference/perfect-crown-ep7-review",
-	"https://perfect-crown-ep7-ryeoun.readme.io/reference/perfect-crown-ep7-ryeoun-full",
-	"https://romance-absolute-ep7.readme.io/reference/romance-absolute-ep7",
-	"https://romance-absolute-ep-7.readme.io/reference/watch-romance-absolute-ep7",
-	"https://absolute-value-romance-ep7-8k.readme.io/reference/ep7",
-	"https://absolutevalueromance-ep7.readme.io/reference/ep-7",
+    "https://our-happy-days-ep22.readme.io/reference/ep22",
+	"https://happy-days-ep-22.readme.io/reference/ep-22",
+	"https://happy-days-ep22-8k.readme.io/reference/ep22",
+	"https://our-happy-days-ep-22.readme.io/reference/ep-22",
+	"https://pearl-in-red-ep40.readme.io/reference/ep40",
+	"https://pearl-in-red-ep-40.readme.io/reference/ep-40",
+	"https://pearl-in-red-8k.readme.io/reference/ep40",
+	"https://pearl-in-red-series-ep40.readme.io/reference/ep-40",
+	"https://we-are-all-trying-here-ep5.readme.io/reference/ep5",
+	"https://we-are-all-trying-here-ep-5.readme.io/reference/ep-5",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
