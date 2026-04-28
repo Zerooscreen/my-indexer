@@ -23,16 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://wearealltryinghereep5.readme.io/reference/watch-trying-here-ep5",
-	"https://wearealltryinghere-ep5.readme.io/reference/ep-5",
-	"https://we-trying-here-ep5.readme.io/reference/trying-here-ep5-cast",
-	"https://we-trying-here-ep-5.readme.io/reference/trying-here-ep5-review",
-	"https://value-of-romance-ep-7.readme.io/reference/romance-absolute-ep7-cast",
-	"https://value-of-romance-ep7.readme.io/reference/romance-absolute-ep7-review",
-	"https://happy-days-ep22.readme.io/reference/happy-days-ep22-cast",
-	"https://happy-days-ep-22-2026.readme.io/reference/happy-days-ep22-review",
-	"https://pearlinred-ep-40.readme.io/reference/pearl-in-red-ep40-cast",
-	"https://pearlinred-ep40.readme.io/reference/pearl-in-red-ep40-review",
+    "https://yumis-cells-3-ep6.readme.io/reference/ep6",
+	"https://yumis-cells-3-ep-6.readme.io/reference/watch-yumis-cells-3-ep6",
+	"https://yumis-cells-s3-8k.readme.io/reference/yumis-cells-s3-ep6-8k",
+	"https://yumis-cells-s3-fhd.readme.io/reference/ep-6",
+	"https://recipe-love-ep27.readme.io/reference/ep27",
+	"https://recipe-love-ep-27.readme.io/reference/watch-recipe-love-ep27",
+	"https://recipe-for-love-ep27-8k.readme.io/reference/recipe-for-love-ep27-8k",
+	"https://recipe-for-love-fhd.readme.io/reference/ep-27",
+	"https://the-scarecrow-ep5.readme.io/reference/ep5",
+	"https://the-scarecrow-2026-fhd.readme.io/reference/ep-5",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
