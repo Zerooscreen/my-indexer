@@ -23,16 +23,14 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://yumis-cells-3-ep6.readme.io/reference/ep6",
-	"https://yumis-cells-3-ep-6.readme.io/reference/watch-yumis-cells-3-ep6",
-	"https://yumis-cells-s3-8k.readme.io/reference/yumis-cells-s3-ep6-8k",
-	"https://yumis-cells-s3-fhd.readme.io/reference/ep-6",
-	"https://recipe-love-ep27.readme.io/reference/ep27",
-	"https://recipe-love-ep-27.readme.io/reference/watch-recipe-love-ep27",
-	"https://recipe-for-love-ep27-8k.readme.io/reference/recipe-for-love-ep27-8k",
-	"https://recipe-for-love-fhd.readme.io/reference/ep-27",
-	"https://the-scarecrow-ep5.readme.io/reference/ep5",
-	"https://the-scarecrow-2026-fhd.readme.io/reference/ep-5",
+    "https://yumis-cells-3-ep6-kdrama.readme.io/reference/yumis-cells-3-ep6-cast",
+	"https://kdrama-yumis-cells-3-ep6.readme.io/reference/yumis-cells-3-ep6-review",
+	"https://the-scarecrow-ep5-kdrama.readme.io/reference/the-scarecrow-ep5-cast",
+	"https://thescarecrow-ep5.readme.io/reference/the-scarecrow-ep5",
+	"https://thescarecrow-ep-5.readme.io/reference/the-scarecrow-ep5",
+	"https://the-scarecrow-8k.readme.io/reference/the-scarecrow-2026-ep5-8k",
+	"https://recipelove-ep27.readme.io/reference/recipe-love-ep27",
+	"https://recipeloveep27.readme.io/reference/ep-27",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
