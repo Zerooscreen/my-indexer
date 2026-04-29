@@ -23,14 +23,11 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://yumis-cells-3-ep6-kdrama.readme.io/reference/yumis-cells-3-ep6-cast",
-	"https://kdrama-yumis-cells-3-ep6.readme.io/reference/yumis-cells-3-ep6-review",
-	"https://the-scarecrow-ep5-kdrama.readme.io/reference/the-scarecrow-ep5-cast",
-	"https://thescarecrow-ep5.readme.io/reference/the-scarecrow-ep5",
-	"https://thescarecrow-ep-5.readme.io/reference/the-scarecrow-ep5",
-	"https://the-scarecrow-8k.readme.io/reference/the-scarecrow-2026-ep5-8k",
-	"https://recipelove-ep27.readme.io/reference/recipe-love-ep27",
-	"https://recipeloveep27.readme.io/reference/ep-27",
+    "https://sold-out-you-ep4.readme.io/reference/ep4",
+	"https://sold-out-on-you-8k.readme.io/reference/sold-out-on-you-ep4-8k",
+	"https://sold-out-on-you-ep4-fhd.readme.io/reference/sold-out-on-you-ep4-fhd",
+	"https://sold-out-you-ep-4.readme.io/reference/watch-sold-out-you-ep4",
+	"https://soldoutyouep4.readme.io/reference/ep-4",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
