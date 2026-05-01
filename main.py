@@ -23,18 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://wukong-jazz-fhd-thai.readme.io/reference/wukong-jazz-fhd-thai",
-	"https://wukong-jazz-fhd.readme.io/reference/wukong-jazz-fhd",
-	"https://heng-jia-jazz-master.readme.io/reference/heng-jia-jazz-master",
-	"https://wukong-jazz-online.readme.io/reference/watch-wukong-jazz-online",
-	"https://salmokji-whispering-fhd.readme.io/reference/salmokji-whispering-fhd",
-	"https://salmokji-2026-fhd-hwss.readme.io/reference/salmokji-2026-fhd",
-	"https://salmokji-2026-4k.readme.io/reference/salmokji-2026-4k",
-	"https://salmokji-thai.readme.io/reference/watch-salmokji-thai",
-	"https://lee-cronin-the-mummy-thai.readme.io/reference/lee-cronin-the-mummy-uncut",
-	"https://the-mummy-master-fhd.readme.io/reference/the-mummy-master-fhd",
-	"https://mummy-2026-thai-dub.readme.io/reference/the-mummy-2026-thai-dub",
-	"https://lee-cronin-mummy-thaisub.readme.io/reference/watch-the-mummy-2026",
+    "https://sweet-blood-ep8.readme.io/reference/ep8",
+	"https://sweet-blood-ep8-fhd.readme.io/reference/sweet-blood-ep8",
+	"https://mad-concrete-dreams-ep1-12.readme.io/reference/mad-concrete-dreams-ep1-12",
+	"https://if-wishes-could-kill-ep1-8.readme.io/reference/ep1-8",
+	"https://sirens-kiss-ep1-12.readme.io/reference/sirens-kiss-ep1-12",
+	"https://practical-guide-love-ep1-12.readme.io/reference/ep1-12",
+	"https://bloodhounds-s2-2026.readme.io/reference/bloodhounds-s2-ep1-7",
+	"https://canthislovetranslated-ep1-12.readme.io/reference/ep1-12",
+	"https://undercover-miss-hong-series.readme.io/reference/ep1-16",
+	"https://beloved-thief-the-series.readme.io/reference/beloved-thief-ep1-16",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
