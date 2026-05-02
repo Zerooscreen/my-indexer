@@ -23,16 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://sweet-blood-ep8.readme.io/reference/ep8",
-	"https://sweet-blood-ep8-fhd.readme.io/reference/sweet-blood-ep8",
-	"https://mad-concrete-dreams-ep1-12.readme.io/reference/mad-concrete-dreams-ep1-12",
-	"https://if-wishes-could-kill-ep1-8.readme.io/reference/ep1-8",
-	"https://sirens-kiss-ep1-12.readme.io/reference/sirens-kiss-ep1-12",
-	"https://practical-guide-love-ep1-12.readme.io/reference/ep1-12",
-	"https://bloodhounds-s2-2026.readme.io/reference/bloodhounds-s2-ep1-7",
-	"https://canthislovetranslated-ep1-12.readme.io/reference/ep1-12",
-	"https://undercover-miss-hong-series.readme.io/reference/ep1-16",
-	"https://beloved-thief-the-series.readme.io/reference/beloved-thief-ep1-16",
+    "https://mad-concrete-dreams-2026.readme.io/reference/mad-concrete-dreams-2026-full",
+	"https://if-wishes-could-kill-2026.readme.io/reference/if-wishes-could-kill-2026-all",
+	"https://sirens-kiss-2026.readme.io/reference/sirens-kiss-2026-full",
+	"https://practical-guide-love-2026.readme.io/reference/practical-guide-love-2026-full",
+	"https://bloodhounds-season-2-2026.readme.io/reference/bloodhounds-s2-2026-full",
+	"https://can-this-love-translated.readme.io/reference/can-this-love-translated-2026",
+	"https://undercover-miss-hong-2026.readme.io/reference/undercover-miss-hong-2026-full",
+	"https://blossom-campus.readme.io/reference/blossom-campus-2026-full",
+	"https://winter-fever-2026.readme.io/reference/winter-fever-2026-full",
+	"https://always-meet-again-2026.readme.io/reference/always-meet-again-2026-full",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
