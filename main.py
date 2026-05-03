@@ -23,16 +23,18 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://mad-concrete-dreams-2026.readme.io/reference/mad-concrete-dreams-2026-full",
-	"https://if-wishes-could-kill-2026.readme.io/reference/if-wishes-could-kill-2026-all",
-	"https://sirens-kiss-2026.readme.io/reference/sirens-kiss-2026-full",
-	"https://practical-guide-love-2026.readme.io/reference/practical-guide-love-2026-full",
-	"https://bloodhounds-season-2-2026.readme.io/reference/bloodhounds-s2-2026-full",
-	"https://can-this-love-translated.readme.io/reference/can-this-love-translated-2026",
-	"https://undercover-miss-hong-2026.readme.io/reference/undercover-miss-hong-2026-full",
-	"https://blossom-campus.readme.io/reference/blossom-campus-2026-full",
-	"https://winter-fever-2026.readme.io/reference/winter-fever-2026-full",
-	"https://always-meet-again-2026.readme.io/reference/always-meet-again-2026-full",
+    "https://ran-12-3-full-movie-kr.readme.io/reference/ran-12-3",
+	"https://watch-ran-12-3.readme.io/reference/ran-12-3-uhd",
+	"https://ran-12-3-ott.readme.io/reference/ran-12-3-ott-vod",
+	"https://lee-cronin-the-mummy-4k.readme.io/reference/lee-cronin-the-mummy-4k-uhd",
+	"https://the-mummy-2026-ko.readme.io/reference/watch-the-mummy-2026-ok",
+	"https://cronin-mummy-korea.readme.io/reference/lee-cronin-mummy-full-hd",
+	"https://salmokji-4k.readme.io/reference/salmokji-4k-uhd-full",
+	"https://salmokji-2026.readme.io/reference/watch-salmokji-2026-ok",
+	"https://salmokji-full-hd.readme.io/reference/salmokji-full-hd-video",
+	"https://my-name-2026.readme.io/reference/my-name-2026-4k-ok",
+	"https://my-name-2026-korean.readme.io/reference/watch-my-name-2026-free",
+	"https://my-name-korean-hd.readme.io/reference/my-name-korean-full-hd",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
