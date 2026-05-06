@@ -23,18 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://mortal-kombat-2-8k.readme.io/reference/mortal-kombat-2-2026-8k-official",
-	"https://mortal-kombat-2-fhd.readme.io/reference/mortal-kombat-2-fhd-sub",
-	"https://mortal-kombat-2-uncut.readme.io/reference/mortal-kombat-2-uncut-12k-stream",
-	"https://the-sheep-detectives-8k.readme.io/reference/the-sheep-detectives-8k-official",
-	"https://sheep-detectives-fhd.readme.io/reference/watch-sheep-detectives-korean-dub",
-	"https://sheep-detectives-sub-korean.readme.io/reference/sheep-detectives-hugh-jackman-full",
-	"https://michael-jackson-8k.readme.io/reference/michael-jackson-biopic-2026-8k",
-	"https://michael-2026-fhd.readme.io/reference/watch-michael-2026-fhd-sub",
-	"https://michael-jackson-full-hd.readme.io/reference/michael-jaafar-jackson-full-hd",
-	"https://swapped-movie-korean.readme.io/reference/swapped-movie-korean-8k-free",
-	"https://swapped-korean-dub.readme.io/reference/watch-swapped-korean-dub-hd",
-	"https://swapped-2026-12k.readme.io/reference/swapped-2026-12k-stream-ok",
+    "https://zyo.se/mortal-kombat-2-filme-online",
+	"https://zyo.se/mortal-kombat-2-legendado",
+	"https://zyo.se/maldicao-da-mumia",
+	"https://zyo.se/maldicao-da-mumia-2026",
+	"https://zyo.se/michael-filme-online",
+	"https://zyo.se/michael-2026-film-completo",
+	"https://zyo.se/como-magica",
+	"https://zyo.se/como-magica-2026-filme",
+	"https://zyo.se/as-ovelhas-detetives",
+	"https://zyo.se/as-ovelhas-detetives-2026",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
