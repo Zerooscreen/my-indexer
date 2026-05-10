@@ -23,16 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://zyo.se/mortal-kombat-2-filme-online",
-	"https://zyo.se/mortal-kombat-2-legendado",
-	"https://zyo.se/maldicao-da-mumia",
-	"https://zyo.se/maldicao-da-mumia-2026",
-	"https://zyo.se/michael-filme-online",
-	"https://zyo.se/michael-2026-film-completo",
-	"https://zyo.se/como-magica",
-	"https://zyo.se/como-magica-2026-filme",
-	"https://zyo.se/as-ovelhas-detetives",
-	"https://zyo.se/as-ovelhas-detetives-2026",
+    "https://ticketme.io/en/account/95bkOCbXh",
+	"https://ticketme.io/en/account/mortalkombat2th",
+	"https://ticketme.io/en/account/mortalkombat2kr",
+	"https://ticketme.io/en/account/mortalkombat2",
+	"https://lee-cronin-thaisub.readme.io/reference/the-mummy",
+	"https://lee-cronins-the-mummy-thaidub.readme.io/reference/lee-cronins-uhd",
+	"https://the-mummy-2026-fhd.readme.io/reference/lee-cronins-fhd",
+	"https://mortal-kombat-2-thaihd.readme.io/reference/mortal-kombat-2",
+	"https://mk2-full-movie.readme.io/reference/mortal-kombat-2-thaisub",
+	"https://mortal-kombat-2-thaisub.readme.io/reference/mortal-kombat-2-2026",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
