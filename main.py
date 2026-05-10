@@ -23,16 +23,15 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/95bkOCbXh",
-	"https://ticketme.io/en/account/mortalkombat2th",
-	"https://ticketme.io/en/account/mortalkombat2kr",
-	"https://ticketme.io/en/account/mortalkombat2",
-	"https://lee-cronin-thaisub.readme.io/reference/the-mummy",
-	"https://lee-cronins-the-mummy-thaidub.readme.io/reference/lee-cronins-uhd",
-	"https://the-mummy-2026-fhd.readme.io/reference/lee-cronins-fhd",
-	"https://mortal-kombat-2-thaihd.readme.io/reference/mortal-kombat-2",
-	"https://mk2-full-movie.readme.io/reference/mortal-kombat-2-thaisub",
-	"https://mortal-kombat-2-thaisub.readme.io/reference/mortal-kombat-2-2026",
+    "https://khao-kala-thaisub.readme.io/reference/khao-kala",
+	"https://khao-kala-thaidub.readme.io/reference/khao-kala-fhd",
+	"https://khao-kala-fullstory.readme.io/reference/khao-kala",
+	"https://sheep-detectives.readme.io/reference/sheep-detectives-thaisub",
+	"https://the-sheep-detectives-thaisub.readme.io/reference/watch-the-sheep",
+	"https://the-sheep-detectives-thaidub.readme.io/reference/the-sheep-detectives",
+	"https://wukong-jazz-thaisub.readme.io/reference/wukong-jazz",
+	"https://wukong-jazz-thaidub.readme.io/reference/wukong-jazz-2026",
+	"https://wukong-jazz-thai-hd.readme.io/reference/wukong-jazz-fhd",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
