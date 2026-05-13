@@ -23,21 +23,18 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "http://cal.com/mortal-kombat-2-filme-completo-dublado",
-	"http://cal.com/mortal-kombat-2-online-gratis",
-	"http://cal.com/ver-mortal-kombat-2",
-	"http://cal.com/maldicao-da-mumia",
-	"http://cal.com/maldicao-da-mumia-online",
-	"http://cal.com/ver-maldicao-da-mumia",
-	"http://cal.com/assistir-as-ovelhas-detetives",
-	"http://cal.com/as-ovelhas-detetives-online",
-	"http://cal.com/ver-as-ovelhas-detetives",
-	"http://cal.com/assistir-michael-filme-completo",
-	"http://cal.com/michael-jackson-filme-online",
-	"http://cal.com/ver-filme-michael",
-	"http://cal.com/assistir-como-magica-filme",
-	"http://cal.com/como-magica-online",
-	"http://cal.com/ver-swapped-filme",
+    "http://cal.com/shades-the-series-ep-5",
+	"http://cal.com/shades-the-series-ep5",
+	"http://cal.com/hometown-romance-ep7",
+	"http://cal.com/hometown-romance-ep-7",
+	"http://cal.com/hometownromance-ep7",
+	"http://cal.com/girl-rules-ep10",
+	"http://cal.com/girl-rules-ep-10",
+	"http://cal.com/girlrulesep10",
+	"http://cal.com/girlrules-ep10",
+	"http://cal.com/broken-of-love-ep8",
+	"http://cal.com/broken-of-love-ep-8",
+	"http://cal.com/brokenoflove-ep-8",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
