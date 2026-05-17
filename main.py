@@ -23,26 +23,14 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://cal.com/michael-thaisub",
-	"https://cal.com/michael-fhd",
-	"https://cal.com/michael-thaidub",
-	"https://cal.com/michael-uhd",
-	"https://cal.com/3-good-guys",
-	"https://cal.com/3-good-guys-thaisub",
-	"https://cal.com/3-good-guys-thai",
-	"https://cal.com/possessed",
-	"https://cal.com/possessed-thaisub",
-	"https://cal.com/possessed-thaidub",
-	"https://cal.com/the-mandalorian-and-grogu",
-	"https://cal.com/mandalorian-and-grogu-thaisub",
-	"https://cal.com/mandalorian-and-grogu-fhd",
-	"https://cal.com/love-upon-a-time-ep-8",
-	"https://cal.com/love-upon-a-time-ep8",
-	"https://cal.com/loveuponatime-ep8",
-	"https://cal.com/love-teacher-ep10",
-	"https://cal.com/love-you-teacher-ep-10",
-	"https://cal.com/flowerboyep4",
-	"https://cal.com/flower-boy-ep-4",
+    "https://ticketme.io/en/account/Ghostfluencer",
+	"https://ticketme.io/en/account/Ghostfluenceruhd",
+	"https://ticketme.io/en/account/Ghostfluencerhd",
+	"https://ticketme.io/en/account/Michaelthaifhd",
+	"https://ticketme.io/en/account/Michaeluhd",
+	"https://ticketme.io/en/account/Michaelthaisub",
+	"https://ticketme.io/en/account/Possessed",
+	"https://ticketme.io/en/account/Possessed_thai",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
