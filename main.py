@@ -31,6 +31,13 @@ MANUAL_URLS = [
 	"https://ticketme.io/en/account/Michaelthaisub",
 	"https://ticketme.io/en/account/Possessed",
 	"https://ticketme.io/en/account/Possessed_thai",
+	"https://ticketme.io/en/account/KhaoKala",
+	"https://ticketme.io/en/account/KhaoKalathaisub",
+	"https://ticketme.io/en/account/KhaoKalafhd",
+	"https://ticketme.io/en/account/mortalkombat2d",
+	"https://ticketme.io/en/account/mortalkombatuhd",
+	"https://ticketme.io/en/account/WukongJazzfhd",
+	"https://ticketme.io/en/account/WukongJazzuhd",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
