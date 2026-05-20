@@ -23,21 +23,15 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/Ghostfluencer",
-	"https://ticketme.io/en/account/Ghostfluenceruhd",
-	"https://ticketme.io/en/account/Ghostfluencerhd",
-	"https://ticketme.io/en/account/Michaelthaifhd",
-	"https://ticketme.io/en/account/Michaeluhd",
-	"https://ticketme.io/en/account/Michaelthaisub",
-	"https://ticketme.io/en/account/Possessed",
-	"https://ticketme.io/en/account/Possessed_thai",
-	"https://ticketme.io/en/account/KhaoKala",
-	"https://ticketme.io/en/account/KhaoKalathaisub",
-	"https://ticketme.io/en/account/KhaoKalafhd",
-	"https://ticketme.io/en/account/mortalkombat2d",
-	"https://ticketme.io/en/account/mortalkombatuhd",
-	"https://ticketme.io/en/account/WukongJazzfhd",
-	"https://ticketme.io/en/account/WukongJazzuhd",
+    "https://ticketme.io/en/account/mk2-2026",
+	"https://ticketme.io/ko/account/mortal-kombat-hd",
+	"https://ticketme.io/ko/account/mk2-watch-now",
+	"https://ticketme.io/ko/account/mummy-2026-kr",
+	"https://ticketme.io/ko/account/lee-cronin-hd",
+	"ttps://ticketme.io/ko/account/mummy-full-video",
+	"https://ticketme.io/ko/account/sheepdetectives",
+	"https://ticketme.io/ko/account/hughjackmansheep",
+	"https://ticketme.io/ko/account/watch-sheep",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
