@@ -23,21 +23,18 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "http://cal.com/fulfill-series-ep5",
-	"http://cal.com/fulfill-series-ep-5",
-	"http://cal.com/fulfill-series-ep5-thai",
-	"http://cal.com/shades-ep6",
-	"http://cal.com/shades-ep6-thai",
-	"http://cal.com/shades-ep6-thai-uncut",
-	"http://cal.com/hometown-ep8",
-	"http://cal.com/hometown-ep-8",
-	"http://cal.com/hometown-ep8-uncut",
-	"http://cal.com/girl-rules-ep11",
-	"http://cal.com/girl-rules-ep-11",
-	"http://cal.com/girl-rules-ep11-uncut",
-	"http://cal.com/broken-love-ep8",
-	"http://cal.com/broken-love-ep-8",
-	"http://cal.com/broken-love-ep8-uncut",
+    "https://ticketme.io/en/account/fulfillseriesep5",
+	"https://ticketme.io/en/account/fulfillep5",
+	"https://ticketme.io/en/account/fulfill-ep6",
+	"https://ticketme.io/en/account/shades-ep6",
+	"https://ticketme.io/en/account/shadesep6",
+	"https://ticketme.io/en/account/shades-ep6-thai",
+	"https://ticketme.io/en/account/hometown-ep8",
+	"https://ticketme.io/en/account/hometown-ep-8",
+	"https://ticketme.io/en/account/hometown-ep8-end",
+	"https://ticketme.io/en/account/the-air-ep2",
+	"https://ticketme.io/en/account/the-air-ep-2",
+	"https://ticketme.io/en/account/theairep2-uncut",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
