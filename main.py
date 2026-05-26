@@ -23,16 +23,18 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/ai-girl-ep2",
-	"https://ticketme.io/en/account/aigirlep2-uncut",
-	"https://ticketme.io/en/account/enemiesep5",
-	"https://ticketme.io/en/account/enemies-ep5",
-	"https://ticketme.io/en/account/love-dreams-ep4",
-	"https://ticketme.io/en/account/lovedreamsep4",
-	"https://ticketme.io/en/account/girl-rules-ep11",
-	"https://ticketme.io/en/account/girlrulesep11",
-	"https://ticketme.io/en/account/broken-love-ep8",
-	"https://ticketme.io/en/account/brokenlove-ep8",
+    "https://ticketme.io/en/account/mummy-koreansub",
+	"https://ticketme.io/en/account/lee-cronin-hd-kr",
+	"https://ticketme.io/en/account/mummy-full-kr",
+	"https://ticketme.io/en/account/mk2-2026-kr",
+	"https://ticketme.io/en/account/MK2-korea",
+	"https://ticketme.io/en/account/mk2-watch-hd",
+	"https://ticketme.io/en/account/watch-sheep-kr",
+	"https://ticketme.io/en/account/sheepkr",
+	"https://ticketme.io/en/account/TheSheepkr",
+	"https://ticketme.io/en/account/mj-2026-kr",
+	"https://ticketme.io/en/account/MJ-movie-kr",
+	"https://ticketme.io/en/account/mj-2026-krsub",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
