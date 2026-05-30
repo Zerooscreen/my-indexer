@@ -23,18 +23,26 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/mummy-koreansub",
-	"https://ticketme.io/en/account/lee-cronin-hd-kr",
-	"https://ticketme.io/en/account/mummy-full-kr",
-	"https://ticketme.io/en/account/mk2-2026-kr",
-	"https://ticketme.io/en/account/MK2-korea",
-	"https://ticketme.io/en/account/mk2-watch-hd",
-	"https://ticketme.io/en/account/watch-sheep-kr",
-	"https://ticketme.io/en/account/sheepkr",
-	"https://ticketme.io/en/account/TheSheepkr",
-	"https://ticketme.io/en/account/mj-2026-kr",
-	"https://ticketme.io/en/account/MJ-movie-kr",
-	"https://ticketme.io/en/account/mj-2026-krsub",
+    "https://ticketme.io/en/account/EnemiesBenefits",
+	"https://ticketme.io/en/account/Enemiesep5",
+	"https://ticketme.io/en/account/LoveDreamsep4",
+	"https://ticketme.io/en/account/LoveDreamsglep4",
+	"https://ticketme.io/en/account/Fulfillep6",
+	"https://ticketme.io/en/account/Fulfillglep6",
+	"https://ticketme.io/en/account/Shadesglep6",
+	"https://ticketme.io/en/account/Shadesep6series",
+	"https://ticketme.io/en/account/Hometownep8",
+	"https://ticketme.io/en/account/Hometownglep8",
+	"https://ticketme.io/en/account/BrokenofLoveep8",
+	"https://ticketme.io/en/account/BrokenLoveep8",
+	"https://ticketme.io/en/account/Magicmoveep6",
+	"https://ticketme.io/en/account/magicmovesrep6",
+	"https://ticketme.io/en/account/lovesilomep7",
+	"https://ticketme.io/en/account/lovesilomblep7",
+	"https://ticketme.io/en/account/Loveupontimeep10",
+	"https://ticketme.io/en/account/Lovetimeep10",
+	"https://ticketme.io/en/account/flowerboyep6",
+	"https://ticketme.io/en/account/flowerboyblep6",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
