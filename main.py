@@ -23,26 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/EnemiesBenefits",
-	"https://ticketme.io/en/account/Enemiesep5",
-	"https://ticketme.io/en/account/LoveDreamsep4",
-	"https://ticketme.io/en/account/LoveDreamsglep4",
-	"https://ticketme.io/en/account/Fulfillep6",
-	"https://ticketme.io/en/account/Fulfillglep6",
-	"https://ticketme.io/en/account/Shadesglep6",
-	"https://ticketme.io/en/account/Shadesep6series",
-	"https://ticketme.io/en/account/Hometownep8",
-	"https://ticketme.io/en/account/Hometownglep8",
-	"https://ticketme.io/en/account/BrokenofLoveep8",
-	"https://ticketme.io/en/account/BrokenLoveep8",
-	"https://ticketme.io/en/account/Magicmoveep6",
-	"https://ticketme.io/en/account/magicmovesrep6",
-	"https://ticketme.io/en/account/lovesilomep7",
-	"https://ticketme.io/en/account/lovesilomblep7",
-	"https://ticketme.io/en/account/Loveupontimeep10",
-	"https://ticketme.io/en/account/Lovetimeep10",
-	"https://ticketme.io/en/account/flowerboyep6",
-	"https://ticketme.io/en/account/flowerboyblep6",
+    "https://ticketme.io/en/account/Ghostuhd",
+	"https://ticketme.io/en/account/Ghostfluencerfhd",
+	"https://ticketme.io/en/account/MJ-thai",
+	"https://ticketme.io/en/account/MJthaisub",
+	"https://ticketme.io/en/account/MK2thaisub",
+	"https://ticketme.io/en/account/MK2thaidub",
+	"https://ticketme.io/en/account/KhaoKalathaidub",
+	"https://ticketme.io/en/account/KhaoKalauhd",
+	"https://ticketme.io/en/account/mandaloriangrogu",
+	"https://ticketme.io/en/account/mandalorianfhd",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
