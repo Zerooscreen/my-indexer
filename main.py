@@ -23,16 +23,20 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/Ghostuhd",
-	"https://ticketme.io/en/account/Ghostfluencerfhd",
-	"https://ticketme.io/en/account/MJ-thai",
-	"https://ticketme.io/en/account/MJthaisub",
-	"https://ticketme.io/en/account/MK2thaisub",
-	"https://ticketme.io/en/account/MK2thaidub",
-	"https://ticketme.io/en/account/KhaoKalathaidub",
-	"https://ticketme.io/en/account/KhaoKalauhd",
-	"https://ticketme.io/en/account/mandaloriangrogu",
-	"https://ticketme.io/en/account/mandalorianfhd",
+    "https://ticketme.io/en/account/Croninthemummy",
+	"https://ticketme.io/en/account/Leecroninsthai",
+	"https://ticketme.io/en/account/Haunted4",
+	"https://ticketme.io/en/account/Universities4",
+	"https://ticketme.io/en/account/Mastersuniverse",
+	"https://ticketme.io/en/account/mastersunivthai",
+	"https://ticketme.io/en/account/Muniverse",
+	"https://ticketme.io/en/account/Colonythai",
+	"https://ticketme.io/en/account/colonythaidub",
+	"https://ticketme.io/en/account/colonymthai",
+	"https://ticketme.io/en/account/Kijsadat2026",
+	"https://ticketme.io/en/account/Kijsadafhd",
+	"https://ticketme.io/en/account/huntersmthai",
+	"https://ticketme.io/en/account/huntersmthaifhd",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
