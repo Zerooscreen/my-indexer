@@ -23,20 +23,19 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/Croninthemummy",
-	"https://ticketme.io/en/account/Leecroninsthai",
-	"https://ticketme.io/en/account/Haunted4",
-	"https://ticketme.io/en/account/Universities4",
-	"https://ticketme.io/en/account/Mastersuniverse",
-	"https://ticketme.io/en/account/mastersunivthai",
-	"https://ticketme.io/en/account/Muniverse",
-	"https://ticketme.io/en/account/Colonythai",
-	"https://ticketme.io/en/account/colonythaidub",
-	"https://ticketme.io/en/account/colonymthai",
-	"https://ticketme.io/en/account/Kijsadat2026",
-	"https://ticketme.io/en/account/Kijsadafhd",
-	"https://ticketme.io/en/account/huntersmthai",
-	"https://ticketme.io/en/account/huntersmthaifhd",
+    "https://ticketme.io/en/account/MagicmoveEp7",
+	"https://ticketme.io/en/account/MagicmoveblEp7",
+	"https://ticketme.io/en/account/MagicmoveEp7bl",
+	"https://ticketme.io/en/account/OrangesFallEp4",
+	"https://ticketme.io/en/account/OrangesFallblep4",
+	"https://ticketme.io/en/account/LatelywinterEp4",
+	"https://ticketme.io/en/account/LatelyEp4",
+	"https://ticketme.io/en/account/Adogplaneep2",
+	"https://ticketme.io/en/account/Adogplaneepsode2",
+	"https://ticketme.io/en/account/Loveofsilomep8",
+	"https://ticketme.io/en/account/Loveofsilomblep8",
+	"https://ticketme.io/en/account/Loveupontimeep11",
+	"https://ticketme.io/en/account/upontimeep11",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
