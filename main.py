@@ -19,7 +19,7 @@ XML_SITEMAP = "sitemap.xml"
 ROBOTS_FILE = "robots.txt"
 
 # --- DOMAIN VERIFIED GSC ---
-VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogspot.com"]
+VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "github.io", "blogspot.com"]
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
