@@ -23,19 +23,16 @@ VERIFIED_DOMAINS = ["readme.io", "webflow.io", "pages.dev", "github.io", "blogsp
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://ticketme.io/en/account/MagicmoveEp7",
-	"https://ticketme.io/en/account/MagicmoveblEp7",
-	"https://ticketme.io/en/account/MagicmoveEp7bl",
-	"https://ticketme.io/en/account/OrangesFallEp4",
-	"https://ticketme.io/en/account/OrangesFallblep4",
-	"https://ticketme.io/en/account/LatelywinterEp4",
-	"https://ticketme.io/en/account/LatelyEp4",
-	"https://ticketme.io/en/account/Adogplaneep2",
-	"https://ticketme.io/en/account/Adogplaneepsode2",
-	"https://ticketme.io/en/account/Loveofsilomep8",
-	"https://ticketme.io/en/account/Loveofsilomblep8",
-	"https://ticketme.io/en/account/Loveupontimeep11",
-	"https://ticketme.io/en/account/upontimeep11",
+    "https://scarymoviethaisub.mintlify.app/scary-movie",
+	"https://scarymoviethaisub.mintlify.app/scary-movie-6",
+	"https://disclosureday.mintlify.app/disclosure-day",
+	"https://disclosureday.mintlify.app/uhd",
+	"https://backrooms-thaisub.mintlify.app/fhd",
+	"https://backrooms-thaisub.mintlify.app/uhd",
+	"https://hokum-thaisub.mintlify.app/fhd",
+	"https://hokum-thaisub.mintlify.app/fullstory",
+	"https://mastersoftheuniversethaisub.mintlify.app/fhd",
+	"https://mastersoftheuniversethaisub.mintlify.app/thaisub",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
