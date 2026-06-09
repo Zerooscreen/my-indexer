@@ -23,16 +23,22 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "gith
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://scarymoviethaisub.mintlify.app/scary-movie",
-	"https://scarymoviethaisub.mintlify.app/scary-movie-6",
-	"https://disclosureday.mintlify.app/disclosure-day",
-	"https://disclosureday.mintlify.app/uhd",
-	"https://backrooms-thaisub.mintlify.app/fhd",
-	"https://backrooms-thaisub.mintlify.app/uhd",
-	"https://hokum-thaisub.mintlify.app/fhd",
-	"https://hokum-thaisub.mintlify.app/fullstory",
-	"https://mastersoftheuniversethaisub.mintlify.app/fhd",
-	"https://mastersoftheuniversethaisub.mintlify.app/thaisub",
+    "https://scarymoviethaisub.mintlify.app/full-hd",
+	"https://scarymoviethaisub.mintlify.app/2026",
+	"https://hokum-thaisub.mintlify.app/thai",
+	"https://hokum-thaisub.mintlify.app/thaidub",
+	"https://hokum-thaisub.mintlify.app/uhd-2026",
+	"https://hokum-thaisub.mintlify.app/legend-hunters",
+	"https://hokum-thaisub.mintlify.app/Haunted-4",
+	"https://hokum-thaisub.mintlify.app/haunted-universities-4-2026",
+	"https://mastersoftheuniversethaisub.mintlify.app/fullstory",
+	"https://mastersoftheuniversethaisub.mintlify.app/masters-universe",
+	"https://mastersoftheuniversethaisub.mintlify.app/possessed",
+	"https://mastersoftheuniversethaisub.mintlify.app/possessed-fhd",
+	"https://mastersoftheuniversethaisub.mintlify.app/khao-kala",
+	"https://mastersoftheuniversethaisub.mintlify.app/khao-kala-fhd",
+	"https://mastersoftheuniversethaisub.mintlify.app/the-mandalorian-and-grogu",
+	"https://mastersoftheuniversethaisub.mintlify.app/mandalorian-grogu",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
