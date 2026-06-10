@@ -23,22 +23,18 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "gith
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://scarymoviethaisub.mintlify.app/full-hd",
-	"https://scarymoviethaisub.mintlify.app/2026",
-	"https://hokum-thaisub.mintlify.app/thai",
-	"https://hokum-thaisub.mintlify.app/thaidub",
-	"https://hokum-thaisub.mintlify.app/uhd-2026",
-	"https://hokum-thaisub.mintlify.app/legend-hunters",
-	"https://hokum-thaisub.mintlify.app/Haunted-4",
-	"https://hokum-thaisub.mintlify.app/haunted-universities-4-2026",
-	"https://mastersoftheuniversethaisub.mintlify.app/fullstory",
-	"https://mastersoftheuniversethaisub.mintlify.app/masters-universe",
-	"https://mastersoftheuniversethaisub.mintlify.app/possessed",
-	"https://mastersoftheuniversethaisub.mintlify.app/possessed-fhd",
-	"https://mastersoftheuniversethaisub.mintlify.app/khao-kala",
-	"https://mastersoftheuniversethaisub.mintlify.app/khao-kala-fhd",
-	"https://mastersoftheuniversethaisub.mintlify.app/the-mandalorian-and-grogu",
-	"https://mastersoftheuniversethaisub.mintlify.app/mandalorian-grogu",
+    "https://thaimovie.mintlify.app/kijsada-paradise",
+	"https://thaimovie.mintlify.app/uhd",
+	"https://thaimovie.mintlify.app/colony-thaisub",
+	"https://thaimovie.mintlify.app/colony-fhd",
+	"https://thaimovie.mintlify.app/wukong-jazz",
+	"https://thaimovie.mintlify.app/wukong-thaisub",
+	"https://thseries.mintlify.app/chermchey-ep5",
+	"https://thseries.mintlify.app/chermchey-ep-5",
+	"https://thseries.mintlify.app/magicmove-ep8",
+	"https://thseries.mintlify.app/magic-move-bl-ep8",
+	"https://thseries.mintlify.app/when-oranges-fall-ep5",
+	"https://thseries.mintlify.app/whenorangesfallep5",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
