@@ -23,18 +23,17 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "gith
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://thaimovie.mintlify.app/kijsada-paradise",
-	"https://thaimovie.mintlify.app/uhd",
-	"https://thaimovie.mintlify.app/colony-thaisub",
-	"https://thaimovie.mintlify.app/colony-fhd",
-	"https://thaimovie.mintlify.app/wukong-jazz",
-	"https://thaimovie.mintlify.app/wukong-thaisub",
-	"https://thseries.mintlify.app/chermchey-ep5",
-	"https://thseries.mintlify.app/chermchey-ep-5",
-	"https://thseries.mintlify.app/magicmove-ep8",
-	"https://thseries.mintlify.app/magic-move-bl-ep8",
-	"https://thseries.mintlify.app/when-oranges-fall-ep5",
-	"https://thseries.mintlify.app/whenorangesfallep5",
+    "https://thseries.mintlify.app/lately-Its-winter-ep5",
+	"https://thseries.mintlify.app/lately-Its-winter-ep-5",
+	"https://thseries.mintlify.app/dog-and-plane-ep3",
+	"https://thseries.mintlify.app/a-dog-and-plane-ep3",
+	"https://thseries.mintlify.app/loveupontime-ep12",
+	"https://thseries.mintlify.app/loveupontimeep12",
+	"https://thseries.mintlify.app/love-of-silom-ep9",
+	"https://thaiglseries.mintlify.app/ticket-to-heaven-ep3",
+	"https://thaiglseries.mintlify.app/ticket-to-heaven-the-series-ep3",
+	"https://thaiglseries.mintlify.app/Flower-Boy-ep8",
+	"https://thaiglseries.mintlify.app/flowerboyep8",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
