@@ -23,17 +23,14 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "gith
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://thseries.mintlify.app/lately-Its-winter-ep5",
-	"https://thseries.mintlify.app/lately-Its-winter-ep-5",
-	"https://thseries.mintlify.app/dog-and-plane-ep3",
-	"https://thseries.mintlify.app/a-dog-and-plane-ep3",
-	"https://thseries.mintlify.app/loveupontime-ep12",
-	"https://thseries.mintlify.app/loveupontimeep12",
-	"https://thseries.mintlify.app/love-of-silom-ep9",
-	"https://thaiglseries.mintlify.app/ticket-to-heaven-ep3",
-	"https://thaiglseries.mintlify.app/ticket-to-heaven-the-series-ep3",
-	"https://thaiglseries.mintlify.app/Flower-Boy-ep8",
-	"https://thaiglseries.mintlify.app/flowerboyep8",
+    "https://thaiblseries.mintlify.app/your-dear-daddy-ep6",
+	"https://thaiblseries.mintlify.app/dear-daddy-ep6",
+	"https://thaiblseries.mintlify.app/one-year-ep8-uncut",
+	"https://thaiblseries.mintlify.app/one-year-series-ep8",
+	"https://thaiblseries.mintlify.app/wu-ep7",
+	"https://thaiblseries.mintlify.app/wu-ep-7-uncut",
+	"https://thaiglseries.mintlify.app/Chasing-love-series-ep4",
+	"https://thaiglseries.mintlify.app/chasinglove-ep4",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
