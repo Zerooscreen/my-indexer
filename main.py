@@ -23,14 +23,16 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "gith
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://thaiblseries.mintlify.app/your-dear-daddy-ep6",
-	"https://thaiblseries.mintlify.app/dear-daddy-ep6",
-	"https://thaiblseries.mintlify.app/one-year-ep8-uncut",
-	"https://thaiblseries.mintlify.app/one-year-series-ep8",
-	"https://thaiblseries.mintlify.app/wu-ep7",
-	"https://thaiblseries.mintlify.app/wu-ep-7-uncut",
-	"https://thaiglseries.mintlify.app/Chasing-love-series-ep4",
-	"https://thaiglseries.mintlify.app/chasinglove-ep4",
+    "https://thaiglseries.mintlify.app/enemies-with-benefits-ep8",
+	"https://thaiglseries.mintlify.app/enemies-benefits-ep8",
+	"https://thaiglseries.mintlify.app/Love-beyond-dreams-ep7",
+	"https://thaiglseries.mintlify.app/beyond-dreams-ep7",
+	"https://thaiglseries.mintlify.app/the-air-ep6",
+	"https://thaiglseries.mintlify.app/the-air-ep-6-uncut",
+	"https://thaiblseries.mintlify.app/payback-4",
+	"https://thaiblseries.mintlify.app/ep-4-payback-uncut",
+	"https://thaiblseries.mintlify.app/crazy-love-moo-ep7",
+	"https://thaiblseries.mintlify.app/love-moo-ep-7",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
