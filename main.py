@@ -23,16 +23,24 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "gith
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://thaiglseries.mintlify.app/enemies-with-benefits-ep8",
-	"https://thaiglseries.mintlify.app/enemies-benefits-ep8",
-	"https://thaiglseries.mintlify.app/Love-beyond-dreams-ep7",
-	"https://thaiglseries.mintlify.app/beyond-dreams-ep7",
-	"https://thaiglseries.mintlify.app/the-air-ep6",
-	"https://thaiglseries.mintlify.app/the-air-ep-6-uncut",
-	"https://thaiblseries.mintlify.app/payback-4",
-	"https://thaiblseries.mintlify.app/ep-4-payback-uncut",
-	"https://thaiblseries.mintlify.app/crazy-love-moo-ep7",
-	"https://thaiblseries.mintlify.app/love-moo-ep-7",
+    "https://moviekorensub.mintlify.app/mandalorian-grogu-korean",
+	"https://moviekorensub.mintlify.app/mandalorian-grogu-4k",
+	"https://moviekorensub.mintlify.app/mandalorian-grogu-full-hd",
+	"https://moviekorensub.mintlify.app/colony-korean",
+	"https://moviekorensub.mintlify.app/colony-4k",
+	"https://moviekorensub.mintlify.app/colony-full-hd",
+	"https://moviekorensub.mintlify.app/masters-universe-kr",
+	"https://moviekorensub.mintlify.app/masters-universe-4k",
+	"https://moviekorensub.mintlify.app/masters-universe-full-hd",
+	"https://koreanmovie.mintlify.app/scary-movie-korean",
+	"https://koreanmovie.mintlify.app/scary-movie-kr",
+	"https://koreanmovie.mintlify.app/scary-movie-full-hd",
+	"https://koreanmovie.mintlify.app/backrooms-korean",
+	"https://koreanmovie.mintlify.app/backrooms-4k-uhd",
+	"https://koreanmovie.mintlify.app/backrooms-full-hd",
+	"https://koreanmovie.mintlify.app/Supergirl-korean",
+	"https://koreanmovie.mintlify.app/supergirl-4k",
+	"https://koreanmovie.mintlify.app/supergirlkoreansub",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
