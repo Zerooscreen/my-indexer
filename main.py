@@ -19,28 +19,23 @@ XML_SITEMAP = "sitemap.xml"
 ROBOTS_FILE = "robots.txt"
 
 # --- DOMAIN VERIFIED GSC ---
-VERIFIED_DOMAINS = ["readme.io","mintlify.app", "webflow.io", "pages.dev", "github.io", "blogspot.com"]
+VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev", "github.io", "blogspot.com","pinterest.com"]
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://moviekorensub.mintlify.app/mandalorian-grogu-korean",
-	"https://moviekorensub.mintlify.app/mandalorian-grogu-4k",
-	"https://moviekorensub.mintlify.app/mandalorian-grogu-full-hd",
-	"https://moviekorensub.mintlify.app/colony-korean",
-	"https://moviekorensub.mintlify.app/colony-4k",
-	"https://moviekorensub.mintlify.app/colony-full-hd",
-	"https://moviekorensub.mintlify.app/masters-universe-kr",
-	"https://moviekorensub.mintlify.app/masters-universe-4k",
-	"https://moviekorensub.mintlify.app/masters-universe-full-hd",
+    "https://koreanmovie.mintlify.app/Supergirl-korean",
+	"https://koreanmovie.mintlify.app/supergirl-4k",
+	"https://koreanmovie.mintlify.app/supergirlkoreansub",
 	"https://koreanmovie.mintlify.app/scary-movie-korean",
 	"https://koreanmovie.mintlify.app/scary-movie-kr",
 	"https://koreanmovie.mintlify.app/scary-movie-full-hd",
-	"https://koreanmovie.mintlify.app/backrooms-korean",
-	"https://koreanmovie.mintlify.app/backrooms-4k-uhd",
-	"https://koreanmovie.mintlify.app/backrooms-full-hd",
-	"https://koreanmovie.mintlify.app/Supergirl-korean",
-	"https://koreanmovie.mintlify.app/supergirl-4k",
-	"https://koreanmovie.mintlify.app/supergirlkoreansub",
+	"https://cutenailideasdaily.blogspot.com/2026/06/10-cute-pink-nail-designs.html",
+	"https://cutenailideasdaily.blogspot.com/2026/06/10-cute-french-tip-nail-designs.html",
+	"https://cutenailideasdaily.blogspot.com/2026/06/10-elegant-acrylic-nail-designs.html",
+	"https://www.pinterest.com/cutenailideasdaily",
+	"https://id.pinterest.com/pin/1112178070505521047",
+	"https://www.pinterest.com/pin/1112178070505521522",
+	"https://www.pinterest.com/pin/1112178070505521626",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
