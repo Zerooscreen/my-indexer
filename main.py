@@ -31,8 +31,6 @@ MANUAL_URLS = [
 	"https://cozy-aesthetics-hub.lovable.app/",
 	"https://kfashion-trends-2026.lovable.app/",
 	"https://japanese-fashion-trends.lovable.app/",
-	"https://shared.archbee.space/public/PREVIEW-UPOafIHo2H-1owvJcLZ-B",
-	"https://app.notion.com/p/WU-EP-8-WU-The-Series-8-UNCUT-HD-20-38352000b620807d8ebfe096ca3ff5ce",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
