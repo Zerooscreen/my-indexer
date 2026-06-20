@@ -19,23 +19,20 @@ XML_SITEMAP = "sitemap.xml"
 ROBOTS_FILE = "robots.txt"
 
 # --- DOMAIN VERIFIED GSC ---
-VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev", "github.io", "blogspot.com","pinterest.com"]
+VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev","shared.archbee.space","app.notion.com", "github.io", "lovable.app", "vercel.app","blogspot.com","pinterest.com"]
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://koreanmovie.mintlify.app/Supergirl-korean",
-	"https://koreanmovie.mintlify.app/supergirl-4k",
-	"https://koreanmovie.mintlify.app/supergirlkoreansub",
-	"https://koreanmovie.mintlify.app/scary-movie-korean",
-	"https://koreanmovie.mintlify.app/scary-movie-kr",
-	"https://koreanmovie.mintlify.app/scary-movie-full-hd",
-	"https://cutenailideasdaily.blogspot.com/2026/06/10-cute-pink-nail-designs.html",
-	"https://cutenailideasdaily.blogspot.com/2026/06/10-cute-french-tip-nail-designs.html",
-	"https://cutenailideasdaily.blogspot.com/2026/06/10-elegant-acrylic-nail-designs.html",
-	"https://www.pinterest.com/cutenailideasdaily",
-	"https://id.pinterest.com/pin/1112178070505521047",
-	"https://www.pinterest.com/pin/1112178070505521522",
-	"https://www.pinterest.com/pin/1112178070505521626",
+    "https://pretty-nail-ideas.lovable.app/",
+	"https://cute-nail-designs.vercel.app/",
+	"https://skinbloomdiary.lovable.app/",
+	"https://glow-guide-truth.lovable.app/",
+	"https://style-verse-daily.lovable.app/",
+	"https://cozy-aesthetics-hub.lovable.app/",
+	"https://kfashion-trends-2026.lovable.app/",
+	"https://japanese-fashion-trends.lovable.app/",
+	"https://shared.archbee.space/public/PREVIEW-UPOafIHo2H-1owvJcLZ-B",
+	"https://app.notion.com/p/WU-EP-8-WU-The-Series-8-UNCUT-HD-20-38352000b620807d8ebfe096ca3ff5ce",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
