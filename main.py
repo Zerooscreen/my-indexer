@@ -23,14 +23,26 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev","shared
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://pretty-nail-ideas.lovable.app/",
-	"https://cute-nail-designs.vercel.app/",
-	"https://skinbloomdiary.lovable.app/",
-	"https://glow-guide-truth.lovable.app/",
-	"https://style-verse-daily.lovable.app/",
-	"https://cozy-aesthetics-hub.lovable.app/",
-	"https://kfashion-trends-2026.lovable.app/",
-	"https://japanese-fashion-trends.lovable.app/",
+    "https://cal.com/dogplaneep4",
+	"https://cal.com/a-dog-plane-ep4",
+	"https://cal.com/the-edge-of-horizon-ep1",
+	"https://cal.com/the-edge-of-horizon-series-ep-1",
+	"https://cal.com/lost-to-light-series-ep-1",
+	"https://cal.com/lost-to-light-ep-1",
+	"https://cal.com/crazy-love-moo-moo-ep7",
+	"https://cal.com/crazy-love-moo-moo-series-ep7",
+	"https://cal.com/payback-series-ep4",
+	"https://cal.com/payback-ep4",
+	"https://adogplane4.mintlify.app/a-dog-plane-ep4",
+	"https://adogandaplaneep4.mintlify.app/a-dog-and-a-plane-ep4",
+	"https://theedgeofhorizonep1.mintlify.app/the-edge-of-horozon-ep1",
+	"https://theedgeofhorizonseriesep1.mintlify.app/the-edge-of-horizon-ep-1-uncut-hd",
+	"https://losttolightseriesep1.mintlify.app/lost-to-light-ep1",
+	"https://losttolightep1-f5e626c4.mintlify.app/lost-light-ep1",
+	"https://crazy-love-moo-moo-ep7.mintlify.app/crazy-love-moo-moo-ep7",
+	"https://crazy-love-moo-moo-series-ep7.mintlify.app/crazy-love-moo-moo-series-ep7",
+	"https://payback-series-ep4.mintlify.app/payback-series-ep4",
+	"https://payback-ep4.mintlify.app/payback-ep4",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
