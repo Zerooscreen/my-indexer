@@ -25,7 +25,7 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev","shared
 MANUAL_URLS = [
     "https://hairbloom-studio.lovable.app/",
 	"https://glowguide-truth.lovable.app/",
-	"https://calculators-converters.lovable.app/"<
+	"https://calculators-converters.lovable.app/",
 	"https://convertifytools.lovable.app/",
 	"https://easyimageconvert.lovable.app/",
 	"https://free-pdf-zone.lovable.app/",
