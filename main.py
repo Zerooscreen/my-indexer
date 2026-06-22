@@ -25,6 +25,17 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev","shared
 MANUAL_URLS = [
     "https://hairbloom-studio.lovable.app/",
 	"https://glowguide-truth.lovable.app/",
+	"https://calculators-converters.lovable.app/"<
+	"https://convertifytools.lovable.app/",
+	"https://easyimageconvert.lovable.app/",
+	"https://free-pdf-zone.lovable.app/",
+	"https://caption-ai-hub.lovable.app/",
+	"https://quick-caption-ai-hub.lovable.app/",
+	"https://thai-caption-ai.lovable.app/",
+	"https://thai-pdf-hub.lovable.app/",
+	"https://thai-image-converter.lovable.app/",
+	"https://thai-audio-fast.lovable.app/",
+	"https://thai-vid-convert.lovable.app/",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
