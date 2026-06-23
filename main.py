@@ -23,19 +23,17 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev","shared
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://hairbloom-studio.lovable.app/",
-	"https://glowguide-truth.lovable.app/",
-	"https://calculators-converters.lovable.app/",
-	"https://convertifytools.lovable.app/",
-	"https://easyimageconvert.lovable.app/",
-	"https://free-pdf-zone.lovable.app/",
-	"https://caption-ai-hub.lovable.app/",
-	"https://quick-caption-ai-hub.lovable.app/",
-	"https://thai-caption-ai.lovable.app/",
-	"https://thai-pdf-hub.lovable.app/",
-	"https://thai-image-converter.lovable.app/",
-	"https://thai-audio-fast.lovable.app/",
-	"https://thai-vid-convert.lovable.app/",
+    "https://magic-move-ep10.lovable.app/",
+	"https://magic-move-series-ep10.lovable.app/",
+	"https://chermchey-series-ep7.lovable.app/",
+	"https://thai-supergirl.lovable.app/",
+	"https://supergirl-thaisub.lovable.app/",
+	"https://toy-story-thai.lovable.app/",
+	"https://toy-story-5-thaisub.lovable.app/",
+	"https://supergirl-korean-premiere.lovable.app/",
+	"https://supergirl-koreasub.lovable.app/",
+	"https://toy-story-5-korea.lovable.app/",
+	"https://toystory5-korean-sub.lovable.app/",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
