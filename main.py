@@ -85,8 +85,20 @@ def generate_html_sitemap(urls):
     with open(HTML_SITEMAP, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-def generate_xml_sitemap():
-    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>{HUB_URL}</loc><lastmod>{datetime.now().strftime("%Y-%m-%d")}</lastmod><priority>1.0</priority></url>\n</urlset>'
+def generate_xml_sitemap(urls):
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+
+    for url in urls:
+        xml += f"""
+  <url>
+    <loc>{url}</loc>
+    <lastmod>{datetime.now().strftime('%Y-%m-%d')}</lastmod>
+    <priority>0.8</priority>
+  </url>"""
+
+    xml += "\n</urlset>"
+
     with open(XML_SITEMAP, "w", encoding="utf-8") as f:
         f.write(xml)
 
@@ -110,7 +122,7 @@ def run_indexer():
     all_urls = set(MANUAL_URLS).union(indexed)
     
     generate_html_sitemap(all_urls)
-    generate_xml_sitemap()
+    generate_xml_sitemap(all_urls)
     generate_robots_txt()
     
     new_urls = [u for u in MANUAL_URLS if u not in indexed]
