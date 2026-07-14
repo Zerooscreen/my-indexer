@@ -23,24 +23,20 @@ VERIFIED_DOMAINS = ["readme.io","mintlify.app","webflow.io", "pages.dev","shared
 
 # --- DAFTAR URL FILM ---
 MANUAL_URLS = [
-    "https://love-destiny-ep-1-5d956791.mintlify.app/ep1",
-	"https://knot-ep-3-cd182e35.mintlify.app/ep-3",
-	"https://cherm-chey-series-ep10.mintlify.app/ep10",
-	"https://when-oranges-fall-ep10-8de5b591.mintlify.app/ep10",
-	"https://spiderman-brand-new-day-thaisub.mintlify.app/thaisub",
-	"https://spiderman-brand-new-day-thaidub.mintlify.app/thaidub",
-	"https://wrecked.mintlify.app/fullstory",
-	"https://wrecked-thaisub.mintlify.app/thaisub",
-	"https://pinocchio-unstrung-thaisub.mintlify.app/thaisub",
-	"https://pinocchio-unstrung-thaidub.mintlify.app/pinocchio",
-	"https://kill-bill-thaisub.mintlify.app/kill-bill",
-	"https://kill-bill-thaidub.mintlify.app/kill-bill",
-	"https://behind-the-screens-thaisub.mintlify.app/fullstory",
-	"https://behind-the-screens-thaidub.mintlify.app/thaidub",
-	"https://cold-war-1994-thaisub.mintlify.app/thaisub",
-	"https://cold-war-1994-thaidub.mintlify.app/thaidub",
-	"https://supergirl-2026-thaisub.mintlify.app/supergirl",
-	"https://moana-2026-thaisub.mintlify.app/moana",
+    "https://spiderman-brand-new-day-subindo.mintlify.app/subindo",
+	"https://spiderman-brand-new-day-hd-subindo.mintlify.app/spiderman",
+	"https://spiderman-brand-new-day-2026-subindo.mintlify.app/sub-indo",
+	"ttps://supergirl-subindo.mintlify.app/supergirl",
+	"https://supergirl-2026-subindo.mintlify.app/supergirl",
+	"https://supergirl-2026-indosub.mintlify.app/supergirl",
+	"https://moana-live-action-subindo.mintlify.app/moana-live-action",
+	"https://moana-2026-subindo.mintlify.app/moana-2026",
+	"https://moana-live-action-2026-subindo.mintlify.app/moana-live-action",
+	"https://toy-story-5-thaihd.mintlify.app/thaisub",
+	"https://scary-movie-6-thaisub.mintlify.app/scary-movie-6",
+	"https://Backrooms-thaisub-2026.mintlify.app/backrooms",
+	"https://haunted-universities-4-thaimovie-2026.mintlify.app/thaisub",
+	"https://Possessed-2026-thaisub.mintlify.app/thaisub",
 ]
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
