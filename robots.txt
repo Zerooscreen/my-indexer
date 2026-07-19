@@ -1,34 +1,4 @@
 User-agent: *
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: Googlebot-Image
-Allow: /
-
-User-agent: Googlebot-Mobile
-Allow: /
-
-User-agent: Googlebot-Video
-Allow: /
-
-User-agent: AdsBot-Google
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Yandex
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
 Sitemap: https://zerooscreen.github.io/my-indexer/sitemap.xml
