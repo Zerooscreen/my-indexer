@@ -2,12 +2,14 @@ name: Google Indexing Bot
 on:
   push:
     branches: [ main ]
+  schedule:
+    - cron: '0 0 * * *' # Jalan otomatis setiap jam 12 malam
   workflow_dispatch:
 jobs:
   indexing:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # IZIN WAJIB
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -15,16 +17,16 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.9'
-      - name: Libs
-        run: pip install requests google-auth tqdm google-api-python-client
-      - name: Run
+      - name: Install Libs
+        run: pip install requests google-auth tqdm google-api-python-client google-auth-httplib2 google-auth-oauthlib
+      - name: Run Indexer
         env:
           INDEXER_CONFIG: ${{ secrets.INDEXER_CONFIG }}
         run: python main.py
-      - name: Save
+      - name: Save Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Update DB, HTML, XML, and Robots [skip ci]" || exit 0
-          git push
+          git commit -m "Update Indexer DB and Sitemaps [skip ci]" || exit 0
+          git push origin main
