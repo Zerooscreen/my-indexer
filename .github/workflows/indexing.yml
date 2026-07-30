@@ -2,12 +2,12 @@ name: Google Indexing Bot
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
+  workflow_dispatch: # Supaya bisa dijalankan manual
 jobs:
   indexing:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # IZIN WAJIB UNTUK PUSH
+      contents: write # Izin untuk menyimpan perubahan ke file indexed_urls.txt
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -18,18 +18,18 @@ jobs:
           python-version: '3.9'
 
       - name: Install Libs
-        run: |
-          pip install requests google-auth tqdm google-api-python-client google-auth-httplib2 google-auth-oauthlib
+        run: pip install requests google-auth tqdm google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
       - name: Run Indexer
         env:
           INDEXER_CONFIG: ${{ secrets.INDEXER_CONFIG }}
         run: python main.py
 
-      - name: Save Changes
+      - name: Save and Push Changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Update DB and Sitemaps [skip ci]" || exit 0
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update DB and Sitemaps [skip ci]"
+          git pull --rebase origin main
           git push origin main
