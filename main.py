@@ -1,10 +1,8 @@
 import requests
 from google.oauth2 import service_account
-from google.auth.transport.requests import Request
 import json
 import os
 import logging
-import sys
 import time
 from tqdm import tqdm
 from datetime import datetime
@@ -18,20 +16,50 @@ HTML_SITEMAP = "index.html"
 XML_SITEMAP = "sitemap.xml" 
 ROBOTS_FILE = "robots.txt"
 
-# --- DOMAIN VERIFIED GSC (SUDAH DITAMBAHKAN RAILWAY) ---
-VERIFIED_DOMAINS = ["railway.app", "readme.io", "lovable.app", "github.io", "vercel.app", "blogspot.com"]
+# --- DOMAIN VERIFIED GSC (Sangat Penting: Masukkan railway.app) ---
+VERIFIED_DOMAINS = ["railway.app", "github.io", "mintlify.app","lovable.app", "vercel.app", "blogspot.com"]
 
-# --- DAFTAR URL FILM (TAMBAHKAN SITUS BARU ANDA DI SINI) ---
+# --- DAFTAR URL SITUS ANDA (Update di sini jika ada film baru) ---
 MANUAL_URLS = [
-    "https://hallyuflix.up.railway.app/",
-    "https://odyssey-2026-koreansub.up.railway.app/",
-    "https://odyssey-2026-koreansub.up.railway.app/movie/1368337-odyssey-2026-koreansub",
-    "https://spiderman-2026-korean.up.railway.app/",
-    "https://spiderman-2026-korean.up.railway.app/movie/969681-spider-man-brand-new-day-korean/",
     "https://toy-story-5-deutsch.up.railway.app/",
-    "https://evil-dead-burn-deutsch.up.railway.app/",
-    "https://evil-dead-burn-koreansub.up.railway.app/",
+	"https://toy-story-5-deutsch.up.railway.app/movie/1084244-toy-story-5-ganzer-film/",
+	"https://evil-dead-burn-deutsch.up.railway.app/",
+	"https://evil-dead-burn-deutsch.up.railway.app/movie/1212763-evil-dead-burn-ganzer-film/",
+	"https://spiderman-4-stream-deutsch.up.railway.app/",
+	"https://spiderman-4-stream-deutsch.up.railway.app/movie/969681-spider-man-brand-new-day-2026-ganzer-film-deutsch-stream/",
+	"https://spiderman-2026-stream-deutsch.up.railway.app/",
+	"https://spiderman-2026-stream-deutsch.up.railway.app/movie/969681-spider-man-brand-new-day-2026-ganzer-film/",
+	"https://supergirl-stream-deutsch.up.railway.app/",
+	"https://supergirl-stream-deutsch.up.railway.app/movie/1081003-supergirl-stream-deutsch/",
+	"https://moana-stream-deutsch.up.railway.app/",
+	"https://moana-stream-deutsch.up.railway.app/movie/1108427-moana-stream-deutsch/",
+	"https://siamreel.up.railway.app/",
+	"https://toy-story-5-deutsch.up.railway/",
+	"https://evil-dead-burn-koreansub.up.railway.app/",
+	"https://evil-dead-burn-koreansub.up.railway.app/movie/1212763-evil-dead-burn-koreansub/",
+	"https://spiderman-2026-korean.up.railway.app/",
+	"https://spiderman-2026-korean.up.railway.app/movie/969681-spider-man-brand-new-day-korean/",
+	"https://odyssey-2026-koreansub.up.railway.app/",
+	"https://odyssey-2026-koreansub.up.railway.app/movie/1368337-odyssey-2026-koreansub/",
+	"https://spider-man-brand-new-day-thaisub.up.railway.app/",
+	"https://evil-dead-burn-thaisub.up.railway.app/",
+	"https://evil-dead-burn-thaisub.up.railway.app/movie/1212763-evil-dead-burn/",
+	"https://sos-save-ou-rstudents.up.railway.app/",
+	"https://sos-save-ou-rstudents.up.railway.app/movie/1714910-sos-save-our-students/",
+	"https://spiderman-4-thaisub.up.railway.app/",
+	"https://spiderman-4-thaisub.up.railway.app/movie/969681-spider-man-brand-new-day-thaisub/",
+	"https://evil-dead-burn-sub-indo.up.railway.app/",
+	"https://evil-dead-burn-sub-indo.up.railway.app/movie/1212763-evil-dead-burn/",
+	"https://spiderman-2026-subindo-production.up.railway.app/",
+	"https://spiderman-2026-subindo-production.up.railway.app/movie/969681-spider-man-brand-new-day/",
+	"https://odyssey-2026-koreansub.lovable.app/",
+	"https://odyssey-2026-koreansub.lovable.app/movie/1368337-odyssey-2026-koreansub/",
+	"https://cinebox.up.railway.app/",
+	"https://cinebox-th.up.railway.app/",
+	"https://cinebox-de.up.railway.app/",
+	"https://hallyuflix.up.railway.app/",
 ]
+
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
 
 def generate_robots_txt():
@@ -41,29 +69,20 @@ def generate_robots_txt():
 
 def generate_html_sitemap(urls):
     meta_verif = '<meta name="google-site-verification" content="jkO82p0n2lmtm7R_TubD9cyAVSxfwpILpgn6zjD-Pvk" />'
-    style = """<style>:root { --p: #1a73e8; --a: #d93025; --b: #f8f9fa; } body { font-family: sans-serif; background: var(--b); margin: 0; padding: 20px; color: #333; } .con { max-width: 900px; margin: auto; } .hero { background: white; padding: 30px; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: center; margin-bottom: 20px; } .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; } .card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: relative; border: 1px solid #eee; } .card:hover { border-color: var(--p); transform: translateY(-3px); transition: 0.2s; } .card-t { font-weight: bold; color: var(--p); text-decoration: none; display: block; margin-bottom: 5px; } .badge { background: var(--a); color: white; font-size: 10px; padding: 2px 6px; border-radius: 4px; float: right; }</style>"""
-    schema_items = []
-    list_cards = ""
-    for url in sorted(list(urls), reverse=True):
-        if "github.io" in url: continue
-        slug = url.rstrip('/').split('/')[-1].replace('-', ' ').replace('_', ' ').title()
-        if not slug or len(slug) < 3: slug = "Home Page"
-        list_cards += f'<div class="card"><span class="badge">HD</span><a class="card-t" href="{url}" target="_blank">{slug}</a><small style="color:#999">Global Series Update</small></div>\n'
-        schema_items.append({"@type": "ListItem", "position": len(schema_items)+1, "url": url, "name": slug})
-    schema_json = json.dumps({"@context": "https://schema.org", "@type": "ItemList", "itemListElement": schema_items})
-    html_content = f"""<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8">{meta_verif}<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>K-Movie Indexer Hub</title>{style}<script type="application/ld+json">{schema_json}</script></head><body><div class="con"><div class="hero"><h1>🎬 Movie Update Hub</h1><p>Premium reference for Korean & International Series.</p></div><div class="grid">{list_cards}</div><div style="text-align:center;margin-top:30px;color:#999"><small>Last Sync: {datetime.now().strftime('%Y-%m-%d')}</small></div></div></body></html>"""
-    with open(HTML_SITEMAP, "w", encoding="utf-8") as f: f.write(html_content)
+    style = "<style>:root { --p: #1a73e8; --a: #d93025; --b: #f8f9fa; } body { font-family: sans-serif; background: var(--b); padding: 20px; } .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; } .card { background: white; padding: 15px; border-radius: 12px; border: 1px solid #eee; text-align: center; } a { color: var(--p); text-decoration: none; font-weight: bold; }</style>"
+    list_cards = "".join([f'<div class="card"><a href="{u}" target="_blank">{u.split("/")[-1] or "Home"}</a></div>' for u in urls if "github.io" not in u])
+    html = f"<!DOCTYPE html><html lang='ko'><head><meta charset='UTF-8'>{meta_verif}<title>Movie Hub</title>{style}</head><body><h1>🎬 Movie Indexer</h1><div class='grid'>{list_cards}</div></body></html>"
+    with open(HTML_SITEMAP, "w", encoding="utf-8") as f: f.write(html)
 
 def generate_xml_sitemap(urls):
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    for url in urls:
-        xml += f"  <url>\n    <loc>{url}</loc>\n    <lastmod>{datetime.now().strftime('%Y-%m-%d')}</lastmod>\n    <priority>0.8</priority>\n  </url>\n"
+    for url in urls: xml += f"  <url><loc>{url}</loc><lastmod>{datetime.now().strftime('%Y-%m-%d')}</lastmod></url>\n"
     xml += "</urlset>"
     with open(XML_SITEMAP, "w", encoding="utf-8") as f: f.write(xml)
 
 def send_to_google(urls):
     try:
-        # Mengambil JSON dari environment variable
+        # Load kunci JSON dari Secret GitHub
         info = json.loads(os.environ['INDEXER_CONFIG'])
         creds = service_account.Credentials.from_service_account_info(info, scopes=["https://www.googleapis.com/auth/indexing"])
         from googleapiclient.discovery import build
@@ -73,28 +92,24 @@ def send_to_google(urls):
                 service.urlNotifications().publish(body={"url": url, "type": "URL_UPDATED"}).execute()
                 with open(DB_FILE, "a") as f: f.write(url + "\n")
                 time.sleep(1)
-            except Exception as e: 
-                logger.error(f"Gagal mengirim {url}: {e}")
-                continue
+            except: continue
     except Exception as e: logger.error(f"API Error: {e}")
 
 def run_indexer():
     if not os.path.exists(DB_FILE): open(DB_FILE, 'w').close()
     with open(DB_FILE, "r") as f: indexed = set(line.strip() for line in f if line.strip())
-    all_urls = set(MANUAL_URLS).union(indexed)
     
-    generate_html_sitemap(all_urls)
-    generate_xml_sitemap(all_urls)
+    generate_html_sitemap(set(MANUAL_URLS).union(indexed))
+    generate_xml_sitemap(set(MANUAL_URLS).union(indexed))
     generate_robots_txt()
     
-    new_urls = [u for u in MANUAL_URLS if u not in indexed]
-    api_queue = [u for u in new_urls if any(d in u for d in VERIFIED_DOMAINS)]
-    
-    if api_queue:
-        logger.info(f"Mengirim {len(api_queue)} link ke Google Indexing API...")
-        send_to_google(api_queue)
+    # Hanya kirim link yang belum pernah dikirim
+    queue = [u for u in MANUAL_URLS if u not in indexed and any(d in u for d in VERIFIED_DOMAINS)]
+    if queue:
+        logger.info(f"Mengirim {len(queue)} link baru...")
+        send_to_google(queue)
     else:
-        logger.info("Tidak ada link baru untuk dikirim.")
+        logger.info("Semua link sudah terindeks sebelumnya.")
 
 if __name__ == "__main__":
     run_indexer()
