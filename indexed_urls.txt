@@ -1765,3 +1765,5 @@ https://cinebox.up.railway.app/
 https://cinebox-th.up.railway.app/
 https://cinebox-de.up.railway.app/
 https://hallyuflix.up.railway.app/
+https://cinebox-br.up.railway.app/
+https://cinebox-fr.up.railway.app/
