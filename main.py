@@ -22,12 +22,12 @@ VERIFIED_DOMAINS = ["railway.app", "github.io", "mintlify.app", "lovable.app", "
 # --- DAFTAR URL SITUS ANDA ---
 MANUAL_URLS = [
     "https://cinebox-br.up.railway.app/",
-	"https://cinebox-fr.up.railway.app/",
-	"https://spiderman-2026-subindo-production.up.railway.app/",
-	"https://spiderman-2026-subindo-production.up.railway.app/movie/969681-spider-man-brand-new-day/",
-	"https://odyssey-2026-koreansub.lovable.app/",
-	"https://odyssey-2026-koreansub.lovable.app/movie/1368337-odyssey-2026-koreansub/",
-	"https://spiderman-4-stream-deutsch.up.railway.app/movie/969681-spider-man-brand-new-day-2026-ganzer-film-deutsch-stream/",
+    "https://cinebox-fr.up.railway.app/",
+    "https://spiderman-2026-subindo-production.up.railway.app/",
+    "https://spiderman-2026-subindo-production.up.railway.app/movie/969681-spider-man-brand-new-day/",
+    "https://odyssey-2026-koreansub.lovable.app/",
+    "https://odyssey-2026-koreansub.lovable.app/movie/1368337-odyssey-2026-koreansub/",
+    "https://spiderman-4-stream-deutsch.up.railway.app/movie/969681-spider-man-brand-new-day-2026-ganzer-film-deutsch-stream/",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
@@ -72,7 +72,7 @@ def send_to_google(urls):
             try:
                 service.urlNotifications().publish(body={"url": url, "type": "URL_UPDATED"}).execute()
                 with open(DB_FILE, "a") as f: f.write(url + "\n")
-                time.sleep(2) # Jeda aman agar tidak error limit
+                time.sleep(2) 
             except Exception as e:
                 logger.error(f"Skip {url}: {e}")
                 continue
