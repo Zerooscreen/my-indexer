@@ -1768,3 +1768,4 @@ https://hallyuflix.up.railway.app/
 https://cinebox-br.up.railway.app/
 https://cinebox-fr.up.railway.app/
 https://cinebox-viet.up.railway.app/
+https://cinethaiseries.up.railway.app
