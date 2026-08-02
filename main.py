@@ -21,7 +21,8 @@ VERIFIED_DOMAINS = ["railway.app", "github.io", "mintlify.app", "lovable.app", "
 
 # --- DAFTAR URL SITUS ANDA ---
 MANUAL_URLS = [
-    "https://cinebox-viet.up.railway.app/",
+    "https://cinethaiseries.up.railway.app",
+    "https://cinebox-espana.up.railway.app",
 ]
 
 HUB_URL = "https://zerooscreen.github.io/my-indexer/"
